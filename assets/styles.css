@@ -285,6 +285,10 @@ small, .font_small {font-size: 0.618em;}*/
 		margin-top: 2rem;
 	}
 
+	.hero br {
+		display: none;
+	}
+
 	header nav {
 		display: block;
 	  position: relative;
