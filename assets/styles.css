@@ -56,6 +56,12 @@ table {
  * STYLE
  *
 ***/
+::selection {
+  background: #000;
+}
+::-moz-selection {
+  background: #000;
+}
 
 body {
   font-family: "Inconsolata", monospace;
