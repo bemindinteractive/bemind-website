@@ -184,9 +184,15 @@ h1 {
 
 h2 {font-size: 4.236em;}
 
-h3 {font-size: 2.618em;}
+h3 {
+  font-size: 2.618em;
+  font-weight: 70;
+}
 
-h4 {font-size: 1.618em;}
+h4 {
+  font-size: 1.618em;
+  font-weight: 700;
+}
 
 small, .font_small {font-size: 0.618em;}
 /*
