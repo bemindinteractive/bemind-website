@@ -1,0 +1,60 @@
+@media screen and (break(medium)) {
+  .c-sub-navigation {
+    display: flex;
+    align-items: center;
+
+    &--closed {
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 150ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    }
+
+    &--open {
+      height: $base-spacing-x10 * 3;
+      opacity: 1;
+      transition: all 150ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    }
+  }
+
+  .c-sub-navigation__item{
+    @include grid(3);
+
+    h3{
+      display: inline-block;
+      font-weight: $font-weight-normal;
+      color: color($base, light);
+      margin-bottom: $base-spacing;
+      padding-right: $base-spacing-x3;
+      background-image: url("/assets/images/navigation-big-arrow-inactive.svg");
+      background-position: right center;
+      background-size: 8px;
+      background-repeat: no-repeat;
+    }
+    p{
+      margin-bottom: 0;
+      font-size: $font-size-small;
+      color: color($base, lighter);
+    }
+
+    &--active {
+      cursor: default;
+
+      h3{
+        color: color($secondary, default);
+        background-image: url("/assets/images/navigation-big-arrow-active.svg");
+      }
+    }
+
+    &:hover {
+      h3{
+        color: color($secondary, default);
+        background-image: url("/assets/images/navigation-big-arrow-active.svg");
+      }
+    }
+  }
+
+  .c-sub-navigation__item:nth-child(1){
+    @include grid(3, $offset: 2);
+  }
+}

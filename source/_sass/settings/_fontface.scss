@@ -1,0 +1,70 @@
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Font Face
+// Last update: 09/08/2016
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+
+@if $font-face-name and $font-face-name != '' {
+
+  @font-face {
+  	font-family: 'HKGroteskPro'; // Regular
+  	src: url('/assets/fonts/hk-grotesk-pro-regular.eot');
+  	src: url('/assets/fonts/hk-grotesk-pro-regular.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/hk-grotesk-pro-regular.woff2') format('woff2'),
+  	     url('/assets/fonts/hk-grotesk-pro-regular.woff') format('woff'),
+  	     url('/assets/fonts/hk-grotesk-pro-regular.ttf') format('truetype'),
+  	     url('/assets/fonts/hk-grotesk-pro-regular.svg#youworkforthem') format('svg');
+  	font-weight: 400;
+  	font-style: normal;
+  }
+
+  @font-face {
+  	font-family: 'HKGroteskPro'; // Regular - Italic
+  	src: url('/assets/fonts/hk-grotesk-pro-italic.eot');
+  	src: url('/assets/fonts/hk-grotesk-pro-italic.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/hk-grotesk-pro-italic.woff2') format('woff2'),
+  	     url('/assets/fonts/hk-grotesk-pro-italic.woff') format('woff'),
+  	     url('/assets/fonts/hk-grotesk-pro-italic.ttf') format('truetype'),
+  	     url('/assets/fonts/hk-grotesk-pro-italic.svg#youworkforthem') format('svg');
+  	font-weight: 400;
+  	font-style: italic;
+  }
+
+  @font-face {
+  	font-family: 'HKGroteskPro'; // Light
+  	src: url('/assets/fonts/hk-grotesk-pro-light.eot');
+  	src: url('/assets/fonts/hk-grotesk-pro-light.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/hk-grotesk-pro-light.woff2') format('woff2'),
+  	     url('/assets/fonts/hk-grotesk-pro-light.woff') format('woff'),
+  	     url('/assets/fonts/hk-grotesk-pro-light.ttf') format('truetype'),
+  	     url('/assets/fonts/hk-grotesk-pro-light.svg#youworkforthem') format('svg');
+  	font-weight: 200;
+  	font-style: normal;
+  }
+
+  @font-face {
+  	font-family: 'HKGroteskPro'; // Medium
+  	src: url('/assets/fonts/hk-grotesk-pro-medium.eot');
+  	src: url('/assets/fonts/hk-grotesk-pro-medium.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/hk-grotesk-pro-medium.woff2') format('woff2'),
+  	     url('/assets/fonts/hk-grotesk-pro-medium.woff') format('woff'),
+  	     url('/assets/fonts/hk-grotesk-pro-medium.ttf') format('truetype'),
+  	     url('/assets/fonts/hk-grotesk-pro-medium.svg#youworkforthem') format('svg');
+  	font-weight: 500;
+  	font-style: normal;
+  }
+
+  @font-face {
+  	font-family: 'HKGroteskPro'; // Bold
+  	src: url('/assets/fonts/hk-grotesk-pro-bold.eot');
+  	src: url('/assets/fonts/hk-grotesk-pro-bold.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/hk-grotesk-pro-bold.woff2') format('woff2'),
+  	     url('/assets/fonts/hk-grotesk-pro-bold.woff') format('woff'),
+  	     url('/assets/fonts/hk-grotesk-pro-bold.ttf') format('truetype'),
+  	     url('/assets/fonts/hk-grotesk-pro-bold.svg#youworkforthem') format('svg');
+  	font-weight: 600;
+  	font-style: normal;
+  }
+
+
+}

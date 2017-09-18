@@ -1,0 +1,193 @@
+.c-illustrated-description-block {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 10;
+  padding: $base-spacing-x3;
+}
+
+.c-illustrated-description-block__content {
+  display: flex;
+  flex-flow: column;
+}
+
+.c-illustrated-description-block__text {
+  order: 2;
+}
+
+.c-illustrated-description-block__image {
+  order: 1;
+}
+
+.c-illustrated-description-block--offimage{
+  .c-illustrated-description-block__image {
+    margin-left: -50px;
+  }
+}
+
+.c-illustrated-description-block--offimage--inverted{
+  .c-illustrated-description-block__image {
+    margin-left: auto;
+    margin-right: -50px;
+  }
+}
+
+.c-illustrated-description-block__icon {
+  margin-bottom: $base-spacing-x4;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+}
+
+.c-illustrated-description-block__triangle{
+  display: none;
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-image: url(/assets/images/accessories-triangle.svg);
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0;
+  top: -20%;
+}
+
+@media screen and (break(medium)) {
+  .c-illustrated-description-block {
+    text-align: left;
+  }
+
+  .c-illustrated-description-block__content {
+    flex-flow: row;
+    padding-top: $base-spacing-x10 + $base-spacing-x2;
+    padding-bottom: $base-spacing-x10 + $base-spacing-x2;
+    align-items: center;
+  }
+
+  .c-illustrated-description-block__icon {
+    margin-bottom: $base-spacing-x8;
+    order: none;
+  }
+
+  .c-illustrated-description-block__text {
+    @include grid(4, $offset: 1);
+    order: 1;
+  }
+
+  .c-illustrated-description-block__image {
+    margin-top: 0;
+    @include grid(4, $offset: 2);
+    order: 2;
+  }
+}
+
+// Modifier ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+
+/* Grey background */
+.c-illustrated-description-block--background{
+  background: color($base, lightest);
+  .c-illustrated-description-block__image {
+    padding-top: $base-spacing-x4;
+    padding-bottom: $base-spacing-x4;
+  }
+}
+
+@media screen and (break(medium)) {
+  .c-illustrated-description-block--background{
+    .c-illustrated-description-block__triangle{
+      display: block;
+    }
+
+    .c-illustrated-description-block__text {
+      @include grid(6, $offset: 1);
+      order: 2;
+    }
+
+    .c-illustrated-description-block__image {
+      @include grid(5);
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-left: 0;
+      order: 1;
+    }
+  }
+}
+
+
+/* Big font */
+.c-illustrated-description-block--big{
+  .c-illustrated-description-block__text{
+    p{
+      font-size: $font-size-medium;
+    }
+  }
+}
+
+@media screen and (break(medium)) {
+  .c-illustrated-description-block--big{
+    .c-illustrated-description-block__text {
+      @include grid(6);
+      p{
+        font-size: $font-size-large;
+      }
+    }
+
+    .c-illustrated-description-block__image {
+      margin-top: 0;
+      @include grid(5, $offset: 1);
+    }
+  }
+}
+
+/* Off Image */
+.c-illustrated-description-block--offimage{
+  z-index: 0;
+  background: transparent;
+
+  .c-illustrated-description-block__triangle{
+    display: none;
+  }
+}
+
+@media screen and (break(medium)) {
+  .c-illustrated-description-block--offimage{
+    padding-top: $base-spacing-x10;
+    padding-bottom: $base-spacing-x10;
+
+    .c-illustrated-description-block__image {
+      @include grid(6);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin: 0;
+    }
+
+    .c-illustrated-description-block__text {
+      @include grid(4, $offset: 8);
+    }
+  }
+
+  .c-illustrated-description-block--offimage--inverted{
+    .c-illustrated-description-block__image {
+      @include grid(6);
+      position: absolute;
+      left: auto;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+    }
+    .c-illustrated-description-block__text {
+      @include grid(4, $offset: 0);
+      margin-left: $grid-gutter;
+    }
+  }
+
+  .c-illustrated-description-block--offimage--inverted--home{
+    padding-top: $base-spacing-x10 * 2;
+    padding-bottom: $base-spacing-x10 * 2;
+
+    .c-illustrated-description-block__image {
+      top: 0;
+    }
+  }
+}

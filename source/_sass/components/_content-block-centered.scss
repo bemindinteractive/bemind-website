@@ -1,0 +1,68 @@
+.c-centered-block {
+  background: linear-gradient(180deg, color($base, lightest) 0%, rgba(255,155,255,0) 100%);
+  padding: $base-spacing-x10 $base-spacing-x3 $base-spacing-x10 $base-spacing-x3;
+
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.c-centered-block--light{
+  background: transparent;
+}
+
+.c-centered-block__title {
+  color: color($base, default);
+  z-index: 10;
+  margin-bottom: $base-spacing-x4;
+}
+
+.c-centered-block__subtitle {
+  color: color($base, lighter);
+  display: block;
+  z-index: 10;
+  margin-bottom: $base-spacing-x2;
+}
+
+.c-centered-block__text {
+  color: color($base, light);
+  z-index: 10;
+  margin-bottom: $base-spacing-x8;
+}
+
+.c-centered-block__image {
+
+}
+
+@media screen and (break(medium)) {
+  .c-centered-block {
+    padding: $base-spacing-x10 * 2 $base-spacing-x3 0 $base-spacing-x3;
+  }
+
+  .c-centered-block--light{
+
+  }
+
+  .c-centered-block__title {
+    @include grid(6, $offset: 3);
+    margin-bottom: $base-spacing-x4;
+  }
+
+  .c-centered-block__subtitle {
+    @include grid(8, $offset: 2);
+    margin-bottom: $base-spacing-x2;
+  }
+
+  .c-centered-block__text {
+    @include grid(8, $offset: 2);
+    margin-bottom: $base-spacing-x8;
+  }
+
+  .c-centered-block--small-image{
+    .c-centered-block__image {
+      @include grid(6, $offset: 3);
+    }
+  }
+
+
+}

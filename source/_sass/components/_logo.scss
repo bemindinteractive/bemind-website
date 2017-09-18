@@ -1,0 +1,23 @@
+.c-logo {
+  display: block;
+  width: 90px;
+  height: 40px;
+  margin: 0 auto;
+
+  background: url("images/logo.svg") no-repeat;
+  background-size: contain;
+
+  text-indent: -9999px;
+}
+
+@media screen and (break(medium)) {
+  .c-logo {
+    width: 124px;
+    height: 40px;
+
+    background: url("images/logo.svg") no-repeat;
+    background-size: contain;
+
+    text-indent: -9999px;
+  }
+}

@@ -1,0 +1,57 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Vidra
+email: hello@vidra.io
+description: "il modo più semplice per vendere online."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.vidra.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: vidrahq
+facebook_username: vidra.io
+instagram_username: vidrahq
+
+# Content Settings
+excerpt_separator: <!--more-->
+collections:
+
+  features:
+    output: true
+    permalink: /features/:path/
+
+  blog:
+    output: true
+    layout: blog-article
+    permalink: /:collection/:path/
+
+
+# Build settings
+source: source
+destination: dist
+markdown: kramdown
+
+# Minification
+sass:
+  style: compressed
+minify_html: true
+
+gems:
+  - jekyll-feed
+  - jekyll-polyglot
+  - octopress-minify-html
+  - octopress-autoprefixer
+
+include: ["_pages"]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+permalink: /:title/
+
+# Multilanguage support
+languages: ["it", "en"]
+default_lang: "it"
+exclude_from_localization: ["assets", "_sass"]
+parallel_localization: true

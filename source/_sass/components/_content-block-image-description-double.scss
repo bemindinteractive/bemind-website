@@ -1,0 +1,100 @@
+.c-illustrated-description-block-double {
+  position: relative;
+  z-index: 10;
+
+  text-align: center;
+  margin: 0 auto;
+}
+.c-illustrated-description-block-double__text {
+
+}
+.c-illustrated-description-block-double__image {
+  margin-bottom: $base-spacing-x4;
+}
+.c-illustrated-description-block-double:nth-child(2) {
+  padding-top: 0;
+}
+
+
+@media screen and (break(medium)) {
+  .c-illustrated-description-block-double {
+    text-align: left;
+    margin-bottom: $base-spacing-x4;
+    margin-top: $base-spacing-x4;
+  }
+  .c-illustrated-description-block-double__wrapper{
+    margin: 0 auto;
+  }
+
+  .c-illustrated-description-block-double__content {
+    @include grid(4, $offset: 1);
+  }
+
+  .c-illustrated-description-block-double__content:nth-child(2) {
+    @include grid(4, $offset: 2);
+  }
+
+  .c-illustrated-description-block-double__text {
+    position: relative;
+  }
+
+  .c-illustrated-description-block-double__image {
+    display: block;
+    margin-top: 0;
+    margin-bottom: $base-spacing-x4;
+  }
+}
+
+
+// Modifier ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+
+.c-illustrated-description-block-double--boxed {
+  position: relative;
+  z-index: 10;
+  margin-bottom: $base-spacing-x4;
+
+  .c-illustrated-description-block-double__content {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 20px 20px 0 rgba(106,104,123,0.3);
+    margin-bottom: $base-spacing-x3;
+  }
+
+  .c-illustrated-description-block-double__image {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .c-illustrated-description-block-double__text {
+    position: relative;
+    padding: $base-spacing-x3;
+    padding-top: $base-spacing-x10;
+    text-align: center;
+  }
+
+  .c-illustrated-description-block-double__icon {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    margin-left: -45px;
+  }
+}
+
+@media screen and (break(medium)) {
+  .c-illustrated-description-block-double--boxed {
+    .c-illustrated-description-block-double__content {
+      @include grid(5);
+      margin-left: 20px;
+    }
+    .c-illustrated-description-block-double__text {
+      padding: $base-spacing-x8;
+      padding-top: $base-spacing-x10;
+    }
+    .c-illustrated-description-block-double__content:nth-child(2) {
+      @include grid(5, $offset: 2);
+    }
+  }
+}

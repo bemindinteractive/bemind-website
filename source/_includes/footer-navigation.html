@@ -1,0 +1,22 @@
+<nav class="c-footer__navigation" role="navigation" aria-label="Secondary Menu">
+  <h6>{{ include.title }}</h6>
+  <ul class="c-footer__navigation__list">
+    {% for p in include.list %}
+      {% if p.menu == include.menu %}
+        {% if p.url == page.url %}
+          <li class="c-footer__navigation__list-item c-footer__navigation__list-item--active">{{ p.menuTitle | escape }}</li>
+        {% else %}
+          <li class="c-footer__navigation__list-item">
+            <a class="c-footer__navigation__link" href="{{ p.url | relative_url }}">{{ p.menuTitle | escape }}</a>
+          </li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if include.menu == "other" %}
+      <li class="c-footer__navigation__list-item">
+        <a class="c-footer__navigation__link" href="http://blog.hype.it/" target="_blank">Blog</a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>

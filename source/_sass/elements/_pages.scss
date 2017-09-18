@@ -1,0 +1,46 @@
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Pages page tags
+// Last update: 08/08/2016
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+// Metro mode compatibility.
+@-ms-viewport {
+  width: device-width;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: $font-size-base;
+}
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: color($base, lightest);
+
+  @if $font-face-name and $font-face-name != '' {
+    font-family: $font-face-name, $font-family;
+  }
+  @else if $use-google-fonts {
+    @include font("Open Sans", 700);
+  }
+  @else {
+    font-family: -apple-system, BlinkMacSystemFont, $font-family;
+  }
+}
+
+::selection {
+  color: color($base, default);
+  text-shadow: none;
+  background-color: color($primary, lightest);
+}
+
+@media screen and (break(medium)) {
+
+}

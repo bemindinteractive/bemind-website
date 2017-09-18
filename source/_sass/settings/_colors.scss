@@ -1,0 +1,65 @@
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Color palette
+// Last update: 23/03/2016
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+$primary: (
+  darkest  : #376B49,
+  darker   : #4C9666,
+  dark     : #57AB74,
+  default  : #77EB9F,
+  light    : #9CF0B9,
+  lighter  : #B4F4CA,
+  lightest : #D9F9E4
+);
+
+$secondary: (
+  darkest  : #22369D,
+  darker   : #2B45CA,
+  dark     : #304DE0,
+  default  : #3454F6,
+  light    : #7D92F9,
+  lighter  : #B5C0FB,
+  lightest : #DADFFD
+);
+
+$base: (
+  darkest  : #33304A,
+  darker   : #33304A,
+  dark     : #33304A,
+  default  : #33304A,
+  light    : #6A687B,
+  lighter  : #C7C6CD,
+  lightest : #F0F1F4,
+  white    : #FFFFFF
+);
+
+$green: (
+  darkest  : #244B2A,
+  darker   : #244B2A,
+  dark     : #3E8248,
+  default  : #61CC71,
+  light    : #A8E3B1,
+  lighter  : #D3F1D8,
+  lightest : #D3F1D8
+);
+
+$red: (
+  darkest  : #5D0A10,
+  darker   : #5D0A10,
+  dark     : #950F1A,
+  default  : #CC1423,
+  light    : #D9545F,
+  lighter  : #E7949B,
+  lightest : #E7949B
+);
+
+$yellow: (
+  darkest  : #746220,
+  darker   : #746220,
+  dark     : #BA9C33,
+  default  : #FFD645,
+  light    : #FFE177,
+  lighter  : #FFF3CC,
+  lightest : #FFF3CC
+);

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="c-hero c-hero--landing o-wrapper">
+  <div class="c-hero__text">
+    <h1 class="c-hero__title">{{ page.heroTitle }}</h1>
+    <p class="c-hero__subtitle">{{ page.heroSubtitle }}</p>
+    <a class="e-button" href="/">{{ page.heroButton }}</a>
+  </div>
+  <div class="c-hero__image">
+    {{page.heroImage}}
+  </div>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+<script>
+if (location.href.indexOf('/en/') > -1) {
+  fetch('/en/errors/404')
+    .then(resp => resp.text())
+    .then(html => {
+      var parser = new DOMParser();
+      var doc = parser.parseFromString(html, 'text/html');
+      var header = doc.querySelectorAll('.c-header');
+      var hero = doc.querySelectorAll('.c-hero');
+
+      document.querySelectorAll('.c-header')[0].innerHTML = header[0].innerHTML;
+      document.querySelectorAll('.c-hero')[0].innerHTML = hero[0].innerHTML;
+    });
+}
+</script>

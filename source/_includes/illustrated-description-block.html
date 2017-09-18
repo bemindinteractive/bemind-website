@@ -1,0 +1,43 @@
+<div class="c-illustrated-description-block {{ include.style }}">
+  <div class="c-illustrated-description-block__triangle"></div>
+  <div class="o-wrapper c-illustrated-description-block__content">
+
+    {% if include.style == "" %}
+      <img class="c-illustrated-description-block__image" src="{{ include.image }}"/>
+    {% endif %}
+
+    <div class="c-illustrated-description-block__text">
+
+      {% if include.icon %}
+        <img class="c-illustrated-description-block__icon" src="{{ include.icon }}"/>
+      {% endif %}
+
+      {% if include.subtitle %}
+        <h5>{{ include.subtitle }}</h5>
+      {% endif %}
+
+      {% if include.title %}
+        {% if page.url == "/" %}
+          <h2>{{ include.title }}</h2>
+        {% else %}
+          <h3>{{ include.title }}</h3>
+        {% endif %}
+      {% endif %}
+
+      {% if include.text %}
+        {{ include.text | markdownify }}
+      {% endif %}
+
+      {% if include.label %}
+        <a class="c-illustrated-description-block__link" href="{{ include.link }}">{{ include.label }}</a>
+      {% endif %}
+
+    </div>
+
+    {% if include.style != "" %}
+      <img class="c-illustrated-description-block__image" src="{{ include.image }}"/>
+    {% endif %}
+
+
+  </div>
+</div>

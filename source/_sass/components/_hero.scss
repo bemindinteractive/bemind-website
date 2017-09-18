@@ -1,0 +1,86 @@
+.c-hero {
+  padding: $base-spacing-x5 $base-spacing-x2;
+  padding-top: $base-spacing-x10 * 4;
+
+  text-align: center;
+
+  background-position: top right;
+  background-size: 80%;
+  background-repeat: no-repeat;
+
+  > div {
+    padding: 0 $base-spacing-x3;
+  }
+  .c-hero__text{
+    z-index: 10;
+    position: relative;
+  }
+
+  .c-hero__title {
+    br {
+      display: none;
+    }
+  }
+}
+
+.c-hero__angle{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-image: url(/assets/images/triangle-background.png);
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  bottom: -60%;
+  z-index: 0;
+}
+
+.c-hero__image {
+  display: none;
+}
+
+@media screen and (break(medium)) {
+
+  .c-hero {
+    background-position: center right;
+    background-size: contain;
+
+    margin-bottom: -($base-spacing-x10 + $base-spacing-x2);
+    text-align: left;
+    margin-top: 5%;
+    padding: 8% $base-spacing-x3 12% $base-spacing-x5;
+  }
+
+  .c-hero__angle{
+    bottom: -120%;
+    z-index: 0;
+  }
+
+  .c-hero__subtitle {
+    padding: 0 28% 0 0;
+    > p {
+      font-size: $font-size-medium;
+    }
+    margin-bottom: $base-spacing-x8;
+  }
+
+  .c-hero__text {
+    @include grid(6);
+    flex: 2;
+    align-self: center;
+  }
+
+  .c-hero__title {
+
+    br {
+      display: block;
+    }
+  }
+}
+
+@media screen and (break(large)) {
+  .c-hero__subtitle {
+    padding: 0;
+  }
+}

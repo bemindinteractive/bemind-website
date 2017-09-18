@@ -1,0 +1,43 @@
+.c-illustrated-description-block-triple {
+  text-align: center;
+  margin: 0 auto;
+  z-index: 10;
+  position: relative;
+}
+.c-illustrated-description-block-triple__text {
+
+}
+.c-illustrated-description-block-triple__image {
+  margin-top: $base-spacing-x4;
+}
+
+@media screen and (break(medium)) {
+  .c-illustrated-description-block-triple {
+    overflow: hidden;
+    text-align: left;
+    margin-top: $base-spacing-x10 * 2;
+  }
+  .c-illustrated-description-block-triple__wrapper{
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .c-illustrated-description-block-triple__content {
+    @include grid(3);
+  }
+
+  .c-illustrated-description-block-triple__content:nth-child(2),
+  .c-illustrated-description-block-triple__content:nth-child(3) {
+    @include grid(3, $offset: 1);
+  }
+
+  .c-illustrated-description-block-triple__text {
+
+  }
+
+  .c-illustrated-description-block-triple__image {
+    display: block;
+    margin-top: 0;
+    margin-bottom: $base-spacing-x4;
+  }
+}

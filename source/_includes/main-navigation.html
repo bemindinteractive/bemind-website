@@ -1,0 +1,18 @@
+<nav class="c-main-navigation" role="navigation" aria-label="Main Menu">
+  <ul class="c-main-navigation__list">
+    <li class="c-main-navigation__list-item">
+      <a class="c-main-navigation__link c-main-navigation__link--more" id="js-featuresButton" href="#">Funzionalità</a>
+    </li>
+    {% for p in site.pages %}
+      {% if p.menu == "main" %}
+        {% if p.url == page.url %}
+          <li class="c-main-navigation__list-item c-main-navigation__list-item--active">{{ p.menuTitle | escape }}</li>
+        {% else %}
+          <li class="c-main-navigation__list-item">
+            <a class="c-main-navigation__link" href="{{ p.url | relative_url }}">{{ p.menuTitle | escape }}</a>
+          </li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

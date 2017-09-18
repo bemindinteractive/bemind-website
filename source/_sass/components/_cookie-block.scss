@@ -1,0 +1,60 @@
+
+.c-cookie-block {
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: $base-spacing-x2;
+  background: color($base, lightest);
+  z-index: 9999;
+  position: inherit;
+
+  p {
+    font-size: 0.775rem;
+    margin: auto;
+    width: 95%;
+    float: left;
+  }
+}
+
+.c-cookie-block__wrapper {
+  display: flex;
+}
+
+.c-cookie-block--closed {
+  display: none;
+  margin-top: -80px;
+  transition: all 0.3s ease 0s;
+}
+
+.c-cookie-block__btn-close {
+  background-image: url("/assets/images/modal-close-button.svg");
+  background-size: cover;
+  background-color: transparent;
+  width: 17px;
+  height: 16px;
+  margin: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+@media screen and (break(medium)) {
+  .c-cookie-block {
+    position: fixed;
+  }
+  .c-cookie-block__btn-close {
+    width: 20px;
+    height: 20px;
+    margin: 16px;
+  }
+
+  .c-cookie-block__wrapper {
+    width: 1220px;
+    padding: 0 $base-spacing-x2;
+    min-width: 915px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,81 @@
+@if $use-helper-mediaqueries == true {
+
+  :root {
+
+    &:after {
+      position: fixed;
+      cursor: default;
+      z-index: 999999;
+      bottom: 20px;
+      right: 20px;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 7px 0;
+      text-align: center;
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 15px 20px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      transition: color 250ms, background-color 250ms;
+      background-color: #FFF;
+      box-shadow: 0 10px 30px rgba(#000, .2);
+      color: #212121;
+
+      /*
+        Loop through $breakpoints and generate a random color for the label
+      */
+      @each $breakpoint in $breakpoints {
+        /*
+          Extract the $breakpoint value
+        */
+        $breakpoint: nth($breakpoint, 2);
+
+        @media screen and (min-width: $breakpoint) {
+          color: hsl(random(361) - 250, 50%, 50%);
+        }
+      }
+
+    }
+
+    /*
+      Extract each density value from $densities
+    */
+    @each $density in $densities {
+
+      $density: nth($density, 2);
+      $dpi: unquote("min-resolution: #{ $density }");
+
+      @for $i from 1 through length($breakpoints) {
+        $size-name: nth(nth($breakpoints, $i), 1);
+        $size: nth(nth($breakpoints, $i), 2);
+
+        &:after {
+          @media screen and ($dpi) {
+            content: "#{ $density } ";
+
+            @media (orientation: portrait) {
+              content: "#{ $density } portrait";
+            }
+
+            @media (orientation: landscape) {
+              content: "#{ $density } landscape";
+            }
+
+            @media (min-width: $size) {
+              content: "#{ $size-name } - #{ $density }" !important;
+
+              @media (orientation: portrait) {
+                content: "#{ $size-name } - #{ $density } - PORTRAIT" !important;
+              }
+
+              @media (orientation: landscape) {
+                content: "#{ $size-name } - #{ $density } - LANDSCAPE" !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

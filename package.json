@@ -1,0 +1,32 @@
+{
+  "name": "vidra-website",
+  "version": "0.1.0",
+  "description": "Vidra website powered by Jekyll.",
+  "main": "",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "commander": "^2.9.0",
+    "fs-jetpack": "^1.0.0"
+  },
+  "scripts": {
+    "start": "jekyll serve",
+    "prebuild": "npm run clean:build",
+    "build": "JEKYLL_ENV=production jekyll build",
+    "clean:build": "node build-tools.js clean-dist",
+    "svnpush": "./svnpush.sh",
+    "deploy:local": "./localdeploy.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vidra-io/website"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vidra-io/website/issues"
+  },
+  "homepage": "https://github.com/vidra-io/website#readme"
+}

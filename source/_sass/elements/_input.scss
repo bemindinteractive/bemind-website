@@ -1,0 +1,37 @@
+.e-input-text {
+  display: inline-block;
+  padding: $base-spacing-x2 - 2;
+  background: color($base, white);
+  border: 2px solid color($base, lightest);
+  color: color($base, default);
+  font-weight: $font-weight-normal;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  border-radius: 4px;
+  margin-right: $base-spacing-x2;
+
+  @include placeholder{
+    color: color($base, lightest);
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
+  }
+}
+
+.e-input-validation{
+  display: inline-block;
+  margin-top: $base-spacing;
+  border-radius: 4px;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-xsmall;
+  padding: $base-spacing;
+
+  &--success{
+    background: color($green, lightest);
+    color: color($green, default);
+  }
+  &--failed{
+    background: color($red, lightest);
+    color: color($red, default);
+  }
+
+}

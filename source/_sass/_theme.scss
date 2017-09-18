@@ -1,0 +1,92 @@
+/* ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+
+This is project follows the Inverted Triangle CSS (ITCSS)
+organizational structure created by Harry Roberts.
+
+The organization is from low to high specifity
+and aims to create more scalable, modular, and structured css
+
+The inverted triangle:
+
+                   ________________
+    Settings       |______________|       Least Specific
+       Tools        |____________|
+     Generic         |__________|              |
+    Elements          |________|               |
+     Objects           |______|                |
+  Components            |____|
+      Trumps             |__|             Most Specific
+
+
+Settings ---- Global variables, config switches.
+Tools ------- Default mixins and functions.
+Generic ----- Ground-zero styles (Normalize.css, resets, box-sizing).
+Elements ---- Unclassed HTML elements (type selectors).
+Objects ----- Cosmetic-free design patterns.
+Components -- Designed components, chunks of UI.
+Trumps ------ Helpers and overrides.
+
+↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥ */
+
+/* Fonts */
+
+
+/* Import Settings */
+@import 'settings/colors';
+@import 'settings/ambient';
+@import 'settings/typography';
+@import 'settings/fontface';
+
+
+/* Import Tools */
+@import 'tools/functions';
+@import 'tools/clearfix';
+@import 'tools/fontface';
+@import 'tools/grid';
+@import 'tools/mediaqueries';
+
+
+/* Import Generic */
+@import 'generic/normalize';
+
+
+/* Import Elements */
+@import 'elements/links';
+@import 'elements/pages';
+@import 'elements/typography';
+@import 'elements/media';
+@import 'elements/button';
+@import 'elements/input';
+
+
+/* Import Objects */
+@import 'objects/wrapper';
+
+
+/* Import Components */
+@import 'components/header';
+@import 'components/main-navigation';
+@import 'components/sub-navigation';
+@import 'components/mobile-navigation';
+@import 'components/logo';
+@import 'components/hero';
+@import 'components/content-block-intro';
+@import 'components/content-block-centered';
+@import 'components/content-block-image-description';
+@import 'components/content-block-image-description-double';
+@import 'components/content-block-image-description-triple';
+@import 'components/prefooter';
+@import 'components/footer';
+@import 'components/footer-navigation';
+@import 'components/cookie-block';
+@import 'components/page-content';
+@import 'components/modal';
+@import 'components/blog';
+
+
+/* Import Trumps */
+@import 'trumps/home-head-block';
+@import 'trumps/language-switcher';
+@import 'trumps/contacts';
+@import 'trumps/margins';
+@import 'trumps/animations';

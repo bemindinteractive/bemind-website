@@ -1,0 +1,33 @@
+.c-intro-block {
+  margin-top: $base-spacing-x10;
+  padding: 0 $base-spacing-x3 0 $base-spacing-x3;
+  text-align: center;
+  position: relative;
+}
+
+.c-intro-block__title {
+  color: color($base, default);
+  z-index: 10;
+}
+
+.c-intro-block__subtitle {
+  display: block;
+  z-index: 10;
+  margin-bottom: $base-spacing-x2;
+
+  color: color($base, lighter);
+}
+
+@media screen and (break(medium)) {
+  .c-intro-block {
+    margin-top: $base-spacing-x10 * 2;
+    margin-bottom: $base-spacing-x10;
+  }
+  .c-intro-block__title {
+    @include grid(8, $offset: 2);
+  }
+  .c-intro-block__subtitle {
+    @include grid(6, $offset: 3);
+    margin-bottom: $base-spacing-x2;
+  }
+}

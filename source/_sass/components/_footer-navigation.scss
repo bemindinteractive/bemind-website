@@ -1,0 +1,46 @@
+.c-footer__navigation {
+  @include grid(3);
+  display: inline-block;
+}
+
+.c-footer__navigation__list {
+  padding: 0;
+  margin: 0;
+}
+
+.c-footer__navigation__list-item {
+  font-size: $font-size-small;
+  font-weight: $font-weight-normal;
+  list-style: none;
+  padding: $base-spacing $base-spacing-x5 $base-spacing 0;
+
+  &--active {
+    font-weight: $font-weight-medium;
+    color: color($secondary, default);
+  }
+}
+
+.c-footer__navigation__link {
+  font-size: $font-size-small;
+  color: color($base, light)
+}
+
+@media screen and (break(extraSmall)) {
+  .c-footer__navigation__list {
+
+  }
+
+  .c-footer__navigation__list-item {
+
+  }
+}
+
+@media screen and (break(medium)) {
+  .c-footer__navigation__list {
+
+  }
+
+  .c-footer__navigation__list-item {
+    align-self: flex-start;
+  }
+}

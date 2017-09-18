@@ -1,0 +1,33 @@
+---
+layout: default
+menuTitle: Blog
+title: Vidra Blog
+permalink: /blog/
+lang: it
+menu: main
+category: blog
+---
+  <div class="o-wrapper c-blog-list">
+
+    <div class="c-blog-list__header">
+      <h1>{{ page.title }}</h1>
+      <p>Le nostre novità, curiosità e riflessioni sull’universo e-commerce  🛒📱🤖</p>
+    </div>
+
+    {% for article in site.blog %}
+      <a class="c-blog-list__item" href="{{ article.url }}">
+        <div class="c-blog-list__item__content">
+          <div class="c-blog-list__item__image" style="background-image:url({{ article.image }})"></div>
+          <div class="c-blog-list__item__text">
+              <h5>{{ article.category}}</h5>
+              <h3>{{ article.title }}</h3>
+              {{ article.description | markdownify }}
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+
+    <div class="clearfix"></div>
+  </div>
+
+{% include prefooter.html %}

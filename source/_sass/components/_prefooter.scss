@@ -1,0 +1,95 @@
+.c-prefooter {
+  position: relative;
+  padding: $base-spacing-x4;
+}
+
+.c-prefooter__big-triangle{
+  display: none;
+  position: absolute;
+  width: 670px;
+  height: 670px;
+  background-image: url(/assets/images/prefooter-big-triangle.svg);
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0;
+  top: -10%;
+  z-index: 0;
+}
+
+.c-prefooter__wrapper{
+  position: relative;
+
+  padding: $base-spacing-x4;
+
+  background-color: color($base, default);
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  box-shadow: 0px 10px 40px 0px rgba(106,104,123,0.4);
+}
+
+.c-prefooter__wrapper__small-triangle{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-image: url(/assets/images/prefooter-small-triangle.svg);
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 5%;
+  top: -15%;
+}
+
+
+.c-prefooter__title {
+  @include grid(12);
+  color: white;
+  margin-bottom: $base-spacing-x4;
+  align-self: flex-start;
+}
+
+.c-prefooter__button {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+}
+
+@media screen and (break(extraSmall)) {
+  .c-prefooter__button {
+    width: auto;
+  }
+}
+
+@media screen and (break(medium)) {
+
+  .c-prefooter{
+    background-size: contain;
+    background-position: top right;
+  }
+  .c-prefooter__wrapper{
+    flex-direction: row;
+    padding: $base-spacing-x8;
+
+    margin-top: $base-spacing-x10 * 2;
+    margin-bottom: $base-spacing-x10;
+  }
+  .c-prefooter__wrapper__small-triangle{
+    top: -25%;
+  }
+  .c-prefooter__big-triangle{
+    display: block;
+  }
+  .c-prefooter__title {
+    @include grid(6);
+    margin-bottom: 0;
+  }
+
+  .c-prefooter__button {
+    width: auto;
+  }
+}

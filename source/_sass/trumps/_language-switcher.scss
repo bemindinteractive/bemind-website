@@ -1,0 +1,17 @@
+.c-language-switcher {
+  display: none;
+}
+
+@media screen and (break(medium)) {
+  .c-language-switcher {
+    display: block;
+    margin: 0;
+    padding: $base-spacing $base-spacing-x4;
+  }
+
+  .c-language-switcher__lang {
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: 500;
+  }
+}

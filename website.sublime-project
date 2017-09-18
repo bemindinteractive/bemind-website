@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				".sass-cache",
+				"node_modules",
+				".idea"
+			],
+			"path": "."
+		}
+	]
+}

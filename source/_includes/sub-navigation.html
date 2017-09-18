@@ -1,0 +1,11 @@
+<div id="js-featuresNavigationBar" class="o-wrapper c-sub-navigation c-sub-navigation--closed">
+  {% for p in site.features %}
+    <div class="c-sub-navigation__item {% if p.url == page.url %}c-sub-navigation__item--active{% endif %}">
+        <a href="{{ p.url | relative_url }}">
+          <h3>{{ p.menuTitle | escape }}</h3>
+          <p>{{ p.title | escape }}</p>
+        </a>
+    </div>
+  {% endfor %}
+  <div class="clearfix"></div>
+</div>

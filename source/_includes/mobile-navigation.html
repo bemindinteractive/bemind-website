@@ -1,0 +1,28 @@
+<div class="c-mobile-navigation c-mobile-navigation--closed" id="js-mobileMenu">
+  <a href="../signup" class="e-button">{{ site.data.general.signup }}</a>
+  <a href="#" class="c-mobile-navigation__burger" id="js-mobileMenu__button">MENU</a>
+
+  <ul class="c-mobile-navigation__list">
+    {% if page.url == "/" %}
+    <li class="c-mobile-navigation__list-item c-mobile-navigation__list-item--active">Home</li>
+    {% else %}
+    <li class="c-mobile-navigation__list-item">
+      <a class="c-mobile-navigation__link" href="/">Home</a>
+    </li>
+    {% endif %}
+    {% for p in site.pages %}
+      {% if p.menu == "main" || p.menu == "mobile" %}
+        {% if p.url == page.url %}
+          <li class="c-mobile-navigation__list-item c-mobile-navigation__list-item--active">{{ p.title | escape }}</li>
+        {% else %}
+          <li class="c-mobile-navigation__list-item">
+            <a class="c-mobile-navigation__link" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+          </li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    <li class="c-mobile-navigation__list-item">
+      <a class="c-mobile-navigation__link" href="https://business.hype.it" target="_blank">Business</a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{% include home-head-block.html %}
+
+{% include illustrated-description-block.html
+  style = "c-illustrated-description-block--offimage c-illustrated-description-block--offimage--inverted--home"
+  subtitle = page.socialBlockSubtitle
+  title = page.socialBlockTitle
+  text = page.socialBlockText
+  image = page.socialBlockImage
+  icon = page.socialBlockIcon
+  label = page.socialBlockLabel
+  link = page.socialBlockLink
+%}
+
+{% include illustrated-description-block.html
+  style = "c-illustrated-description-block--offimage c-illustrated-description-block--offimage--inverted c-illustrated-description-block--offimage--inverted--home"
+  subtitle = page.marketplaceBlockSubtitle
+  title = page.marketplaceBlockTitle
+  text = page.marketplaceBlockText
+  image = page.marketplaceBlockImage
+  icon = page.marketplaceBlockIcon
+  label = page.marketplaceBlockLabel
+  link = page.marketplaceBlockLink
+%}
+
+{% include illustrated-description-block-double.html
+  style = "c-illustrated-description-block-double--boxed"
+
+  first-subtitle = page.printBlockSubtitle
+  first-title = page.printBlockTitle
+  first-text = page.printBlockText
+  first-image = page.printBlockImage
+  first-icon = page.printBlockIcon
+  first-label = page.printBlockLabel
+  first-link = page.printBlockLink
+
+  second-subtitle = page.deliverBlockSubtitle
+  second-title = page.deliverBlockTitle
+  second-text = page.deliverBlockText
+  second-image = page.deliverBlockImage
+  second-icon = page.deliverBlockIcon
+  second-label = page.deliverBlockLabel
+  second-link = page.deliverBlockLink
+%}
+
+{% include prefooter.html %}

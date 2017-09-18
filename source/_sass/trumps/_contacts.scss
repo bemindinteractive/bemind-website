@@ -1,0 +1,82 @@
+.c-contacts {
+  padding: $base-spacing-x7  $base-spacing-x3 $base-spacing-x10 * 2 $base-spacing-x3;
+}
+
+.c-contacts__header {
+  width: 100%;
+
+  h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 500;
+  }
+
+  .subtitle {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.375rem;
+  }
+}
+
+.c-contacts__list {
+  margin: $base-spacing-x7 0 0 0;
+  padding: 0;
+  border: 1px solid #F1F3F7;
+  display: block;
+}
+
+.c-contacts__list-item {
+  margin: 0;
+  padding: 5em;
+  display: block;
+  width: 100%;
+
+  &--border-right {
+    border-right: 1px solid #F1F3F7;
+  }
+
+  &--border-left {
+    border-left: 1px solid #F1F3F7;
+  }
+}
+
+.c-contacts__list-icon {
+  display: block;
+  margin: 0 auto $base-spacing-x5 auto;
+}
+
+.c-contacts__list-description {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 0.813rem;
+  color: color($base, lightest);
+
+  &--more-margin {
+    margin-bottom: $base-spacing-x2;
+  }
+}
+
+.c-contacts__list-contact {
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: color($base, light);
+}
+
+@media screen and (break(medium)) {
+  .c-contacts {
+    padding: $base-spacing-x9 *2 0 $base-spacing-x10 * 2 0;
+  }
+
+  .c-contacts__list {
+    display: flex
+  }
+
+  .c-contacts__list-item {
+    width: 33%;
+  }
+}
