@@ -38,10 +38,12 @@ h2 {
   }
 }
 
-h3, blockquote>p {
+h3,
+blockquote>p {
   @extend %heading-rules;
   font-size: $font-size-large;
-  margin-bottom: $base-spacing-x4;
+  font-weight: $font-weight-light;
+  margin-bottom: $base-spacing-x8;
 }
 
 
@@ -58,7 +60,7 @@ h5 {
   font-weight: $font-weight-normal;
   font-family: $font-face-secondary;
   color: color($primary, default);
-  margin-bottom: $base-spacing-x3;
+  margin-bottom: $base-spacing-x8;
 }
 
 

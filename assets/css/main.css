@@ -498,7 +498,8 @@ body {
   text-shadow: none;
   background-color: #4F3DF3; }
 
-h1, h2, h3, blockquote > p, h4, h5, h6 {
+h1, h2, h3,
+blockquote > p, h4, h5, h6 {
   line-height: 1.2;
   font-weight: 500;
   color: #FFFFFF;
@@ -522,9 +523,11 @@ h2 {
 @media screen and (min-width: 60em) {
   h2 {
     font-size: 4.444rem; } }
-h3, blockquote > p {
+h3,
+blockquote > p {
   font-size: 1.778rem;
-  margin-bottom: 32px; }
+  font-weight: 200;
+  margin-bottom: 64px; }
 
 h4 {
   font-size: 1.333rem;
@@ -535,7 +538,7 @@ h5 {
   font-weight: 400;
   font-family: Apercu-Mono;
   color: #4F3DF3;
-  margin-bottom: 24px; }
+  margin-bottom: 64px; }
 
 h6 {
   font-size: 18px;
@@ -1197,7 +1200,8 @@ img, video, iframe {
   text-align: center;
   margin: 0 auto;
   z-index: 10;
-  padding: 24px; }
+  padding: 24px;
+  margin-top: 320px; }
 
 .c-illustrated-description-block__content {
   display: -ms-flexbox;
@@ -1209,34 +1213,33 @@ img, video, iframe {
   -ms-flex-order: 2;
       order: 2; }
 
-.c-illustrated-description-block__image {
+.c-illustrated-description-block__figure {
   -ms-flex-order: 1;
-      order: 1; }
-
-.c-illustrated-description-block--offimage .c-illustrated-description-block__image {
-  margin-left: -50px; }
-
-.c-illustrated-description-block--offimage--inverted .c-illustrated-description-block__image {
-  margin-left: auto;
-  margin-right: -50px; }
-
-.c-illustrated-description-block__icon {
-  margin-bottom: 32px;
-  display: inline-block;
-  width: 90px;
-  height: 90px; }
-
-.c-illustrated-description-block__triangle {
-  display: none;
+      order: 1;
   position: absolute;
-  width: 230px;
-  height: 230px;
-  background-image: url(/assets/images/accessories-triangle.svg);
-  background-position: right center;
+  right: 0;
+  height: 100%; }
+
+.c-illustrated-description-block__image {
+  height: 100%;
+  width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  right: 0;
-  top: -20%; }
+  background-position: center center; }
+
+.c-illustrated-description-block__link {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-family: Apercu-Mono;
+  background: url(/assets/images/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 8px 6px;
+  padding-left: 32px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #4F3DF3; }
+  .c-illustrated-description-block__link:hover {
+    color: #4F3DF3; }
 
 @media screen and (min-width: 60em) {
   .c-illustrated-description-block {
@@ -1245,15 +1248,8 @@ img, video, iframe {
   .c-illustrated-description-block__content {
     -ms-flex-flow: row;
         flex-flow: row;
-    padding-top: 96px;
-    padding-bottom: 96px;
     -ms-flex-align: center;
         align-items: center; }
-
-  .c-illustrated-description-block__icon {
-    margin-bottom: 64px;
-    -ms-flex-order: none;
-        order: none; }
 
   .c-illustrated-description-block__text {
     /*
@@ -1283,51 +1279,12 @@ img, video, iframe {
       Check if the $gutter have a % unit
     */
     width: calc( 33.3333333333% - 24px - 8px );
+    padding-top: 160px;
+    padding-bottom: 160px;
     -ms-flex-order: 1;
         order: 1; }
 
-  .c-illustrated-description-block__image {
-    margin-top: 0;
-    /*
-      Check if $colSpan is a valid integer number then process the parameters
-      passed to the grid() mixin.
-    */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
-    float: left;
-    /*
-      If $grid-use-gutters is set to false (true by default) set the
-      element width based on the $initColWidth process result.
-    */
-    /*
-      Check if not 0 $offset is passed as argument and then if $gutter is 0
-      set the left (based on direction) margin as offset.
-    */
-    margin: 0 24px 0 calc( 16.6666666667% + 24px );
-    /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
-    */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 33.3333333333% - 24px - 8px );
-    -ms-flex-order: 2;
-        order: 2; } }
-/* Grey background */
-.c-illustrated-description-block--background {
-  background: #F0F1F4; }
-  .c-illustrated-description-block--background .c-illustrated-description-block__image {
-    padding-top: 32px;
-    padding-bottom: 32px; }
-
-@media screen and (min-width: 60em) {
-  .c-illustrated-description-block--background .c-illustrated-description-block__triangle {
-    display: block; }
-  .c-illustrated-description-block--background .c-illustrated-description-block__text {
+  .c-illustrated-description-block__figure {
     /*
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
@@ -1355,9 +1312,33 @@ img, video, iframe {
       Check if the $gutter have a % unit
     */
     width: calc( 50% - 24px - 12px );
+    height: 100%;
     -ms-flex-order: 2;
         order: 2; }
-  .c-illustrated-description-block--background .c-illustrated-description-block__image {
+
+  .c-illustrated-description-block__image {
+    position: absolute;
+    margin-top: 0;
+    z-index: 1; }
+    .c-illustrated-description-block__image--back {
+      height: 85%;
+      z-index: 0;
+      right: 0;
+      margin: 0;
+      margin-top: -100px;
+      left: -30px; } }
+.c-illustrated-description-block--inverted .c-illustrated-description-block__figure {
+  left: 0;
+  right: auto; }
+.c-illustrated-description-block--inverted .c-illustrated-description-block__image {
+  margin-left: auto;
+  margin-right: -50px; }
+  .c-illustrated-description-block--inverted .c-illustrated-description-block__image--back {
+    margin-left: 50px;
+    margin-top: -50px; }
+
+@media screen and (min-width: 60em) {
+  .c-illustrated-description-block--inverted .c-illustrated-description-block__figure {
     /*
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
@@ -1385,181 +1366,18 @@ img, video, iframe {
     */
     width: calc( 41.6666666667% - 24px - 10px );
     margin: 0 0 0 24px;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-left: 0;
-    -ms-flex-order: 1;
-        order: 1; } }
-/* Big font */
-.c-illustrated-description-block--big .c-illustrated-description-block__text p {
-  font-size: 1.333rem; }
-
-@media screen and (min-width: 60em) {
-  .c-illustrated-description-block--big .c-illustrated-description-block__text {
-    /*
-      Check if $colSpan is a valid integer number then process the parameters
-      passed to the grid() mixin.
-    */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
-    float: left;
-    /*
-      If $grid-use-gutters is set to false (true by default) set the
-      element width based on the $initColWidth process result.
-    */
-    /*
-      Check if not 0 $offset is passed as argument and then if $gutter is 0
-      set the left (based on direction) margin as offset.
-    */
-    /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
-    */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 50% - 24px - 12px );
-    margin: 0 0 0 24px; }
-    .c-illustrated-description-block--big .c-illustrated-description-block__text p {
-      font-size: 1.778rem; }
-  .c-illustrated-description-block--big .c-illustrated-description-block__image {
-    margin-top: 0;
-    /*
-      Check if $colSpan is a valid integer number then process the parameters
-      passed to the grid() mixin.
-    */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
-    float: left;
-    /*
-      If $grid-use-gutters is set to false (true by default) set the
-      element width based on the $initColWidth process result.
-    */
-    /*
-      Check if not 0 $offset is passed as argument and then if $gutter is 0
-      set the left (based on direction) margin as offset.
-    */
-    margin: 0 24px 0 calc( 8.3333333333% + 24px );
-    /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
-    */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 41.6666666667% - 24px - 10px ); } }
-/* Off Image */
-.c-illustrated-description-block--offimage {
-  z-index: 0;
-  background: transparent; }
-  .c-illustrated-description-block--offimage .c-illustrated-description-block__triangle {
-    display: none; }
-
-@media screen and (min-width: 60em) {
-  .c-illustrated-description-block--offimage {
-    padding-top: 80px;
-    padding-bottom: 80px; }
-    .c-illustrated-description-block--offimage .c-illustrated-description-block__image {
-      /*
-        Check if $colSpan is a valid integer number then process the parameters
-        passed to the grid() mixin.
-      */
-      box-sizing: border-box;
-      /*
-        Check if $align is set to left (default) and make element floating
-        to the left
-      */
-      float: left;
-      /*
-        If $grid-use-gutters is set to false (true by default) set the
-        element width based on the $initColWidth process result.
-      */
-      /*
-        Check if not 0 $offset is passed as argument and then if $gutter is 0
-        set the left (based on direction) margin as offset.
-      */
-      /*
-        If $grid-use-gutters is true then calculate the default new width and left-margin
-        based on $columns and $colSpan
-      */
-      /*
-        Check if the $gutter have a % unit
-      */
-      width: calc( 50% - 24px - 12px );
-      margin: 0 0 0 24px;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      margin: 0; }
-    .c-illustrated-description-block--offimage .c-illustrated-description-block__text {
-      /*
-        Check if $colSpan is a valid integer number then process the parameters
-        passed to the grid() mixin.
-      */
-      box-sizing: border-box;
-      /*
-        Check if $align is set to left (default) and make element floating
-        to the left
-      */
-      float: left;
-      /*
-        If $grid-use-gutters is set to false (true by default) set the
-        element width based on the $initColWidth process result.
-      */
-      /*
-        Check if not 0 $offset is passed as argument and then if $gutter is 0
-        set the left (based on direction) margin as offset.
-      */
-      margin: 0 24px 0 calc( 66.6666666667% + 24px );
-      /*
-        If $grid-use-gutters is true then calculate the default new width and left-margin
-        based on $columns and $colSpan
-      */
-      /*
-        Check if the $gutter have a % unit
-      */
-      width: calc( 33.3333333333% - 24px - 8px ); }
-
-  .c-illustrated-description-block--offimage--inverted .c-illustrated-description-block__image {
-    /*
-      Check if $colSpan is a valid integer number then process the parameters
-      passed to the grid() mixin.
-    */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
-    float: left;
-    /*
-      If $grid-use-gutters is set to false (true by default) set the
-      element width based on the $initColWidth process result.
-    */
-    /*
-      Check if not 0 $offset is passed as argument and then if $gutter is 0
-      set the left (based on direction) margin as offset.
-    */
-    /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
-    */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 50% - 24px - 12px );
-    margin: 0 0 0 24px;
+    margin-left: 0; }
+  .c-illustrated-description-block--inverted .c-illustrated-description-block__image {
     position: absolute;
-    left: auto;
-    right: 0;
-    bottom: 0;
+    left: 0;
     margin: 0; }
-  .c-illustrated-description-block--offimage--inverted .c-illustrated-description-block__text {
+    .c-illustrated-description-block--inverted .c-illustrated-description-block__image--left {
+      background-position: left center; }
+    .c-illustrated-description-block--inverted .c-illustrated-description-block__image--back {
+      height: 100%;
+      margin-left: 100px;
+      margin-top: -100px; }
+  .c-illustrated-description-block--inverted .c-illustrated-description-block__text {
     /*
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
@@ -1578,6 +1396,7 @@ img, video, iframe {
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin: 0 24px 0 calc( 50% + 24px );
     /*
       If $grid-use-gutters is true then calculate the default new width and left-margin
       based on $columns and $colSpan
@@ -1586,14 +1405,8 @@ img, video, iframe {
       Check if the $gutter have a % unit
     */
     width: calc( 33.3333333333% - 24px - 8px );
-    margin: 0 0 0 24px;
-    margin-left: 24px; }
-
-  .c-illustrated-description-block--offimage--inverted--home {
-    padding-top: 160px;
-    padding-bottom: 160px; }
-    .c-illustrated-description-block--offimage--inverted--home .c-illustrated-description-block__image {
-      top: 0; } }
+    padding-top: 112px;
+    padding-bottom: 112px; } }
 .c-illustrated-description-block-double {
   position: relative;
   z-index: 10;
