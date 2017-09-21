@@ -1,14 +1,14 @@
 
 .c-cookie-block {
   display: flex;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
   padding: $base-spacing-x2;
   background: color($base, lightest);
-  z-index: 9999;
-  position: inherit;
+  z-index: 99999;
+  position: fixed;
 
   p {
     font-size: 0.775rem;
@@ -42,6 +42,8 @@
 @media screen and (break(medium)) {
   .c-cookie-block {
     position: fixed;
+    bottom: auto;
+    top: 0;
   }
   .c-cookie-block__btn-close {
     width: 20px;

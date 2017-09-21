@@ -2,7 +2,7 @@
   padding: $base-spacing-x5 $base-spacing-x2;
   padding-top: $base-spacing-x10 * 4;
 
-  text-align: center;
+  text-align: left;
 
   background-position: top right;
   background-size: 80%;
@@ -68,7 +68,7 @@
   .c-hero__text {
     @include grid(6);
     flex: 2;
-    align-self: center;
+    align-self: flex-start;
   }
 
   .c-hero__title {

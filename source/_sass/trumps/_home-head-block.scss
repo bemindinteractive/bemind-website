@@ -1,6 +1,6 @@
 .t-home-hero {
   padding: 0 $base-spacing-x3 $base-spacing-x10 $base-spacing-x3;
-  text-align: center;
+  text-align: left;
   position: relative;
 }
 
@@ -12,6 +12,13 @@
 .t-home-hero__title {
   margin-top: 0;
   margin-bottom: $base-spacing-x4;
+
+  span{
+    color: color($primary, default);
+  }
+  i{
+    opacity: 0.2;
+  }
 }
 
 .t-home-hero__subtitle {
@@ -32,7 +39,7 @@
 @media screen and (break(medium)) {
   .t-home-hero {
     padding: ($base-spacing-x6 * 4) 0;
-    padding-bottom: $base-spacing-x10 * 11;
+    padding-bottom: $base-spacing-x10 * 5;
   }
   .t-home-hero__subtitle {
     p {
@@ -41,28 +48,14 @@
     }
   }
   .t-home-hero__content{
-    @include grid(8, $offset: 2);
+    @include grid(6);
   }
   .t-home-hero__bg-img {
     position: absolute;
     display: block;
     z-index: 0;
-
-    &--left {
-      @include grid(7);
-      bottom: 10%;
-      margin-left: 0;
-      left: 0;
-    }
-
-    &--right {
-      display: block;
-      bottom: 0px;
-      right: 0;
-      @include grid(4);
-     // opacity: 0;
-    }
-
+    right: 0;
+    @include grid(6);
 
   }
 }

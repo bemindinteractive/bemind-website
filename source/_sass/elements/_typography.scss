@@ -6,7 +6,7 @@
 %heading-rules {
   line-height: 1.2;
   font-weight: $font-weight-medium;
-  color: color($base, default);
+  color: color($base, white);
 
   margin-top: 0;
   padding: 0;
@@ -15,23 +15,26 @@
 
 h1 {
   @extend %heading-rules;
-  font-size: $font-size-large;
+  font-size: $font-size-mega;
   margin-bottom: $base-spacing-x4;
+  font-weight: $font-weight-light;
 }
 @media screen and (break(medium)) {
   h1 {
-    font-size: $font-size-huge;
+    font-size: $font-size-mega;
   }
 }
 
 h2 {
   @extend %heading-rules;
-  font-size: $font-size-medium;
+  font-size: $font-size-mega;
   margin-bottom: $base-spacing-x4;
+  font-weight: $font-weight-light;
+  color: color($base, white);
 }
 @media screen and (break(medium)) {
   h2 {
-    font-size: $font-size-xlarge;
+    font-size: $font-size-mega;
   }
 }
 
@@ -51,10 +54,10 @@ h4 {
 
 h5 {
   @extend %heading-rules;
-  font-size: $font-size-xsmall;
-  font-weight: $font-weight-medium;
-  color: color($base, lighter);
-  text-transform: uppercase;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  font-family: $font-face-secondary;
+  color: color($primary, default);
   margin-bottom: $base-spacing-x3;
 }
 

@@ -1,23 +1,30 @@
 {
-  "name": "vidra-website",
+  "name": "webshop-template",
   "version": "0.1.0",
   "description": "Vidra website powered by Jekyll.",
-  "main": "",
-  "dependencies": {
-    "gulp": "^3.9.1"
-  },
+  "main": "index.js",
   "devDependencies": {
-    "commander": "^2.9.0",
-    "fs-jetpack": "^1.0.0"
+    "browser-sync": "^2.18.13",
+    "del": "^2.1.0",
+    "eslint": "^4.5.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.4",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.6",
+    "gulp-zip": "^3.0.2",
+    "run-sequence": "^1.1.4"
   },
   "scripts": {
-    "start": "jekyll serve",
-    "prebuild": "npm run clean:build",
-    "build": "JEKYLL_ENV=production jekyll build",
-    "clean:build": "node build-tools.js clean-dist",
-    "svnpush": "./svnpush.sh",
-    "deploy:local": "./localdeploy.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -28,5 +35,6 @@
   "bugs": {
     "url": "https://github.com/vidra-io/website/issues"
   },
-  "homepage": "https://github.com/vidra-io/website#readme"
+  "homepage": "https://github.com/vidra-io/website#readme",
+  "dependencies": {}
 }

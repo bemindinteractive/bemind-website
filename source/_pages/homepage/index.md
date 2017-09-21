@@ -5,11 +5,12 @@
 layout: home
 permalink: "/"
 
-title: Il modo più semplice per vendere online
-description: Vidra è la soluzione Software in cloud che permette di Aumentare il fatturato attraverso un sistema che vende automaticamente i prodotti su più canali in modo semplice e profittevole.
+title: We build digital products that give people superpowers.
+description:
+
 image: /assets/images/social-home.png
 
-socialBlockTitle: Vendi sui social network
+socialBlockTitle: Things we do well.
 socialBlockSubtitle: I Clienti li hai già
 socialBlockIcon: /assets/images/home-icon-social.svg
 socialBlockImage: /assets/images/home-social.png

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " it" }}">
+
+
+  <!-- Style -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+
+
+  <body class="e-{{ layout }}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8QTM3K"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="c-header" role="banner" id="js-fixedNav">
+        <div class="c-header__wrapper">
+            <a class="c-logo" href="{{ "/" | relative_url}}"></a>
+            <nav class="c-main-navigation"></nav>
+            <!-- {% include language-switcher.html %} -->
+            <a class="e-button" href="#" data-js="signup-js">{{ site.data.general.signup }}</a>
+            <div class="clearfix"></div>
+        </div>
+    </header>
+
+
+    <main role="main" aria-label="Content">
+
+      <div class="t-home-hero">
+        <img class="t-home-hero__bg-img t-home-hero__bg-img--right" src="/assets/images/home-hero-right.svg" id="js-card">
+        <div class="o-wrapper">
+          <div class="t-home-hero__content">
+            <h1 class="t-home-hero__title">We build digital products that give people <span>superpowers.<i>|</i><span></h1>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+
+      <div class="o-wrapper c-intro-block">
+        <h2 class="c-intro-block__title">Things we do <span>well.<i>|</i></span></h2>
+        <div class="clearfix"></div>
+      </div>
+
+    </main>
+
+  </body>
+</html>

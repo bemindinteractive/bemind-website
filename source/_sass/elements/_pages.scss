@@ -24,8 +24,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: color($base, lightest);
 
-  @if $font-face-name and $font-face-name != '' {
-    font-family: $font-face-name, $font-family;
+  @if $font-face-primary and $font-face-primary != '' {
+    font-family: $font-face-primary, $font-family;
   }
   @else if $use-google-fonts {
     @include font("Open Sans", 700);
@@ -33,6 +33,8 @@ body {
   @else {
     font-family: -apple-system, BlinkMacSystemFont, $font-family;
   }
+
+  background: color($base, default);
 }
 
 ::selection {

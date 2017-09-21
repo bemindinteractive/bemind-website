@@ -1,21 +1,19 @@
 .c-intro-block {
   margin-top: $base-spacing-x10;
-  padding: 0 $base-spacing-x3 0 $base-spacing-x3;
-  text-align: center;
+  text-align: left;
   position: relative;
 }
 
 .c-intro-block__title {
-  color: color($base, default);
+  color: color($base, white);
   z-index: 10;
-}
 
-.c-intro-block__subtitle {
-  display: block;
-  z-index: 10;
-  margin-bottom: $base-spacing-x2;
-
-  color: color($base, lighter);
+  span{
+    color: color($primary, default);
+  }
+  i{
+    opacity: 0.2;
+  }
 }
 
 @media screen and (break(medium)) {
@@ -24,10 +22,6 @@
     margin-bottom: $base-spacing-x10;
   }
   .c-intro-block__title {
-    @include grid(8, $offset: 2);
-  }
-  .c-intro-block__subtitle {
-    @include grid(6, $offset: 3);
-    margin-bottom: $base-spacing-x2;
+    @include grid(8);
   }
 }
