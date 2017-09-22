@@ -1799,7 +1799,7 @@ img, video, iframe {
 .c-footer {
   position: relative;
   z-index: 10;
-  padding: 40px 24px;
+  padding: 240px 24px;
   text-align: left; }
 
 .c-footer__brand {
@@ -1881,6 +1881,7 @@ img, video, iframe {
   .c-footer__credits p {
     color: #6A687B;
     font-size: 0.8889rem;
+    font-family: Apercu-Mono;
     margin: 0; }
 
 .c-footer__social {
@@ -1941,11 +1942,12 @@ img, video, iframe {
 
 .c-footer__copyright {
   margin-top: 16px;
-  color: #C7C6CD;
+  color: #6A687B;
   padding: 16px 0;
-  text-align: center;
-  font-size: 0.7778rem;
-  font-weight: 400; }
+  text-align: left;
+  font-size: 0.7222rem;
+  font-weight: 400;
+  font-family: Apercu-Mono; }
 
 .c-footer__navigation {
   /*
@@ -2483,7 +2485,11 @@ img, video, iframe {
   .t-home-hero__title span {
     color: #4F3DF3; }
   .t-home-hero__title i {
-    opacity: 0.2; }
+    opacity: 0.2;
+    transition: all 200ms cubic-bezier(0.86, 0, 0.07, 1); }
+    .t-home-hero__title i.hidden {
+      transition: all 200ms cubic-bezier(0.86, 0, 0.07, 1);
+      opacity: 0; }
 
 .t-home-hero__subtitle {
   display: block;

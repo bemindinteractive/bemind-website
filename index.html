@@ -4,7 +4,7 @@
 
   <!-- Style -->
   <link href="/assets/css/main.css" rel="stylesheet">
-
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
   <body class="e-{{ layout }}">
     <!-- Google Tag Manager (noscript) -->
@@ -28,7 +28,7 @@
         <img class="t-home-hero__bg-img t-home-hero__bg-img--right" src="/assets/images/home-hero-right.svg" id="js-card">
         <div class="o-wrapper">
           <div class="t-home-hero__content">
-            <h1 class="t-home-hero__title">We build digital products that give people <span>superpowers.<i>|</i><span></h1>
+            <h1 class="t-home-hero__title">We build digital products that give people <br/><span class="console-container"><span id="text">superpowers.</span><i id="console" class="console-underscore">|</i><span></h1>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -77,9 +77,83 @@
           <div class="clearfix"></div>
         </div>
       </div>
-
-
     </main>
 
+    <footer class="c-footer" role="contentinfo">
+        <div class="c-footer__bottom o-wrapper">
+
+          <div class="c-footer__social">
+            <a class="c-footer__social-facebook" href="https://facebook.com/{{site.facebook_username}}" target="_blank"></a>
+            <a class="c-footer__social-instagram" href="https://instagram.com/{{site.instagram_username}}" target="_blank"></a>
+            <a class="c-footer__social-twitter" href="https://instagram.com/{{site.twitter_username}}" target="_blank"></a>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="o-wrapper">
+          <p class="c-footer__copyright">
+            Bemind Interactive S.r.l. - P.I. 02477870592 - Via del truglio 1 - Latina
+          </p>
+          <div class="clearfix"></div>
+        </div>
+
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script type="text/javascript">
+    // function([string1, string2],target id,[color1,color2])
+      consoleText(['superpowers.', 'happiness.', 'love.'], 'text',['tomato','rebeccapurple','lightblue']);
+
+      function consoleText(words, id, colors) {
+      if (colors === undefined) colors = ['#fff'];
+      var visible = true;
+      var con = document.getElementById('console');
+      var letterCount = 1;
+      var x = 1;
+      var waiting = false;
+      var target = document.getElementById(id)
+      //target.setAttribute('style', 'color:' + colors[0])
+      window.setInterval(function() {
+
+        if (letterCount === 0 && waiting === false) {
+          waiting = true;
+          target.innerHTML = words[0].substring(0, letterCount)
+          window.setTimeout(function() {
+            var usedColor = colors.shift();
+            colors.push(usedColor);
+            var usedWord = words.shift();
+            words.push(usedWord);
+            x = 1;
+            //target.setAttribute('style', 'color:' + colors[0])
+            letterCount += x;
+            waiting = false;
+          }, 1000)
+        } else if (letterCount === words[0].length + 1 && waiting === false) {
+          waiting = true;
+          window.setTimeout(function() {
+            x = -1;
+            letterCount += x;
+            waiting = false;
+          }, 1000)
+        } else if (waiting === false) {
+          target.innerHTML = words[0].substring(0, letterCount)
+          letterCount += x;
+        }
+      }, 120)
+      window.setInterval(function() {
+        if (visible === true) {
+          con.className = 'console-underscore hidden'
+          visible = false;
+
+        } else {
+          con.className = 'console-underscore'
+
+          visible = true;
+        }
+      }, 400)
+      }
+    </script>
   </body>
 </html>

@@ -18,6 +18,12 @@
   }
   i{
     opacity: 0.2;
+    transition: all 200ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+
+    &.hidden {
+      transition: all 200ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+      opacity:0;
+    }
   }
 }
 

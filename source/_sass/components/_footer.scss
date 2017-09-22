@@ -1,7 +1,7 @@
 .c-footer {
   position: relative;
   z-index: 10;
-  padding: $base-spacing-x5 $base-spacing-x3;
+  padding: $base-spacing-x10 * 3 $base-spacing-x3;
   text-align: left;
 }
 
@@ -38,6 +38,7 @@
   p{
     color: color($base, light);
     font-size: $font-size-small;
+    font-family: $font-face-secondary;
     margin: 0;
   }
 }
@@ -78,9 +79,10 @@
 
 .c-footer__copyright {
   margin-top: $base-spacing-x2;
-  color: color($base, lighter);
+  color: color($base, light);
   padding: $base-spacing-x2 0;
-  text-align: center;
-  font-size: $font-size-xsmall;
+  text-align: left;
+  font-size: $font-size-xxsmall;
   font-weight: $font-weight-normal;
+  font-family: $font-face-secondary;
 }

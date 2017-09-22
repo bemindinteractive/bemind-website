@@ -36,5 +36,7 @@
     "url": "https://github.com/vidra-io/website/issues"
   },
   "homepage": "https://github.com/vidra-io/website#readme",
-  "dependencies": {}
+  "dependencies": {
+    "scrollreveal": "^3.3.6"
+  }
 }
