@@ -1,0 +1,98 @@
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+
+.c-carousel-container{
+  @include grid(6, $offset: 1);
+  margin-top: $base-spacing-x8 * 2;
+}
+
+.owl-carousel .owl-item{
+
+  .c-carousel-item{
+    opacity: 0.2;
+    transition: all 500ms cubic-bezier(0.86, 0, 0.07, 1);
+
+    h5{
+      transition: all 500ms cubic-bezier(0.86, 0, 0.07, 1);
+      color: color($base, white);
+    }
+    p{
+      font-size: $font-size-large;
+      color: color($base, white);
+      font-weight: $font-weight-light;
+    }
+
+  }
+
+  &.active{
+    .c-carousel-item{
+      opacity: 1;
+
+      h5{
+        color: color($primary, default);
+      }
+    }
+  }
+
+}
+
+.owl-theme  .owl-stage-outer{
+  overflow: visible;
+}
+
+.owl-theme .owl-nav {
+  margin-top: $base-spacing-x8 * 2;
+  margin-bottom: $base-spacing-x10 * 4;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-nav [class*='owl-'] {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin-right: $base-spacing-x4;
+  background: color($base, default);
+  border: 3px solid color($primary, default);
+  border-radius: 100%;
+  text-indent: -99999px;
+  overflow: hidden;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  border: 3px solid color($primary, default);
+  text-decoration: none;
+}
+
+.owl-theme .owl-nav .disabled {
+  border: 1px solid color($primary, default);
+  cursor: default;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px; }
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .owl-theme .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background: #D6D6D6;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #869791; }

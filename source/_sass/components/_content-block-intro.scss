@@ -13,6 +13,9 @@
   }
   i{
     opacity: 0.2;
+    &.hidden{
+      opacity: 0;
+    }
   }
 }
 
@@ -22,6 +25,6 @@
     margin-bottom: $base-spacing-x10;
   }
   .c-intro-block__title {
-    @include grid(8);
+    @include grid(12);
   }
 }

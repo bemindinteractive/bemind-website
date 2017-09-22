@@ -28,19 +28,41 @@
         <img class="t-home-hero__bg-img t-home-hero__bg-img--right" src="/assets/images/home-hero-right.svg" id="js-card">
         <div class="o-wrapper">
           <div class="t-home-hero__content">
-            <h1 class="t-home-hero__title">We build digital products that give people <br/><span class="console-container"><span id="text">superpowers.</span><i id="console" class="console-underscore">|</i><span></h1>
+            <h1 class="t-home-hero__title">We build digital products that give people <br/><span class="console-container"><span id="superpowers">superpowers.</span><i class="console-underscore">|</i><span></h1>
           </div>
           <div class="clearfix"></div>
         </div>
       </div>
 
       <div class="o-wrapper c-intro-block">
-        <h2 class="c-intro-block__title">Things we do <span>well.<i>|</i></span></h2>
+        <h2 class="c-intro-block__title">Things we do <span class="console-container"><span id="well">well.</span><i class="console-underscore">|</i><span></h2>
         <div class="clearfix"></div>
       </div>
 
+      <div class="o-wrapper">
+        <div class="c-carousel-container">
+          <div class="owl-carousel owl-theme">
+            <div class="c-carousel-item">
+              <h5>Software architecture</h5>
+              <p>Whatever the requirements, we will build usable and accessible websites, databases and web applications.
+We put our experience in software development to fulfill every kind of request, making possible the impossible.</p>
+            </div>
+            <div class="c-carousel-item">
+              <h5>Software architecture</h5>
+              <p>Whatever the requirements, we will build usable and accessible websites, databases and web applications.
+We put our experience in software development to fulfill every kind of request, making possible the impossible.</p>
+            </div>
+            <div class="c-carousel-item">
+              <h5>Software architecture</h5>
+              <p>Whatever the requirements, we will build usable and accessible websites, databases and web applications.
+We put our experience in software development to fulfill every kind of request, making possible the impossible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="o-wrapper c-intro-block">
-        <h2 class="c-intro-block__title">Our <span>ventures.<i>|</i></span></h2>
+        <h2 class="c-intro-block__title">Our <span class="console-container"><span id="ventures">ventures.</span><i class="console-underscore">|</i><span></h2>
         <div class="clearfix"></div>
       </div>
 
@@ -101,59 +123,13 @@
     </footer>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/js/owl.carousel.js"></script>
+
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/wearehiring.js"></script>
+
     <script type="text/javascript">
-    // function([string1, string2],target id,[color1,color2])
-      consoleText(['superpowers.', 'happiness.', 'love.'], 'text',['tomato','rebeccapurple','lightblue']);
 
-      function consoleText(words, id, colors) {
-      if (colors === undefined) colors = ['#fff'];
-      var visible = true;
-      var con = document.getElementById('console');
-      var letterCount = 1;
-      var x = 1;
-      var waiting = false;
-      var target = document.getElementById(id)
-      //target.setAttribute('style', 'color:' + colors[0])
-      window.setInterval(function() {
-
-        if (letterCount === 0 && waiting === false) {
-          waiting = true;
-          target.innerHTML = words[0].substring(0, letterCount)
-          window.setTimeout(function() {
-            var usedColor = colors.shift();
-            colors.push(usedColor);
-            var usedWord = words.shift();
-            words.push(usedWord);
-            x = 1;
-            //target.setAttribute('style', 'color:' + colors[0])
-            letterCount += x;
-            waiting = false;
-          }, 1000)
-        } else if (letterCount === words[0].length + 1 && waiting === false) {
-          waiting = true;
-          window.setTimeout(function() {
-            x = -1;
-            letterCount += x;
-            waiting = false;
-          }, 1000)
-        } else if (waiting === false) {
-          target.innerHTML = words[0].substring(0, letterCount)
-          letterCount += x;
-        }
-      }, 120)
-      window.setInterval(function() {
-        if (visible === true) {
-          con.className = 'console-underscore hidden'
-          visible = false;
-
-        } else {
-          con.className = 'console-underscore'
-
-          visible = true;
-        }
-      }, 400)
-      }
     </script>
   </body>
 </html>

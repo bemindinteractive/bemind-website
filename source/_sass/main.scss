@@ -63,8 +63,12 @@ Trumps ------ Helpers and overrides.
 @import 'objects/wrapper';
 
 
+/* Import Vendor */
+@import 'vendor/_owl.carousel';
+
 /* Import Components */
 @import 'components/header';
+@import 'components/carousel';
 @import 'components/main-navigation';
 @import 'components/sub-navigation';
 @import 'components/mobile-navigation';

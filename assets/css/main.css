@@ -525,7 +525,7 @@ h2 {
     font-size: 4.444rem; } }
 h3,
 blockquote > p {
-  font-size: 1.778rem;
+  font-size: 1.667rem;
   font-weight: 200;
   margin-bottom: 64px; }
 
@@ -644,6 +644,149 @@ img, video, iframe {
   max-width: 1220px;
   margin: 0 auto; }
 
+/* Import Vendor */
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  -moz-backface-visibility: hidden;
+  /* fix firefox animation glitch */ }
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px); }
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0); }
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none; }
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%; }
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: none; }
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.owl-carousel.owl-loaded {
+  display: block; }
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block; }
+
+.owl-carousel.owl-hidden {
+  opacity: 0; }
+
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden; }
+
+.owl-carousel.owl-drag .owl-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.owl-carousel.owl-rtl {
+  direction: rtl; }
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both; }
+
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+
+.owl-carousel .fadeOut {
+  animation-name: fadeOut; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out; }
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-item img.owl-lazy {
+  transform-style: preserve-3d; }
+
 /* Import Components */
 .c-header {
   padding: 16px; }
@@ -714,6 +857,113 @@ img, video, iframe {
 
   .c-header .e-button {
     display: block; } }
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.c-carousel-container {
+  /*
+    Check if $colSpan is a valid integer number then process the parameters
+    passed to the grid() mixin.
+  */
+  box-sizing: border-box;
+  /*
+    Check if $align is set to left (default) and make element floating
+    to the left
+  */
+  float: left;
+  /*
+    If $grid-use-gutters is set to false (true by default) set the
+    element width based on the $initColWidth process result.
+  */
+  /*
+    Check if not 0 $offset is passed as argument and then if $gutter is 0
+    set the left (based on direction) margin as offset.
+  */
+  margin: 0 24px 0 calc( 8.3333333333% + 24px );
+  /*
+    If $grid-use-gutters is true then calculate the default new width and left-margin
+    based on $columns and $colSpan
+  */
+  /*
+    Check if the $gutter have a % unit
+  */
+  width: calc( 50% - 24px - 12px );
+  margin-top: 128px; }
+
+.owl-carousel .owl-item .c-carousel-item {
+  opacity: 0.2;
+  transition: all 500ms cubic-bezier(0.86, 0, 0.07, 1); }
+  .owl-carousel .owl-item .c-carousel-item h5 {
+    transition: all 500ms cubic-bezier(0.86, 0, 0.07, 1);
+    color: #FFFFFF; }
+  .owl-carousel .owl-item .c-carousel-item p {
+    font-size: 1.667rem;
+    color: #FFFFFF;
+    font-weight: 200; }
+.owl-carousel .owl-item.active .c-carousel-item {
+  opacity: 1; }
+  .owl-carousel .owl-item.active .c-carousel-item h5 {
+    color: #4F3DF3; }
+
+.owl-theme .owl-stage-outer {
+  overflow: visible; }
+
+.owl-theme .owl-nav {
+  margin-top: 128px;
+  margin-bottom: 320px;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent; }
+
+.owl-theme .owl-nav [class*='owl-'] {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin-right: 32px;
+  background: #161C2D;
+  border: 3px solid #4F3DF3;
+  border-radius: 100%;
+  text-indent: -99999px;
+  overflow: hidden; }
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  border: 3px solid #4F3DF3;
+  text-decoration: none; }
+
+.owl-theme .owl-nav .disabled {
+  border: 1px solid #4F3DF3;
+  cursor: default; }
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px; }
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline; }
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px; }
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #869791; }
+
 .c-main-navigation {
   display: none; }
 
@@ -1013,6 +1263,8 @@ img, video, iframe {
     color: #4F3DF3; }
   .c-intro-block__title i {
     opacity: 0.2; }
+    .c-intro-block__title i.hidden {
+      opacity: 0; }
 
 @media screen and (min-width: 60em) {
   .c-intro-block {
@@ -1045,7 +1297,7 @@ img, video, iframe {
     /*
       Check if the $gutter have a % unit
     */
-    width: calc( 66.6666666667% - 24px - 16px );
+    width: calc( 100% - 24px - 24px );
     margin: 0 0 0 24px; } }
 .c-centered-block {
   background: linear-gradient(180deg, #F0F1F4 0%, rgba(255, 155, 255, 0) 100%);
