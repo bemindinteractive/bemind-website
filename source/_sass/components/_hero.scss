@@ -1,5 +1,5 @@
 .c-hero {
-  padding: $base-spacing-x5 $base-spacing-x2;
+
   padding-top: $base-spacing-x10 * 4;
 
   text-align: left;
@@ -8,9 +8,6 @@
   background-size: 80%;
   background-repeat: no-repeat;
 
-  > div {
-    padding: 0 $base-spacing-x3;
-  }
   .c-hero__text{
     z-index: 10;
     position: relative;
@@ -45,11 +42,11 @@
   .c-hero {
     background-position: center right;
     background-size: contain;
+    margin-top: $base-spacing-x10;
+    margin-bottom: $base-spacing-x10;
 
-    margin-bottom: -($base-spacing-x10 + $base-spacing-x2);
     text-align: left;
-    margin-top: 5%;
-    padding: 8% $base-spacing-x3 12% $base-spacing-x5;
+
   }
 
   .c-hero__angle{
@@ -66,7 +63,7 @@
   }
 
   .c-hero__text {
-    @include grid(6);
+    @include grid(8);
     flex: 2;
     align-self: flex-start;
   }

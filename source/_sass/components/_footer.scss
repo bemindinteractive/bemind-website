@@ -1,7 +1,8 @@
 .c-footer {
   position: relative;
   z-index: 10;
-  padding: $base-spacing-x10 * 3 $base-spacing-x3;
+  padding-top: $base-spacing-x10 * 3;
+  padding-bottom: $base-spacing-x10;
   text-align: left;
 }
 
@@ -85,4 +86,23 @@
   font-size: $font-size-xxsmall;
   font-weight: $font-weight-normal;
   font-family: $font-face-secondary;
+  @include grid(7);
+}
+.c-footer__contact{
+  @include grid(5);
+  text-align: right;
+  a{
+    color: color($base, white);
+    font-weight: $font-weight-light;
+    font-size: $font-size-large;
+    background: url(/assets/images/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: $base-spacing 7px;
+    padding-left: $base-spacing-x5;
+    padding-bottom: $base-spacing;
+  }
+  &:hover {
+    color: color($secondary, dark);
+  }
 }

@@ -3,6 +3,11 @@ $(document).ready(function(){
   consoleText(['well.', 'seriusly.', 'with love.'], 'well');
   consoleText(['ventures.', 'craft.', 'creations.'], 'ventures');
 
+  $('#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+    $(".c-main-navigation").toggleClass('c-main-navigation--open');
+	});
+
   window.sr = ScrollReveal({
     distance: '30px',
     scale: 1,
@@ -17,6 +22,9 @@ $(document).ready(function(){
   sr.reveal('.c-illustrated-description-block');
   sr.reveal('.c-intro-block');
   sr.reveal('.owl-item');
+  sr.reveal('.c-page-content__title');
+  sr.reveal('.c-page-content__text__item');
+  sr.reveal('.c-hero');
 
   $(".owl-carousel").owlCarousel({
     loop:false,

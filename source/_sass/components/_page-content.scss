@@ -1,39 +1,72 @@
 .c-page-content {
-  max-width: 1100px;
+
   margin: 0 auto;
   padding: $base-spacing-x5 $base-spacing-x3;
 
-  h1 {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 2.75rem;
-    font-weight: 500;
+  .c-page-content__title{
+
+  }
+  .c-page-content__text{
+    &__item{
+      h5{
+        margin-bottom: $base-spacing-x5;
+      }
+      p{
+        margin-bottom: $base-spacing-x8 * 2;
+      }
+    }
   }
 
-  .subtitle {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 1.375rem;
+  &--notitle {
+    .c-page-content__text__item{
+        h5{
+          margin-bottom: $base-spacing-x7;
+        }
+        p{
+          font-size: $font-size-large;
+        }
+    }
   }
 
-  img {
-    margin: $base-spacing-x2 0;
-  }
+}
 
-  p {
-    font-weight: 400;
-  }
+.c-big-link{
 
+  @include grid(4, $offset:8);
+  text-align: right;
+  a{
+    color: color($base, white);
+    font-weight: $font-weight-light;
+    font-size: $font-size-huge;
+    background: url(/assets/images/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 46px;
+    background-position: $base-spacing 17px;
+    padding-left: $base-spacing-x9;
+    padding-bottom: $base-spacing;
+  }
+  &:hover {
+    color: color($secondary, dark);
+  }
 }
 
 @media screen and (break(medium)) {
   .c-page-content {
     padding: $base-spacing-x9 *2 0 $base-spacing-x7 * 2 0;
+  }
+  .c-page-content__title{
+    @include grid(4);
+  }
+  .c-page-content__text{
+    @include grid(5, $offset:2);
+  }
 
-    img {
-      margin: $base-spacing-x8 0;
+
+  .c-page-content {
+    &--notitle{
+      .c-page-content__text{
+        @include grid(7, $offset:4);
+      }
     }
   }
 }

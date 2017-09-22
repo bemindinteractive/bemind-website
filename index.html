@@ -14,13 +14,58 @@
     <header class="c-header" role="banner" id="js-fixedNav">
         <div class="c-header__wrapper">
             <a class="c-logo" href="{{ "/" | relative_url}}"></a>
-            <nav class="c-main-navigation"></nav>
+            <nav class="c-main-navigation-draft" ></nav>
             <!-- {% include language-switcher.html %} -->
-            <a class="e-button" href="#" data-js="signup-js">{{ site.data.general.signup }}</a>
+            <div id="nav-icon4">
+              <span></span>
+              <span></span>
+            </div>
             <div class="clearfix"></div>
         </div>
+
     </header>
 
+    <nav class="c-main-navigation" role="navigation" aria-label="Main Menu">
+      <div class="c-main-navigation__background"></div>
+      <div class="o-wrapper">
+        <ul class="c-main-navigation__list">
+          <li class="c-main-navigation__list-item">
+            <span class="c-main-navigation__line"></span>
+            <a class="c-main-navigation__link" href="/">Home</a>
+          </li>
+          <li class="c-main-navigation__list-item">
+            <span class="c-main-navigation__line"></span>
+            <a class="c-main-navigation__link" href="/studio.html">Studio</a>
+          </li>
+          <li class="c-main-navigation__list-item">
+            <span class="c-main-navigation__line"></span>
+            <a class="c-main-navigation__link" href="https://medium.com/bemind-me" target="_blank">Blog</a>
+          </li>
+          <li class="c-main-navigation__list-item">
+            <span class="c-main-navigation__line"></span>
+            <a class="c-main-navigation__link" href="mailto:hello@bemind.me">Contact</a>
+          </li>
+          <li class="c-main-navigation__list-item c-main-navigation__list-item--small c-main-navigation__list-item--first">
+            <span class="c-main-navigation__line"></span>
+            <a class="c-main-navigation__link" href="https://www.facebook.com/bemind.me/" target="_blank">Facebook</a>
+          </li>
+          <li class="c-main-navigation__list-item c-main-navigation__list-item--small">
+            <span class="c-main-navigation__line"></span>
+            <a class="c-main-navigation__link" href="https://twitter.com/bemind_me" target="_blank">Twitter</a>
+          </li>
+          <li class="c-main-navigation__list-item c-main-navigation__list-item--small">
+            <span class="c-main-navigation__line"></span>
+            <a class="c-main-navigation__link" href="https://www.instagram.com/bemindinteractive/" target="_blank">Instagram</a>
+          </li>
+          <li class="c-main-navigation__list-item c-main-navigation__list-item--small">
+            <span class="c-main-navigation__line"></span>
+            <a class="c-main-navigation__link" href="https://dribbble.com/bemind" target="_blank">Dribbble</a>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </nav>
 
     <main role="main" aria-label="Content">
 
@@ -39,28 +84,29 @@
         <div class="clearfix"></div>
       </div>
 
-      <div class="o-wrapper">
-        <div class="c-carousel-container">
-          <div class="owl-carousel owl-theme">
-            <div class="c-carousel-item">
-              <h5>Software architecture</h5>
-              <p>Whatever the requirements, we will build usable and accessible websites, databases and web applications.
-We put our experience in software development to fulfill every kind of request, making possible the impossible.</p>
-            </div>
-            <div class="c-carousel-item">
-              <h5>Software architecture</h5>
-              <p>Whatever the requirements, we will build usable and accessible websites, databases and web applications.
-We put our experience in software development to fulfill every kind of request, making possible the impossible.</p>
-            </div>
-            <div class="c-carousel-item">
-              <h5>Software architecture</h5>
-              <p>Whatever the requirements, we will build usable and accessible websites, databases and web applications.
-We put our experience in software development to fulfill every kind of request, making possible the impossible.</p>
+      <div class="c-carousel-wrapper">
+        <div class="o-wrapper">
+          <div class="c-carousel-container">
+            <div class="owl-carousel owl-theme">
+              <div class="c-carousel-item">
+                <h5>Software architecture</h5>
+                <p>Whatever the requirements, we will build usable and accessible websites, databases and web applications.
+  We put our experience in software development to fulfill every kind of request, making possible the impossible.</p>
+              </div>
+              <div class="c-carousel-item">
+                <h5>Software architecture</h5>
+                <p>Whatever the requirements, we will build usable and accessible websites, databases and web applications.
+  We put our experience in software development to fulfill every kind of request, making possible the impossible.</p>
+              </div>
+              <div class="c-carousel-item">
+                <h5>Software architecture</h5>
+                <p>Whatever the requirements, we will build usable and accessible websites, databases and web applications.
+  We put our experience in software development to fulfill every kind of request, making possible the impossible.</p>
+              </div>
             </div>
           </div>
-        </div>
       </div>
-
+    </div>
       <div class="o-wrapper c-intro-block">
         <h2 class="c-intro-block__title">Our <span class="console-container"><span id="ventures">ventures.</span><i class="console-underscore">|</i><span></h2>
         <div class="clearfix"></div>
@@ -102,21 +148,14 @@ We put our experience in software development to fulfill every kind of request, 
     </main>
 
     <footer class="c-footer" role="contentinfo">
-        <div class="c-footer__bottom o-wrapper">
-
-          <div class="c-footer__social">
-            <a class="c-footer__social-facebook" href="https://facebook.com/{{site.facebook_username}}" target="_blank"></a>
-            <a class="c-footer__social-instagram" href="https://instagram.com/{{site.instagram_username}}" target="_blank"></a>
-            <a class="c-footer__social-twitter" href="https://instagram.com/{{site.twitter_username}}" target="_blank"></a>
-          </div>
-
-          <div class="clearfix"></div>
-        </div>
 
         <div class="o-wrapper">
           <p class="c-footer__copyright">
             Bemind Interactive S.r.l. - P.I. 02477870592 - Via del truglio 1 - Latina
           </p>
+          <div class="c-footer__contact">
+            <a href="#">Get in touch</a>
+          </div>
           <div class="clearfix"></div>
         </div>
 
