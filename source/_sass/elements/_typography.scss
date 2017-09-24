@@ -15,7 +15,7 @@
 
 h1 {
   @extend %heading-rules;
-  font-size: $font-size-mega;
+  font-size: $font-size-xlarge;
   margin-bottom: $base-spacing-x4;
   font-weight: $font-weight-light;
 }
@@ -27,7 +27,7 @@ h1 {
 
 h2 {
   @extend %heading-rules;
-  font-size: $font-size-mega;
+  font-size: $font-size-xlarge;
   margin-bottom: $base-spacing-x4;
   font-weight: $font-weight-light;
   color: color($base, white);
@@ -41,11 +41,15 @@ h2 {
 h3,
 blockquote>p {
   @extend %heading-rules;
-  font-size: $font-size-large;
+  font-size: $font-size-book;
   font-weight: $font-weight-light;
   margin-bottom: $base-spacing-x8;
 }
-
+@media screen and (break(medium)) {
+  h3 {
+    font-size: $font-size-large;
+  }
+}
 
 h4 {
   @extend %heading-rules;

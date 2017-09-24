@@ -1,10 +1,9 @@
 .c-illustrated-description-block {
   position: relative;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
   z-index: 10;
-  padding: $base-spacing-x3;
-  margin-top: $base-spacing-x10 * 4;
+  margin-top: $base-spacing-x10 * 2;
 }
 
 .c-illustrated-description-block__content {
@@ -18,9 +17,14 @@
 
 .c-illustrated-description-block__figure {
   order: 1;
-  position: absolute;
+
   right: 0;
-  height: 100%;
+  width: 100%;
+
+  position: relative;
+  height: 300px;
+
+  margin-bottom: $base-spacing-x8;
 }
 
 .c-illustrated-description-block__image {
@@ -29,6 +33,18 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  transform-style: preserve-3d;
+  transform: translateZ(20px)
+
+  &--back{
+    transform: translateZ(-10px);
+    height: 85%;
+    z-index: 0;
+    right: 0;
+    margin: 0;
+    margin-top: -100px;
+    left: -30px;
+  }
 }
 
 .c-illustrated-description-block__link{
@@ -51,7 +67,8 @@
 
 @media screen and (break(medium)) {
   .c-illustrated-description-block {
-    text-align: left;
+    padding: $base-spacing-x3;
+    margin-top: $base-spacing-x10 * 4;
   }
 
   .c-illustrated-description-block__content {
@@ -67,6 +84,7 @@
   }
 
   .c-illustrated-description-block__figure {
+    position: absolute;
     @include grid(6, $offset: 1);
     height: 100%;
     order: 2;
@@ -77,14 +95,7 @@
     margin-top: 0;
     z-index: 1;
 
-    &--back{
-      height: 85%;
-      z-index: 0;
-      right: 0;
-      margin: 0;
-      margin-top: -100px;
-      left: -30px;
-    }
+
   }
 }
 

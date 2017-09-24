@@ -5,7 +5,9 @@ $(document).ready(function(){
 
   $('#nav-icon4').click(function(){
 		$(this).toggleClass('open');
-    $(".c-main-navigation").toggleClass('c-main-navigation--open');
+
+    var menu = $(".c-main-navigation");
+    menu.toggleClass('c-main-navigation--open');
 	});
 
   window.sr = ScrollReveal({
@@ -17,6 +19,7 @@ $(document).ready(function(){
     scale:1,
     easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
   });
+
   sr.reveal('.t-home-hero__content');
   sr.reveal('.t-home-hero__bg-img');
   sr.reveal('.c-illustrated-description-block');
@@ -28,22 +31,32 @@ $(document).ready(function(){
 
   $(".owl-carousel").owlCarousel({
     loop:false,
-    margin: 120,
-    nav:true,
     dots: false,
     items:3,
     slideBy: 1,
     responsive:{
         0:{
-            items:1
+            items:1,
+            margin: 40,
+            nav: false
         },
         600:{
-            items:1
+            items:1,
+            margin: 120,
+            nav:true
         }
     }
-});
-});
+  });
 
+});
+var sceneHome = document.getElementById('scene-home');
+var parallaxInstance = new Parallax(sceneHome);
+
+var scene1 = document.getElementById('scene1');
+var parallaxInstance = new Parallax(scene1);
+
+var scene2 = document.getElementById('scene2');
+var parallaxInstance = new Parallax(scene2);
 
 // function([string1, string2],target id,[color1,color2])
 function consoleText(words, id) {

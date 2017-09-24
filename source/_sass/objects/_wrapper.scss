@@ -1,4 +1,12 @@
 .o-wrapper {
-  max-width: 1220px;
-  margin: 0 auto;
+  margin-left: $base-spacing-x4;
+  margin-right: $base-spacing-x4;
+}
+
+@media screen and (break(medium)) {
+  .o-wrapper {
+
+    max-width: 1220px;
+    margin: 0 auto;
+  }
 }

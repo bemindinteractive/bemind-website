@@ -1,155 +1,160 @@
+.c-main-navigation-draft{
+  flex-grow: 2;
+}
 .c-main-navigation {
   top: 0;
   left: 0;
   right: 0;
   position: fixed;
   display: none;
+  transition: transform .8s cubic-bezier(.86,0,.07,1);
+  z-index: 100;
+  pointer-events: none;
+  display: block;
+
+  padding-top: $base-spacing-x8 * 2;
+  padding-bottom: $base-spacing-x8 * 2;
+
+  overflow: hidden;
+
+  &__background{
+    transition: transform .8s cubic-bezier(.86,0,.07,1);
+    transform: translate3d(0,-100%,0);
+    perspective: 1000px;
+    background-color: color($base, white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
-.c-main-navigation-draft{
-  flex-grow: 2;
+
+.c-main-navigation__list {
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
 }
-@media screen and (break(medium)) {
-  .c-main-navigation {
-    z-index: 100;
 
-    display: block;
-    padding-top: $base-spacing-x8 * 2;
-    padding-bottom: $base-spacing-x8 * 2;
-    flex-grow: 2;
+.c-main-navigation__list-item {
+  display: inline-block;
+  margin-right: $base-spacing-x4;
+  font-size: $font-size-huge;
+  overflow: hidden;
+  position: relative;
 
-
+  .c-main-navigation__line {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    height: $base-spacing;
     overflow: hidden;
 
-    &__background{
-      transition: transform .8s cubic-bezier(.86,0,.07,1);
-      transform: translate3d(0,-100%,0);
-      perspective: 1000px;
-      background-color: color($base, white);
+    &:after,&:before{
+      content: "";
       position: absolute;
       top: 0;
-      left: 0;
       bottom: 0;
+      left: 0;
       right: 0;
+      background: color($primary, default);;
+    }
+    &:before {
+      transform: translate3d(-102%,0,0);
+      opacity: 0;
+    }
+    &:after{
+      transition: transform .8s cubic-bezier(.165,.84,.44,1);
+      transform: translate3d(102%,0,0);
+      opacity: 1;
     }
   }
 
-  .c-main-navigation__list {
-    position: relative;
-    z-index: 10;
-    padding: 0;
-    margin: 0;
-    @include grid(4, $offset:8);
+  .c-main-navigation__link {
+    transition: transform .8s cubic-bezier(.41,0,.07,1);
+    transform: translate3d(0,-100%,0);
+
+    color: color($base, default);
+    font-weight: $font-weight-light;
+  }
+
+  &--small{
+    display: inline-block;
+    margin-right: 130px;
+    font-family: $font-face-secondary;
+    font-size: $font-size-small;
+    padding-bottom: $base-spacing-x2;
+    overflow: hidden;
+    .c-main-navigation__line {
+      height: 4px;
+    }
+    .c-main-navigation__link {
+      transition: transform .4s cubic-bezier(.41,0,.07,1);
+      transition-delay: 0;
+      color: color($base, lighter);
+    }
+  }
+
+  &:hover{
+    color: color($primary, default);
+    .c-main-navigation__line {
+      &:before {
+        transition: transform .6s cubic-bezier(.165,.84,.44,1);
+        transform: translateZ(0);
+        opacity: 1;
+      }
+      &:after{
+        transform: translateZ(0);
+        transition: none;
+        opacity: 0;
+      }
+    }
+  }
+
+  &--first{
+    margin-top: $base-spacing-x6;
+  }
+
+  &--active{
+    .c-main-navigation__link {
+      color: color($secondary, default);
+      &--more{
+        background-image: url("/assets/images/navigation-small-arrow-active.svg");
+      }
+    }
+  }
+
+}
+
+.c-main-navigation--open{
+  pointer-events: auto;
+
+  .c-main-navigation__background{
+    transform: translate3d(0,0,0);
   }
 
   .c-main-navigation__list-item {
-    display: inline-block;
-    margin-right: $base-spacing-x4;
-    font-size: $font-size-huge;
-    overflow: hidden;
-    position: relative;
-
-    .c-main-navigation__line {
-      position: absolute;
-      bottom: 16px;
-      left: 0;
-      right: 0;
-      height: $base-spacing;
-      overflow: hidden;
-
-      &:after,&:before{
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: color($primary, default);;
-      }
-      &:before {
-        transform: translate3d(-102%,0,0);
-        opacity: 0;
-      }
-      &:after{
-        transition: transform .8s cubic-bezier(.165,.84,.44,1);
-        transform: translate3d(102%,0,0);
-        opacity: 1;
-      }
+    .c-main-navigation__link{
+        transition: transform .8s cubic-bezier(.41,0,.07,1);
+        transition-delay: .1s;
+        transform: translate3d(0,0,0);
     }
-
-    .c-main-navigation__link {
-      transition: transform .8s cubic-bezier(.41,0,.07,1);
-      transform: translate3d(0,-100%,0);
-
-      color: color($base, default);
-      font-weight: $font-weight-light;
-    }
-
     &--small{
-      display: inline-block;
-      margin-right: 130px;
-      font-family: $font-face-secondary;
-      font-size: $font-size-small;
-      padding-bottom: $base-spacing-x2;
-      overflow: hidden;
-      .c-main-navigation__line {
-        height: 4px;
-      }
       .c-main-navigation__link {
-        transition: transform .4s cubic-bezier(.41,0,.07,1);
-        transition-delay: 0;
-        color: color($base, lighter);
+        transition: transform .8s cubic-bezier(.41,0,.07,1);
+        transition-delay: .3s;
       }
     }
-
-    &:hover{
-      color: color($primary, default);
-      .c-main-navigation__line {
-        &:before {
-          transition: transform .6s cubic-bezier(.165,.84,.44,1);
-          transform: translateZ(0);
-          opacity: 1;
-        }
-        &:after{
-          transform: translateZ(0);
-          transition: none;
-          opacity: 0;
-        }
-      }
-    }
-
-    &--first{
-      margin-top: $base-spacing-x6;
-    }
-
-    &--active{
-      .c-main-navigation__link {
-        color: color($secondary, default);
-        &--more{
-          background-image: url("/assets/images/navigation-small-arrow-active.svg");
-        }
-      }
-    }
-
   }
+}
 
-  .c-main-navigation--open{
-    .c-main-navigation__background{
-      transform: translate3d(0,0,0);
-    }
 
-    .c-main-navigation__list-item {
-      .c-main-navigation__link{
-          transition: transform .8s cubic-bezier(.41,0,.07,1);
-          transition-delay: .1s;
-          transform: translate3d(0,0,0);
-      }
-      &--small{
-        .c-main-navigation__link {
-          transition: transform .8s cubic-bezier(.41,0,.07,1);
-          transition-delay: .3s;
-        }
-      }
-    }
+
+@media screen and (break(medium)) {
+  .c-main-navigation__list {
+    @include grid(4, $offset:8);
   }
 }
 

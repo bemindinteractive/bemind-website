@@ -12,12 +12,10 @@
  }
 
 .c-carousel-container{
-  @include grid(6, $offset: 1);
   margin-top: $base-spacing-x8 * 2;
 }
 
 .owl-carousel .owl-item{
-
   .c-carousel-item{
     opacity: 0.2;
     transition: all 500ms cubic-bezier(0.86, 0, 0.07, 1);
@@ -27,11 +25,9 @@
       color: color($base, white);
     }
     p{
-      font-size: $font-size-large;
       color: color($base, white);
       font-weight: $font-weight-light;
     }
-
   }
 
   &.active{
@@ -43,7 +39,6 @@
       }
     }
   }
-
 }
 
 .owl-theme  .owl-stage-outer{
@@ -84,19 +79,39 @@
 
 .owl-theme .owl-dots {
   text-align: center;
-  -webkit-tap-highlight-color: transparent; }
-  .owl-theme .owl-dots .owl-dot {
-    display: inline-block;
-    zoom: 1;
-    *display: inline; }
-    .owl-theme .owl-dots .owl-dot span {
-      width: 10px;
-      height: 10px;
-      margin: 5px 7px;
-      background: #D6D6D6;
-      display: block;
-      -webkit-backface-visibility: visible;
-      transition: opacity 200ms ease;
-      border-radius: 30px; }
-    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      background: #869791; }
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #869791;
+}
+
+
+@media screen and (break(medium)) {
+  .c-carousel-container{
+    @include grid(6, $offset: 1);
+    margin-top: $base-spacing-x8 * 2;
+  }
+  .owl-carousel .owl-item{
+    .c-carousel-item{
+      p{
+        font-size: $font-size-large;
+      }
+    }
+  }
+}

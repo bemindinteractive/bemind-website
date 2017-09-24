@@ -3,7 +3,7 @@
   z-index: 10;
   padding-top: $base-spacing-x10 * 3;
   padding-bottom: $base-spacing-x10;
-  text-align: left;
+  text-align: center;
 }
 
 .c-footer__brand{
@@ -33,7 +33,6 @@
 }
 
 .c-footer__credits {
-  @include grid(6);
   padding: 0;
   text-align: left;
   p{
@@ -82,15 +81,13 @@
   margin-top: $base-spacing-x2;
   color: color($base, light);
   padding: $base-spacing-x2 0;
-  text-align: left;
+  text-align: center;
   font-size: $font-size-xxsmall;
   font-weight: $font-weight-normal;
   font-family: $font-face-secondary;
-  @include grid(7);
 }
 .c-footer__contact{
-  @include grid(5);
-  text-align: right;
+  text-align: center;
   a{
     color: color($base, white);
     font-weight: $font-weight-light;
@@ -104,5 +101,22 @@
   }
   &:hover {
     color: color($secondary, dark);
+  }
+}
+
+@media screen and (break(medium)) {
+  .c-footer {
+    text-align: left;
+  }
+  .c-footer__credits {
+    @include grid(6);
+  }
+  .c-footer__copyright {
+    @include grid(7);
+    text-align: left;
+  }
+  .c-footer__contact{
+    @include grid(5);
+    text-align: right;
   }
 }

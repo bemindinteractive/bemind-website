@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " it" }}">
-
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <meta name="author" content="Bemind Interactive S.r.l.">
+  <meta name="Copyright" content="Copyright © {{ site.time | date: '%Y' }}">
 
   <!-- Style -->
   <link href="/assets/css/main.css" rel="stylesheet">
@@ -80,6 +85,9 @@
 
       <div class="o-wrapper">
         <div class="c-page-content c-page-content--notitle">
+          <div class="c-page-content-background c-page-content-background--triangle">
+
+          </div>
           <div class="c-page-content__text">
             <div class="c-page-content__text__item">
               <h5>About Us</h5>
@@ -97,6 +105,9 @@ We create new products and services from the ground up, or improve existing prod
 
       <div class="o-wrapper">
         <div class="c-page-content">
+          <div class="c-page-content-background c-page-content-background--circle">
+
+          </div>
           <div class="c-page-content__title">
             <h1>Our approach.</h1>
           </div>
@@ -121,10 +132,6 @@ We create new products and services from the ground up, or improve existing prod
         </div>
       </div>
 
-
-
-
-
     </main>
 
     <footer class="c-footer" role="contentinfo">
@@ -147,8 +154,5 @@ We create new products and services from the ground up, or improve existing prod
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/wearehiring.js"></script>
 
-    <script type="text/javascript">
-
-    </script>
   </body>
 </html>

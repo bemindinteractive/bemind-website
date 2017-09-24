@@ -1,8 +1,10 @@
 .c-header {
+  position: fixed;
+  z-index: 999;
+  top:0;
+  left:0;
+  width: 100%;
   padding: $base-spacing-x2;
-  &.cookie-on {
-    margin-top: 0;
-  }
 }
 
 .c-header__logos {
@@ -12,40 +14,24 @@
   justify-content: space-around;
 }
 
-.c-header__partner-logo {
-  height: 72px;
-  margin-left: 2rem;
-}
-
-@media screen and (break(medium)) {
-  .c-header__partner-logo {
-    height: 40px;
-  }
-}
-
 .c-header .e-button {
   display: none;
 }
 
+.c-header__wrapper{
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (break(medium)) {
   .c-header {
-    position: fixed;
-    z-index: 999;
-    top:0;
-    left:0;
-    width: 100%;
     margin-top:0;
 
-    &.is-sticky {
-      //background-color: rgba( color($midnight,darker), 0.95);
-      background-color: #FFF;
-      border-color: transparent;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      position: fixed;
-      top:0; left:0;
-      width: 100%;
-      transition: all .3s ease;
-    }
     &.cookie-on {
       margin-top: $base-spacing-x10;
     }
@@ -60,16 +46,9 @@
     }
   }
   .c-header__wrapper{
-    width: 100%;
     padding: 0 $base-spacing-x2;
     min-width: 915px;
     position: relative;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
 
     margin: 0 auto;
     align-items: center;

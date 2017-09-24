@@ -1,7 +1,7 @@
 .c-page-content {
-
+  position: relative;
   margin: 0 auto;
-  padding: $base-spacing-x5 $base-spacing-x3;
+  padding-top: $base-spacing-x10;
 
   .c-page-content__title{
 
@@ -17,13 +17,34 @@
     }
   }
 
+  .c-page-content-background{
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+    &--triangle{
+      background-image: url(/assets/images/triangle-about.svg);
+      right: -20%;
+      bottom: 0;
+      background-size: 70%;
+    }
+    &--circle{
+      background-image: url(/assets/images/circle.svg);
+      left: -20%;
+      top: 50%;
+    }
+  }
+
   &--notitle {
     .c-page-content__text__item{
         h5{
           margin-bottom: $base-spacing-x7;
         }
         p{
-          font-size: $font-size-large;
+          font-size: $font-size-book;
         }
     }
   }
@@ -31,8 +52,6 @@
 }
 
 .c-big-link{
-
-  @include grid(4, $offset:8);
   text-align: right;
   a{
     color: color($base, white);
@@ -60,13 +79,17 @@
   .c-page-content__text{
     @include grid(5, $offset:2);
   }
-
-
-  .c-page-content {
-    &--notitle{
+  .c-big-link{
+    @include grid(4, $offset:8);
+  }
+  .c-page-content--notitle{
       .c-page-content__text{
         @include grid(7, $offset:4);
+        .c-page-content__text__item{
+            p{
+              font-size: $font-size-large;
+            }
+        }
       }
-    }
   }
 }

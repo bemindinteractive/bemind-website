@@ -1,7 +1,7 @@
 .t-home-hero {
-  padding: 0 $base-spacing-x3 $base-spacing-x10 $base-spacing-x3;
   text-align: left;
   position: relative;
+  padding-top: $base-spacing-x10*2;
 }
 
 .t-home-hero__content{
@@ -37,7 +37,6 @@
 
   }
   &--right {
-    display: none;
   }
 }
 
@@ -55,6 +54,7 @@
     display: block;
     z-index: 0;
     right: 0;
+    top: 20%;
     @include grid(6);
   }
 }

@@ -16,9 +16,9 @@
             <g id="Group-3" transform="translate(-2.000000, 2666.000000)">
                 <g id="Group-5" transform="translate(735.000000, 883.000000)">
                     <g id="Group-6">
-                        <g id="Rectangle-7-Copy-3">
-                            <use fill="#151C2E" xlink:href="#path-2"></use>
-                            <use fill-opacity="0.5" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                        <g id="Rectangle-7-Copy" transform="translate(367.500000, 258.500000) scale(1, -1) translate(-367.500000, -258.500000) ">
+                            <use fill="#151C2E" xlink:href="#path-3"></use>
+                            <use fill-opacity="0.5" fill="url(#linearGradient-1)" xlink:href="#path-3"></use>
                         </g>
                     </g>
                 </g>
