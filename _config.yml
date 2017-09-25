@@ -4,7 +4,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Vidra
+title: Bemind
 email: hello@vidra.io
 description: "il modo più semplice per vendere online."
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -15,17 +15,6 @@ instagram_username: vidrahq
 
 # Content Settings
 excerpt_separator: <!--more-->
-collections:
-
-  features:
-    output: true
-    permalink: /features/:path/
-
-  blog:
-    output: true
-    layout: blog-article
-    permalink: /:collection/:path/
-
 
 # Build settings
 source: source
@@ -43,7 +32,6 @@ gems:
   - octopress-minify-html
   - octopress-autoprefixer
 
-include: ["_pages"]
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -51,7 +39,7 @@ exclude:
 permalink: /:title/
 
 # Multilanguage support
-languages: ["it", "en"]
-default_lang: "it"
+languages: ["en"]
+default_lang: "en"
 exclude_from_localization: ["assets", "_sass"]
 parallel_localization: true
