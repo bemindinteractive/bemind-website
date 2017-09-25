@@ -1,6 +1,6 @@
 $(document).ready(function(){
   consoleText(['superpowers.', 'opportunities.', 'happiness.'], 'superpowers');
-  consoleText(['well.', 'seriusly.', 'with love.'], 'well');
+  consoleText(['well.', 'with elegance.', 'seriously.', 'with love.'], 'well');
   consoleText(['ventures.', 'craft.', 'creations.'], 'ventures');
 
   $('#nav-icon4').click(function(){
@@ -49,14 +49,7 @@ $(document).ready(function(){
   });
 
 });
-var sceneHome = document.getElementById('scene-home');
-var parallaxInstance = new Parallax(sceneHome);
 
-var scene1 = document.getElementById('scene1');
-var parallaxInstance = new Parallax(scene1);
-
-var scene2 = document.getElementById('scene2');
-var parallaxInstance = new Parallax(scene2);
 
 // function([string1, string2],target id,[color1,color2])
 function consoleText(words, id) {
@@ -87,7 +80,7 @@ function consoleText(words, id) {
         x = -1;
         letterCount += x;
         waiting = false;
-      }, 1000)
+      }, 3000)
     } else if (waiting === false) {
       target.html(words[0].substring(0, letterCount));
       letterCount += x;

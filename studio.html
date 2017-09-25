@@ -18,7 +18,7 @@
     <!-- End Google Tag Manager (noscript) -->
     <header class="c-header" role="banner" id="js-fixedNav">
         <div class="c-header__wrapper">
-            <a class="c-logo" href="{{ "/" | relative_url}}"></a>
+            <a class="c-logo" href="/"></a>
             <nav class="c-main-navigation-draft"></nav>
             <!-- {% include language-switcher.html %} -->
 
@@ -84,18 +84,18 @@
       </div>
 
       <div class="o-wrapper">
-        <div class="c-page-content c-page-content--notitle">
-          <div class="c-page-content-background c-page-content-background--triangle">
-
-          </div>
+        <div class="c-page-content c-page-content--notitle" >
+          <div  class="c-page-content-background c-page-content-background--triangle"></div>
           <div class="c-page-content__text">
             <div class="c-page-content__text__item">
               <h5>About Us</h5>
-              <p>Bemind is a product design studio that transforms big ideas into great products and ventures.
-We help big companies act like small startups, and provide the expertise startups need to launch and scale their business.
-We also create ventures on our own.
-We create new products and services from the ground up, or improve existing products. As a team we contribute with everything from product design, prototyping and branding to development and advanced machine learning.
-</p>
+              <p>
+                Bemind is a product design studio that transforms big ideas into great products and ventures.<br/><br/>
+                Since 2009, we have partnered with startups and leading companies providing the expertise need to launch and scale their business,
+                contributing with everything from product design, prototyping and branding to development and advanced machine learning.<br/><br/>
+                We also create ventures on our own.<br/>
+                We believe in building self-sustaining, purposeful products that could overcome customer expectations, anticipating market dynamics.
+              </p>
             </div>
           </div>
 
@@ -104,25 +104,37 @@ We create new products and services from the ground up, or improve existing prod
       </div>
 
       <div class="o-wrapper">
-        <div class="c-page-content">
-          <div class="c-page-content-background c-page-content-background--circle">
-
-          </div>
+        <div class="c-page-content" >
+          <div class="c-page-content-background c-page-content-background--circle"></div>
           <div class="c-page-content__title">
             <h1>Our approach.</h1>
           </div>
           <div class="c-page-content__text">
             <div class="c-page-content__text__item">
-              <h5>We focus on product</h5>
-              <p>Making great products is why we get up in the morning. With an obsession for well designed products and a relentless attention to detail, we will always put the product first.</p>
+              <h5>We focus on people</h5>
+              <p>
+                We puts people at the centre of problem solving,
+                based on the principle that any good design must meet the needs of its user.
+                We use Design Thinking, love, collaboration and experimentation through rapid iteration of prototypes.</p>
             </div>
             <div class="c-page-content__text__item">
-              <h5>We focus on product</h5>
-              <p>Making great products is why we get up in the morning. With an obsession for well designed products and a relentless attention to detail, we will always put the product first.</p>
+              <h5>We move fast</h5>
+              <p>
+                We start with design and prototyping from day one, working with quick iterations we pursue a short time to launched product. <br/><br/>
+                At your disposal, heavy technical experience, fierce focus on product design, production of content, UX, all the needed to take a product from beginning to end.
+                We are capable to bring any idea to life, no matter the complexity.
+              </p>
             </div>
             <div class="c-page-content__text__item">
-              <h5>We focus on product</h5>
-              <p>Making great products is why we get up in the morning. With an obsession for well designed products and a relentless attention to detail, we will always put the product first.</p>
+              <h5>Client as a partner</h5>
+              <p>We work with you to define,
+                build and continuously improve the experiences people have with your product or brand.
+                Making great products is why we get up in the morning.</p>
+            </div>
+            <div class="c-page-content__text__item">
+              <h5>In every end, a new beginning</h5>
+              <p>Delivering an experience doesn’t end with a successful launch. That’s when it begins.<br/>
+                We help measure and iterate to ensure that your business is continuously providing value and meeting culture wherever it’s going.</p>
             </div>
           </div>
           <div class="clearfix"></div>
@@ -149,10 +161,20 @@ We create new products and services from the ground up, or improve existing prod
     </footer>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="/assets/js/parallax.js"></script>
     <script src="/assets/js/owl.carousel.js"></script>
 
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/wearehiring.js"></script>
+
+    <script type="text/javascript">
+      var scene1 = document.getElementById('scene1');
+      var parallaxInstance = new Parallax(scene1);
+
+      var scene2 = document.getElementById('scene2');
+      var parallaxInstance = new Parallax(scene2);
+    </script>
 
   </body>
 </html>

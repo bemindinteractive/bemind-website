@@ -38,9 +38,9 @@
 }
 
 .c-main-navigation__list-item {
-  display: inline-block;
+  display: block;
   margin-right: $base-spacing-x4;
-  font-size: $font-size-huge;
+  font-size: $font-size-xlarge;
   overflow: hidden;
   position: relative;
 
@@ -81,7 +81,6 @@
   }
 
   &--small{
-    display: inline-block;
     margin-right: 130px;
     font-family: $font-face-secondary;
     font-size: $font-size-small;
@@ -151,13 +150,30 @@
 }
 
 
+@media screen and (break(extraSmall)) {
+
+  .c-main-navigation__list-item {
+    font-size: $font-size-huge;
+      &--small{
+        font-size: $font-size-small;
+      }
+  }
+}
+
+@media screen and (break(small)) {
+  .c-main-navigation__list {
+    @include grid(6, $offset:6);
+  }
+  .c-main-navigation__list-item {
+    display: inline-block;
+  }
+}
 
 @media screen and (break(medium)) {
   .c-main-navigation__list {
     @include grid(4, $offset:8);
   }
 }
-
 
 #nav-icon4 {
   width: 24px;

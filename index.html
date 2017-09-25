@@ -17,7 +17,7 @@
     <!-- End Google Tag Manager (noscript) -->
     <header class="c-header" role="banner" id="js-fixedNav">
         <div class="c-header__wrapper">
-            <a class="c-logo" href="{{ "/" | relative_url}}"></a>
+            <a class="c-logo" href="/"></a>
             <nav class="c-main-navigation-draft" ></nav>
             <!-- {% include language-switcher.html %} -->
             <div id="nav-icon4">
@@ -97,19 +97,23 @@
           <div class="c-carousel-container">
             <div class="owl-carousel owl-theme">
               <div class="c-carousel-item">
-                <h5>Software architecture</h5>
-                <p>Whatever the requirements, we will build usable and accessible websites, databases and web applications.
-  We put our experience in software development to fulfill every kind of request, making possible the impossible.</p>
+                <h5>Product Design</h5>
+                <p>We love to mix togheter inspiration and usability.
+By a close communication with our customers, we create an product characterized by a strong identity and an engaging user experience.</p>
               </div>
               <div class="c-carousel-item">
                 <h5>Software architecture</h5>
                 <p>Whatever the requirements, we will build usable and accessible websites, databases and web applications.
-  We put our experience in software development to fulfill every kind of request, making possible the impossible.</p>
+We put our experience in software development to fulfill every kind of request, making possible the impossible.</p>
               </div>
               <div class="c-carousel-item">
-                <h5>Software architecture</h5>
-                <p>Whatever the requirements, we will build usable and accessible websites, databases and web applications.
-  We put our experience in software development to fulfill every kind of request, making possible the impossible.</p>
+                <h5>Ecommerce & Payments</h5>
+                <p>Our autonomously developed E-Commerce platform features great flexibility and security, and a extensive set of features to enhance the online shopping experience for our customers.</p>
+              </div>
+              <div class="c-carousel-item">
+                <h5>App Development</h5>
+                <p>Rule your world with your fingers!
+All you need to do is tell us about the functional and aesthetic characteristics which you dream of and leave it to us: we will put them together in your simple, stylish, fantastic mobile app.</p>
               </div>
             </div>
           </div>
@@ -124,8 +128,8 @@
         <div class="o-wrapper c-illustrated-description-block__content">
 
           <figure class="c-illustrated-description-block__figure" id="scene1">
-            <div data-depth="0.2" class="c-illustrated-description-block__image c-illustrated-description-block__image--back" style="background-image:url(/assets/images/circle.svg)"></div>
-            <div data-depth="0.6" class="c-illustrated-description-block__image c-illustrated-description-block__image--left" style="background-image:url(/assets/images/vidra.png)"></div>
+            <div data-depth="0.5" class="c-illustrated-description-block__image c-illustrated-description-block__image--back" style="background-image:url(/assets/images/circle.svg)"></div>
+            <div class="c-illustrated-description-block__image c-illustrated-description-block__image--left" style="background-image:url(/assets/images/vidra.png)"></div>
           </figure>
 
           <div class="c-illustrated-description-block__text">
@@ -141,9 +145,9 @@
         <div class="o-wrapper c-illustrated-description-block__content">
 
           <figure class="c-illustrated-description-block__figure" id="scene2">
-            <div data-depth="0" class="c-illustrated-description-block__image c-illustrated-description-block__image--back" style="background-image:url(/assets/images/ball-triangle.svg)"></div>
-            <div data-depth="0.3" class="c-illustrated-description-block__image c-illustrated-description-block__image--back" style="background-image:url(/assets/images/triangle.svg)"></div>
-            <div data-depth="0.6" class="c-illustrated-description-block__image" style="background-image:url(/assets/images/hype.png)"></div>
+            <div data-depth="0.3" class="c-illustrated-description-block__image c-illustrated-description-block__image--back" style="background-image:url(/assets/images/ball-triangle.svg)"></div>
+            <div data-depth="0.7" class="c-illustrated-description-block__image c-illustrated-description-block__image--back" style="background-image:url(/assets/images/triangle.svg)"></div>
+            <div  class="c-illustrated-description-block__image" style="background-image:url(/assets/images/hype.png)"></div>
           </figure>
 
           <div class="c-illustrated-description-block__text">
@@ -179,7 +183,14 @@
     <script src="/assets/js/wearehiring.js"></script>
 
     <script type="text/javascript">
+      var sceneHome = document.getElementById('scene-home');
+      var parallaxInstance = new Parallax(sceneHome);
 
+      var scene1 = document.getElementById('scene1');
+      var parallaxInstance = new Parallax(scene1);
+
+      var scene2 = document.getElementById('scene2');
+      var parallaxInstance = new Parallax(scene2);
     </script>
   </body>
 </html>

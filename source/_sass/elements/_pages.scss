@@ -24,6 +24,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: color($base, lightest);
 
+  overflow-x: hidden;
   @if $font-face-primary and $font-face-primary != '' {
     font-family: $font-face-primary, $font-family;
   }
@@ -38,9 +39,9 @@ body {
 }
 
 ::selection {
-  color: color($base, default);
+  color: color($base, white);
   text-shadow: none;
-  background-color: color($primary, lightest);
+  background-color: color($red, lightest);
 }
 
 @media screen and (break(medium)) {

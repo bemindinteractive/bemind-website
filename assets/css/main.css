@@ -485,18 +485,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: #F0F1F4;
+  overflow-x: hidden;
   font-family: Apercu, sans-serif;
   background: #161C2D; }
 
 ::-moz-selection {
-  color: #161C2D;
+  color: #FFFFFF;
   text-shadow: none;
-  background-color: #4F3DF3; }
+  background-color: #EF2952; }
 
 ::selection {
-  color: #161C2D;
+  color: #FFFFFF;
   text-shadow: none;
-  background-color: #4F3DF3; }
+  background-color: #EF2952; }
 
 h1, h2, h3,
 blockquote > p, h4, h5, h6 {
@@ -639,8 +640,8 @@ img, video, iframe {
     background: #D3F1D8;
     color: #61CC71; }
   .e-input-validation--failed {
-    background: #E7949B;
-    color: #CC1423; }
+    background: #EF2952;
+    color: #EF2952; }
 
 /* Import Objects */
 .o-wrapper {
@@ -1000,9 +1001,9 @@ img, video, iframe {
   margin: 0; }
 
 .c-main-navigation__list-item {
-  display: inline-block;
+  display: block;
   margin-right: 32px;
-  font-size: 3.556rem;
+  font-size: 2.222rem;
   overflow: hidden;
   position: relative; }
   .c-main-navigation__list-item .c-main-navigation__line {
@@ -1033,7 +1034,6 @@ img, video, iframe {
     color: #161C2D;
     font-weight: 200; }
   .c-main-navigation__list-item--small {
-    display: inline-block;
     margin-right: 130px;
     font-family: Apercu-Mono;
     font-size: 0.8889rem;
@@ -1074,6 +1074,43 @@ img, video, iframe {
     transition: transform 0.8s cubic-bezier(0.41, 0, 0.07, 1);
     transition-delay: .3s; }
 
+@media screen and (min-width: 30em) {
+  .c-main-navigation__list-item {
+    font-size: 3.556rem; }
+    .c-main-navigation__list-item--small {
+      font-size: 0.8889rem; } }
+@media screen and (min-width: 48em) {
+  .c-main-navigation__list {
+    /*
+      Check if $colSpan is a valid integer number then process the parameters
+      passed to the grid() mixin.
+    */
+    box-sizing: border-box;
+    /*
+      Check if $align is set to left (default) and make element floating
+      to the left
+    */
+    float: left;
+    /*
+      If $grid-use-gutters is set to false (true by default) set the
+      element width based on the $initColWidth process result.
+    */
+    /*
+      Check if not 0 $offset is passed as argument and then if $gutter is 0
+      set the left (based on direction) margin as offset.
+    */
+    margin: 0 24px 0 calc( 50% + 24px );
+    /*
+      If $grid-use-gutters is true then calculate the default new width and left-margin
+      based on $columns and $colSpan
+    */
+    /*
+      Check if the $gutter have a % unit
+    */
+    width: calc( 50% - 24px - 12px ); }
+
+  .c-main-navigation__list-item {
+    display: inline-block; } }
 @media screen and (min-width: 60em) {
   .c-main-navigation__list {
     /*
