@@ -165,7 +165,7 @@
     @include grid(5, $offset:7);
   }
   .c-main-navigation__list-item {
-    display: block;
+    display: inline-block;
   }
 }
 
