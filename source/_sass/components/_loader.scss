@@ -6,21 +6,15 @@
   z-index: 1000;
   top: 0;
   left: 0;
-  background-color: color($base, default);
+  background-color: color($base, white);
   background-image: url("/assets/images/loader.svg");
   background-position: center center;
   background-repeat: no-repeat;
-
-  transform: translate3d(0,100%,0);
   opacity: 0;
-
   transition: opacity .8s cubic-bezier(.86,0,.07,1);
 
   &--show{
     transition: opacity .8s cubic-bezier(.86,0,.07,1);
-
     opacity: 1;
-    transform: translate3d(0,0,0);
-    perspective: 1000px;
   }
 }

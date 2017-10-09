@@ -49,16 +49,20 @@ $(document).ready(function(){
   });
 
   $(".c-loader").removeClass("c-loader--show");
+  window.setTimeout(function() {
+    $(".c-loader").hide();
+  }, 800);
 
   $('.link').click(function(e) {
     e.preventDefault();
     newLocation = this.href;
+    $(".c-loader").show();
     $(".c-loader").addClass("c-loader--show");
     $(".c-main-navigation").removeClass("c-main-navigation--open");
 
     window.setTimeout(function() {
       window.location = newLocation;
-    }, 800)
+    }, 800);
   });
 
 });
