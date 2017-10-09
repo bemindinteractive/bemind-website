@@ -48,7 +48,22 @@ $(document).ready(function(){
     }
   });
 
+  $(".c-loader").removeClass("c-loader--show");
+
+  $('.link').click(function(e) {
+    e.preventDefault();
+    newLocation = this.href;
+    $(".c-loader").addClass("c-loader--show");
+    $(".c-main-navigation").removeClass("c-main-navigation--open");
+
+    window.setTimeout(function() {
+      window.location = newLocation;
+    }, 800)
+  });
+
 });
+
+
 
 
 // function([string1, string2],target id,[color1,color2])

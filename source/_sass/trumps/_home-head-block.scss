@@ -43,8 +43,12 @@
 
 @media screen and (break(medium)) {
   .t-home-hero {
-    padding: ($base-spacing-x6 * 4) 0;
-    padding-bottom: $base-spacing-x10 * 5;
+    min-height: 100vh;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    //padding: ($base-spacing-x6 * 4) 0;
+    //padding-bottom: $base-spacing-x10 * 5;
   }
   .t-home-hero__content{
     @include grid(6);
@@ -56,5 +60,38 @@
     right: 0;
     top: 20%;
     @include grid(6);
+  }
+
+  .t-home-hero__customers{
+    @include grid(10, $offset: 1);
+    position: absolute;
+    left: 0;
+    bottom: $base-spacing-x4;
+
+    .t-home-hero__customers__item{
+      width: 20%;
+      float: left;
+      height: 60px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 120px 60px;
+
+      &--hype{
+        background-image: url(/assets/images/customers/logo_hype.svg);
+      }
+      &--sella{
+        background-image: url(/assets/images/customers/logo_bs@2x.png);
+      }
+      &--gestpay{
+        background-image: url(/assets/images/customers/logo_gestpay.svg);
+      }
+      &--veratour{
+        background-image: url(/assets/images/customers/logo_veratour.svg);
+      }
+      &--sofidel{
+        background-image: url(/assets/images/customers/logo_sofidel@2x.png);
+      }
+    }
+
   }
 }

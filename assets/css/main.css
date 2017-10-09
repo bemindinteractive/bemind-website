@@ -468,10 +468,10 @@ a {
   text-decoration: none;
   transition: all 200ms;
   display: inline-block;
-  color: #4F3DF3; }
+  color: #491CDF; }
   a:hover {
     transition: all 200ms;
-    color: #4F3DF3; }
+    color: #491CDF; }
   a .e-middle-line {
     display: inline-block;
     width: 24px;
@@ -564,10 +564,10 @@ p, ul {
   margin-top: 0; }
 
 a {
-  color: #4F3DF3;
+  color: #491CDF;
   font-weight: 500; }
   a:hover {
-    color: #4F3DF3; }
+    color: #491CDF; }
 
 img, video, iframe {
   max-width: 100%; }
@@ -582,23 +582,23 @@ img, video, iframe {
   line-height: 1.34;
   border-radius: 100px; }
   .e-button:hover {
-    background: #4F3DF3;
+    background: #491CDF;
     color: #fff; }
   .e-button--secondary {
     text-transform: uppercase; }
   .e-button--uppercase {
-    background: #4F3DF3; }
+    background: #491CDF; }
     .e-button--uppercase:hover {
-      background: #4F3DF3;
+      background: #491CDF;
       color: #fff; }
   .e-button--outlined {
     background: none;
-    border: 1px solid #4F3DF3;
-    color: #4F3DF3; }
+    border: 1px solid #491CDF;
+    color: #491CDF; }
   .e-button--small {
     padding: 8px 16px;
-    background: #4F3DF3;
-    color: #4F3DF3;
+    background: #491CDF;
+    color: #491CDF;
     font-size: .75rem;
     text-transform: capitalize;
     font-weight: 600;
@@ -1063,7 +1063,7 @@ img, video, iframe {
   .c-main-navigation__list-item--first {
     margin-top: 48px; }
   .c-main-navigation__list-item--active .c-main-navigation__link {
-    color: #4F3DF3; }
+    color: #491CDF; }
     .c-main-navigation__list-item--active .c-main-navigation__link--more {
       background-image: url("/assets/images/navigation-small-arrow-active.svg"); }
 
@@ -1115,7 +1115,7 @@ img, video, iframe {
     width: calc( 41.6666666667% - 24px - 10px ); }
 
   .c-main-navigation__list-item {
-    display: inline-block; } }
+    display: block; } }
 @media screen and (min-width: 60em) {
   .c-main-navigation__list {
     /*
@@ -1248,10 +1248,10 @@ img, video, iframe {
     .c-sub-navigation__item--active {
       cursor: default; }
       .c-sub-navigation__item--active h3 {
-        color: #4F3DF3;
+        color: #491CDF;
         background-image: url("/assets/images/navigation-big-arrow-active.svg"); }
     .c-sub-navigation__item:hover h3 {
-      color: #4F3DF3;
+      color: #491CDF;
       background-image: url("/assets/images/navigation-big-arrow-active.svg"); }
 
   .c-sub-navigation__item:nth-child(1) {
@@ -1437,6 +1437,27 @@ img, video, iframe {
 @media screen and (min-width: 80em) {
   .c-hero__subtitle {
     padding: 0; } }
+.c-loader {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #161C2D;
+  background-image: url("/assets/images/loader.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: translate3d(0, 100%, 0);
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  .c-loader--show {
+    transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px; }
+
 .c-intro-block {
   margin-top: 80px;
   text-align: left;
@@ -2488,7 +2509,7 @@ img, video, iframe {
   padding: 8px 40px 8px 0; }
   .c-footer__navigation__list-item--active {
     font-weight: 500;
-    color: #4F3DF3; }
+    color: #491CDF; }
 
 .c-footer__navigation__link {
   font-size: 0.8889rem;
@@ -2870,7 +2891,7 @@ img, video, iframe {
     .t-arrow-link--medium .t-arrow-link__line {
       height: 8px; }
   .t-arrow-link:hover {
-    color: #4F3DF3; }
+    color: #491CDF; }
     .t-arrow-link:hover .t-arrow-link__line:before {
       transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
       transform: translateZ(0);
@@ -2907,8 +2928,12 @@ img, video, iframe {
 
 @media screen and (min-width: 60em) {
   .t-home-hero {
-    padding: 192px 0;
-    padding-bottom: 400px; }
+    min-height: 100vh;
+    padding-top: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
 
   .t-home-hero__content {
     /*
@@ -2971,7 +2996,56 @@ img, video, iframe {
       Check if the $gutter have a % unit
     */
     width: calc( 50% - 24px - 12px );
-    margin: 0 0 0 24px; } }
+    margin: 0 0 0 24px; }
+
+  .t-home-hero__customers {
+    /*
+      Check if $colSpan is a valid integer number then process the parameters
+      passed to the grid() mixin.
+    */
+    box-sizing: border-box;
+    /*
+      Check if $align is set to left (default) and make element floating
+      to the left
+    */
+    float: left;
+    /*
+      If $grid-use-gutters is set to false (true by default) set the
+      element width based on the $initColWidth process result.
+    */
+    /*
+      Check if not 0 $offset is passed as argument and then if $gutter is 0
+      set the left (based on direction) margin as offset.
+    */
+    margin: 0 24px 0 calc( 8.3333333333% + 24px );
+    /*
+      If $grid-use-gutters is true then calculate the default new width and left-margin
+      based on $columns and $colSpan
+    */
+    /*
+      Check if the $gutter have a % unit
+    */
+    width: calc( 83.3333333333% - 24px - 20px );
+    position: absolute;
+    left: 0;
+    bottom: 32px; }
+    .t-home-hero__customers .t-home-hero__customers__item {
+      width: 20%;
+      float: left;
+      height: 60px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 120px 60px; }
+      .t-home-hero__customers .t-home-hero__customers__item--hype {
+        background-image: url(/assets/images/customers/logo_hype.svg); }
+      .t-home-hero__customers .t-home-hero__customers__item--sella {
+        background-image: url(/assets/images/customers/logo_bs@2x.png); }
+      .t-home-hero__customers .t-home-hero__customers__item--gestpay {
+        background-image: url(/assets/images/customers/logo_gestpay.svg); }
+      .t-home-hero__customers .t-home-hero__customers__item--veratour {
+        background-image: url(/assets/images/customers/logo_veratour.svg); }
+      .t-home-hero__customers .t-home-hero__customers__item--sofidel {
+        background-image: url(/assets/images/customers/logo_sofidel@2x.png); } }
 .c-language-switcher {
   display: none; }
 
