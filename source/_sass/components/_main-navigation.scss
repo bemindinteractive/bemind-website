@@ -162,7 +162,7 @@
 
 @media screen and (break(small)) {
   .c-main-navigation__list {
-    @include grid(6, $offset:6);
+    @include grid(5, $offset:7);
   }
   .c-main-navigation__list-item {
     display: inline-block;
@@ -179,7 +179,7 @@
   width: 24px;
   height: 17px;
   position: relative;
-  margin: 50px auto;
+  margin: 0px auto;
   transform: rotate(0deg);
   transition: .5s cubic-bezier(.41,0,.07,1);
   cursor: pointer;
@@ -224,4 +224,10 @@
   transform: rotate(-45deg);
   top: 14px;
   left: 8px;
+}
+
+@media screen and (break(medium)) {
+  #nav-icon4 {
+    margin: 50px auto;
+  }
 }

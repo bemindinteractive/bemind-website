@@ -49,7 +49,7 @@
           </li>
           <li class="c-main-navigation__list-item">
             <span class="c-main-navigation__line"></span>
-            <a class="c-main-navigation__link" href="mailto:hello@bemind.me">Contact</a>
+            <a class="c-main-navigation__link" href="mailto:hello@bemind.me" target="_blank">Contact</a>
           </li>
           <li class="c-main-navigation__list-item c-main-navigation__list-item--small c-main-navigation__list-item--first">
             <span class="c-main-navigation__line"></span>
@@ -78,7 +78,7 @@
       <div class="c-hero">
         <div class="o-wrapper">
           <div class="c-hero__content">
-            <h1 class="c-hero__text">Our mission is to build ambitious products that make people lives better.</h1>
+            <h1 class="c-hero__text">Our mission is to build ambitious products that make people’s lives better</h1>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -86,13 +86,15 @@
 
       <div class="o-wrapper">
         <div class="c-page-content c-page-content--notitle" >
-          <div  class="c-page-content-background c-page-content-background--triangle"></div>
+          <div class="c-page-content-background c-page-content-background--triangle" id="scene1">
+            <div data-depth="0.6" class="c-page-content-background__image"></div>
+          </div>
           <div class="c-page-content__text">
             <div class="c-page-content__text__item">
               <h5>About Us</h5>
               <p>
                 Bemind is a product design studio that transforms big ideas into great products and ventures.<br/><br/>
-                Since 2009, we have partnered with startups and leading companies providing the expertise need to launch and scale their business,
+                Since 2009, we have partnered with startups and leading companies providing the expertise needed to launch and scale their business,
                 contributing with everything from product design, prototyping and branding to development and advanced machine learning.<br/><br/>
                 We also create ventures on our own.<br/>
                 We believe in building self-sustaining, purposeful products that could overcome customer expectations, anticipating market dynamics.
@@ -106,7 +108,9 @@
 
       <div class="o-wrapper">
         <div class="c-page-content" >
-          <div class="c-page-content-background c-page-content-background--circle"></div>
+          <div class="c-page-content-background c-page-content-background--circle" id="scene2">
+            <div data-depth="0.6" class="c-page-content-background__image"></div>
+          </div>
           <div class="c-page-content__title">
             <h1>Our approach.</h1>
           </div>
@@ -114,7 +118,7 @@
             <div class="c-page-content__text__item">
               <h5>We focus on people</h5>
               <p>
-                We puts people at the centre of problem solving,
+                We put people at the centre of problem solving,
                 based on the principle that any good design must meet the needs of its user.
                 We use Design Thinking, love, collaboration and experimentation through rapid iteration of prototypes.</p>
             </div>
@@ -140,8 +144,13 @@
           </div>
           <div class="clearfix"></div>
         </div>
-        <div class="c-big-link">
-          <a href="https://bemind.recruitee.com/" target="_blank">Careers</a>
+        <div class="o-wrapper">
+          <div class="c-page-content" >
+            <div class="c-big-link">
+              <a href="https://bemind.recruitee.com/" target="_blank" class="t-arrow-link t-arrow-link--big"><span class="t-arrow-link__line"></span>Careers</a>
+            </div>
+            <div class="clearfix"></div>
+          </div>
         </div>
       </div>
     </main>
@@ -153,7 +162,7 @@
             Bemind Interactive S.r.l. - P.I. 02477870592 - Via del truglio 1 - Latina
           </p>
           <div class="c-footer__contact">
-            <a href="mailto:hello@bemind.me">Get in touch</a>
+            <a href="mailto:hello@bemind.me" target="_blank" class="t-arrow-link t-arrow-link--medium"><span class="t-arrow-link__line"></span>Get in touch</a>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -168,6 +177,13 @@
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/wearehiring.js"></script>
 
+    <script type="text/javascript">
+      var scene1 = document.getElementById('scene1');
+      var parallaxInstance = new Parallax(scene1);
+
+      var scene2 = document.getElementById('scene2');
+      var parallaxInstance1 = new Parallax(scene2);
+    </script>
 
   </body>
 </html>

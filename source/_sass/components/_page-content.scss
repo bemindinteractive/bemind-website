@@ -17,26 +17,37 @@
     }
   }
 
-  .c-page-content-background{
+.c-page-content-background{
+  position: absolute;
+  width: 550px;
+  height: 550px;
+
+  .c-page-content-background__image{
     position: absolute;
     width: 550px;
     height: 550px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-
-    &--triangle{
-      background-image: url(/assets/images/triangle-about.svg);
-      right: -20%;
-      bottom: 0;
-      background-size: 70%;
-    }
-    &--circle{
-      background-image: url(/assets/images/circle.svg);
-      left: -20%;
-      top: 50%;
-    }
   }
+  
+  &--triangle{
+    .c-page-content-background__image{
+      background-size: 70%;
+      background-image: url(/assets/images/triangle-about.svg);
+    }
+    right: -20%;
+    bottom: 0;
+  }
+  &--circle{
+    .c-page-content-background__image{
+      background-image: url(/assets/images/circle.svg);
+    }
+    left: -20%;
+    top: 50%;
+  }
+}
+
 
   &--notitle {
     .c-page-content__text__item{
@@ -49,24 +60,6 @@
     }
   }
 
-}
-
-.c-big-link{
-  text-align: right;
-  a{
-    color: color($base, white);
-    font-weight: $font-weight-light;
-    font-size: $font-size-huge;
-    background: url(/assets/images/arrow.svg);
-    background-repeat: no-repeat;
-    background-size: 46px;
-    background-position: $base-spacing 17px;
-    padding-left: $base-spacing-x9;
-    padding-bottom: $base-spacing;
-  }
-  &:hover {
-    color: color($secondary, dark);
-  }
 }
 
 @media screen and (break(medium)) {

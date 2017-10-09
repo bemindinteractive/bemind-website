@@ -13,4 +13,11 @@ a {
     transition: all 200ms;
     color: color($secondary, dark);
   }
+
+  .e-middle-line{
+    display: inline-block;
+    width: 24px;
+    margin-bottom: 4px;
+    border-bottom: 2px solid color($primary, default);
+  }
 }

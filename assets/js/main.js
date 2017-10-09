@@ -24,7 +24,7 @@ $(document).ready(function(){
   sr.reveal('.t-home-hero__bg-img');
   sr.reveal('.c-illustrated-description-block');
   sr.reveal('.c-intro-block');
-  sr.reveal('.owl-item');
+  sr.reveal('.c-carousel-wrapper');
   sr.reveal('.c-page-content__title');
   sr.reveal('.c-page-content__text__item');
   sr.reveal('.c-hero');

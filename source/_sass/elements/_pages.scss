@@ -39,9 +39,9 @@ body {
 }
 
 ::selection {
-  color: color($base, white);
   text-shadow: none;
-  background-color: color($red, lightest);
+  color: color($base, white);
+  background-color: color($primary, default);
 }
 
 @media screen and (break(medium)) {

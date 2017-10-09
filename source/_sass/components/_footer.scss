@@ -88,20 +88,7 @@
 }
 .c-footer__contact{
   text-align: center;
-  a{
-    color: color($base, white);
-    font-weight: $font-weight-light;
-    font-size: $font-size-large;
-    background: url(/assets/images/arrow.svg);
-    background-repeat: no-repeat;
-    background-size: 22px;
-    background-position: $base-spacing 7px;
-    padding-left: $base-spacing-x5;
-    padding-bottom: $base-spacing;
-  }
-  &:hover {
-    color: color($secondary, dark);
-  }
+  
 }
 
 @media screen and (break(medium)) {

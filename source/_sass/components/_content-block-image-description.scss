@@ -47,24 +47,6 @@
   }
 }
 
-.c-illustrated-description-block__link{
-  color: color($base, white);
-  font-weight: $font-weight-medium;
-  font-family: $font-face-secondary;
-  background: url(/assets/images/arrow.svg);
-  background-repeat: no-repeat;
-  background-size: 12px;
-  background-position: $base-spacing 6px;
-  padding-left: $base-spacing-x4;
-  padding-bottom: $base-spacing;
-  border-bottom: 1px solid color($primary, default);
-
-  &:hover {
-    color: color($secondary, dark);
-  }
-}
-
-
 @media screen and (break(medium)) {
   .c-illustrated-description-block {
     padding: $base-spacing-x3;
