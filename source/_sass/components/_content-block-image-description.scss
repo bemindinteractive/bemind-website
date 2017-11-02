@@ -4,6 +4,7 @@
   margin: 0 auto;
   z-index: 10;
   margin-top: $base-spacing-x10 * 2;
+  overflow-x: hidden;
 }
 
 .c-illustrated-description-block__content {
@@ -51,6 +52,7 @@
   .c-illustrated-description-block {
     padding: $base-spacing-x3;
     margin-top: $base-spacing-x10 * 4;
+    overflow-x: visible;
   }
 
   .c-illustrated-description-block__content {

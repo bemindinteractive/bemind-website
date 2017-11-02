@@ -1656,7 +1656,8 @@ img, video, iframe {
   text-align: left;
   margin: 0 auto;
   z-index: 10;
-  margin-top: 160px; }
+  margin-top: 160px;
+  overflow-x: hidden; }
 
 .c-illustrated-description-block__content {
   display: -ms-flexbox;
@@ -1696,7 +1697,8 @@ img, video, iframe {
 @media screen and (min-width: 60em) {
   .c-illustrated-description-block {
     padding: 24px;
-    margin-top: 320px; }
+    margin-top: 320px;
+    overflow-x: visible; }
 
   .c-illustrated-description-block__content {
     -ms-flex-flow: row;
