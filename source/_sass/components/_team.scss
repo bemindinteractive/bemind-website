@@ -3,6 +3,12 @@
   margin-top: $base-spacing-x10;
   color: color($base, white);
   text-align: center;
+  transform-style: preserve-3d;
+
+  img{
+    transform-style: preserve-3d;
+    transform: translateZ(20px);
+  }
 
   &--text{
     height: 300px;

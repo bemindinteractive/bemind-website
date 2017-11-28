@@ -2902,7 +2902,11 @@ img, video, iframe {
   position: relative;
   margin-top: 80px;
   color: #FFFFFF;
-  text-align: center; }
+  text-align: center;
+  transform-style: preserve-3d; }
+  .c-team-item img {
+    transform-style: preserve-3d;
+    transform: translateZ(20px); }
   .c-team-item--text {
     height: 300px;
     text-align: left;
