@@ -2906,7 +2906,7 @@ img, video, iframe {
   transform-style: preserve-3d; }
   .c-team-item img {
     transform-style: preserve-3d;
-    transform: translateZ(20px); }
+    transform: translateZ(-20px); }
   .c-team-item--text {
     height: 300px;
     text-align: left;
@@ -2918,8 +2918,10 @@ img, video, iframe {
       color: #FFFFFF;
       text-decoration: underline; }
   .c-team-item .c-team-item__title {
+    transform: translateZ(10px);
     color: #6A687B; }
   .c-team-item .c-team-item__position {
+    transform: translateZ(0px);
     color: #6A687B; }
 
 @media screen and (min-width: 60em) {

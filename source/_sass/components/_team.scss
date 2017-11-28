@@ -7,7 +7,7 @@
 
   img{
     transform-style: preserve-3d;
-    transform: translateZ(20px);
+    transform: translateZ(-20px);
   }
 
   &--text{
@@ -15,7 +15,6 @@
     text-align: left;
     display: flex;
     align-items: center;
-
     a{
       color: color($base, white);
       text-decoration: underline;
@@ -23,9 +22,11 @@
   }
 
   .c-team-item__title{
+    transform: translateZ(10px);
     color: color($base, light);
   }
   .c-team-item__position{
+    transform: translateZ(0px);
     color: color($base, light);
   }
 }
