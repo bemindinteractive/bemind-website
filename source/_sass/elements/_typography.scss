@@ -54,7 +54,9 @@ blockquote>p {
 h4 {
   @extend %heading-rules;
   font-size: $font-size-medium;
-  margin-bottom: $base-spacing-x3;
+  margin-bottom: $base-spacing;
+  font-family: $font-face-secondary;
+  color: color($base, light);
 }
 
 

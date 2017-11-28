@@ -1,0 +1,34 @@
+.c-team-item {
+  position: relative;
+  margin-top: $base-spacing-x10;
+  color: color($base, white);
+  text-align: center;
+
+  &--text{
+    height: 300px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+
+    a{
+      color: color($base, white);
+      text-decoration: underline;
+    }
+  }
+
+  .c-team-item__title{
+    color: color($base, light);
+  }
+  .c-team-item__position{
+    color: color($base, light);
+  }
+}
+
+@media screen and (break(medium)) {
+  .c-team-item {
+    @include grid(4);
+    margin-top: $base-spacing-x10;
+  }
+
+
+}

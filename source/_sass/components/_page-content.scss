@@ -30,7 +30,7 @@
     background-size: contain;
     background-position: center center;
   }
-  
+
   &--triangle{
     .c-page-content-background__image{
       background-size: 70%;
@@ -82,6 +82,23 @@
             p{
               font-size: $font-size-large;
             }
+        }
+
+        &.c-page-content__text--col1{
+          @include grid(4, $offset:4);
+          .c-page-content__text__item{
+            p{
+              font-size: $font-size-book;
+            }
+          }
+        }
+        &.c-page-content__text--col2{
+          @include grid(3, $offset:0);
+          .c-page-content__text__item{
+            p{
+              font-size: $font-size-book;
+            }
+          }
         }
       }
   }
