@@ -10,14 +10,23 @@
 
   .c-team-item__figure{
     position: relative;
-    height: 248px;
+    width: 100%;
+    //height: 248px;
     margin: 0;
 
+    &::before{
+    	content: "";
+    	display: block;
+    	padding-top: 100%; 	/* initial ratio of 1:1*/
+    }
+
     .c-team-item__figure__tilt{
-      width: 200px;
+      background-position: center center;
+      background-size: 100%;
+      height: 100%;
+      width: 100%;
       position: absolute;
-      top: 20px;
-      left: 86px;
+      top: 0px;
 
       &--1{
         transform: translateZ(5px);
