@@ -304,7 +304,10 @@
       var parallaxInstance1 = new Parallax(scene2);
 
       $('.js-tilt').tilt({
-          maxTilt: -50
+          maxTilt: -30,
+          perspective: 1500,
+          easing: "cubic-bezier(.03,.98,.52,.99)",
+          transition: true,
       })
     </script>
 
