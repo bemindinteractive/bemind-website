@@ -2919,13 +2919,13 @@ img, video, iframe {
       position: absolute;
       top: 20px;
       left: 86px;
-      transform: translateZ(10px); }
+      transform: translateZ(15px) scale(0.98); }
     .c-team-item .c-team-item__figure .c-team-item__figure__3 {
       width: 200px;
       position: absolute;
       top: 20px;
       left: 86px;
-      transform: translateZ(20px); }
+      transform: translateZ(30px) scale(0.95); }
   .c-team-item img {
     transform-style: preserve-3d;
     transform: translateZ(-20px); }

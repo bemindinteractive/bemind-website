@@ -23,14 +23,14 @@
       position: absolute;
       top: 20px;
       left: 86px;
-      transform: translateZ(10px);
+      transform: translateZ(15px) scale(0.98);
     }
     .c-team-item__figure__3{
       width: 200px;
       position: absolute;
       top: 20px;
       left: 86px;
-      transform: translateZ(20px);
+      transform: translateZ(30px) scale(0.95);
     }
   }
 
@@ -57,6 +57,11 @@
   .c-team-item__position{
     transform: translateZ(0px);
     color: color($base, light);
+  }
+
+
+  &:hover{
+
   }
 }
 
