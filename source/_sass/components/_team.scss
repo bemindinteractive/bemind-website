@@ -29,13 +29,13 @@
       top: 0px;
 
       &--1{
-        transform: translateZ(5px);
+        transform: translateZ(-5px);
       }
       &--2{
-        transform: translateZ(15px) scale(0.98);
+        transform: translateZ(20px) scale(0.98);
       }
       &--3{
-        transform: translateZ(30px) scale(0.95);
+        transform: translateZ(45px) scale(0.95);
       }
     }
 

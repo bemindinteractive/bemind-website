@@ -2922,11 +2922,11 @@ img, video, iframe {
       position: absolute;
       top: 0px; }
       .c-team-item .c-team-item__figure .c-team-item__figure__tilt--1 {
-        transform: translateZ(5px); }
+        transform: translateZ(-5px); }
       .c-team-item .c-team-item__figure .c-team-item__figure__tilt--2 {
-        transform: translateZ(15px) scale(0.98); }
+        transform: translateZ(20px) scale(0.98); }
       .c-team-item .c-team-item__figure .c-team-item__figure__tilt--3 {
-        transform: translateZ(30px) scale(0.95); }
+        transform: translateZ(45px) scale(0.95); }
   .c-team-item img {
     transform-style: preserve-3d;
     transform: translateZ(-20px); }

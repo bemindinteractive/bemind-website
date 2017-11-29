@@ -28,6 +28,7 @@ $(document).ready(function(){
   sr.reveal('.c-page-content__title');
   sr.reveal('.c-page-content__text__item');
   sr.reveal('.c-hero');
+  sr.reveal('.c-team-item');
 
   $(".owl-carousel").owlCarousel({
     loop:false,
@@ -71,6 +72,7 @@ $(document).ready(function(){
 
 
 // function([string1, string2],target id,[color1,color2])
+// <span class="console-container"><span id="well">well.</span><i class="console-underscore">|</i><span>
 function consoleText(words, id) {
 
   var visible = true;
@@ -116,3 +118,12 @@ function consoleText(words, id) {
     }
   }, 400)
 }
+
+/*function consoleText(words, id) {
+  // <span class="console-writer" data-words="well.,"><span>
+  // foreach
+  var target = $('#'+id);
+  var underscore = $('#'+id).parent().children('.console-underscore').first();
+  var words =
+
+}*/
