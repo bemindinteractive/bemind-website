@@ -5,6 +5,27 @@
   text-align: center;
   transform-style: preserve-3d;
 
+  .c-team-item__figure{
+    position: relative;
+    height: 248px;
+    margin: 0;
+
+    .c-team-item__figure__details{
+      width: 200px;
+      position: absolute;
+      top: 20px;
+      left: 86px;
+      transform: translateZ(10px);
+    }
+    .c-team-item__figure__edge{
+      width: 200px;
+      position: absolute;
+      top: 20px;
+      left: 86px;
+      transform: translateZ(20px);
+    }
+  }
+
   img{
     transform-style: preserve-3d;
     transform: translateZ(-20px);
