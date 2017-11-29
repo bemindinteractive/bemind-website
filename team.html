@@ -182,7 +182,7 @@
             </h5>
           </div>
 
-          <div data-tilt class="c-team-item">
+          <div class="c-team-item js-tilt">
             <figure class="c-team-item__figure">
               <img class="c-team-item__figure__1" src="assets/images/team/alessandro_1.svg" alt="">
               <img class="c-team-item__figure__2" src="assets/images/team/alessandro_2.svg" alt="">
@@ -302,6 +302,10 @@
 
       var scene2 = document.getElementById('scene2');
       var parallaxInstance1 = new Parallax(scene2);
+
+      $('.js-tilt').tilt({
+          maxTilt: -50
+      })
     </script>
 
   </body>
