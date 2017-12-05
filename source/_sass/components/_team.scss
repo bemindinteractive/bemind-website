@@ -51,6 +51,10 @@
     text-align: left;
     display: flex;
     align-items: center;
+    h3{
+      margin-top: $base-spacing-x10;
+      margin-bottom: 0;
+    }
     a{
       color: color($base, white);
       text-decoration: underline;

@@ -29,6 +29,7 @@ $(document).ready(function(){
   sr.reveal('.c-page-content__text__item');
   sr.reveal('.c-hero');
   sr.reveal('.c-team-item');
+  sr.reveal('.t-link');
 
   $(".owl-carousel").owlCarousel({
     loop:false,

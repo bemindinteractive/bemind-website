@@ -1,21 +1,35 @@
-
-
-.t-arrow-link{
+.t-link{
   display: inline-block;
   transition: transform .8s cubic-bezier(.41,0,.07,1);
   transform: translate3d(0,0,0);
   position: relative;
   color: color($base, white);
-  font-weight: $font-weight-medium;
-  font-family: $font-face-secondary;
-  background: url(/assets/images/arrow.svg);
-  background-repeat: no-repeat;
-  background-size: 12px;
-  background-position: $base-spacing 6px;
-  padding-left: $base-spacing-x4;
-  //border-bottom: 1px solid color($primary, default);
+  line-height: 1.3;
 
-  .t-arrow-link__line {
+  font-weight: $font-weight-light;
+  font-size: $font-size-large;
+  font-family: $font-face-secondary;
+
+  &--inverted{
+    color: color($base, default);
+    font-family: $font-face-primary;
+    margin-bottom: $base-spacing-x4;
+  }
+
+  &--base-font{
+    color: color($base, light);
+    font-family: $font-face-primary;
+  }
+
+  &--arrow{
+    background: url(/assets/images/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: $base-spacing 10px;
+    padding-left: $base-spacing-x6;
+  }
+
+  .t-link__line {
     position: absolute;
     left: 0;
     right: 0;
@@ -47,11 +61,14 @@
     text-align: right;
     font-weight: $font-weight-light;
     font-size: $font-size-huge;
-    background-size: 46px;
-    background-position: $base-spacing 17px;
-    padding-left: $base-spacing-x9;
 
-    .t-arrow-link__line{
+    &--arrow{
+      background-size: 46px;
+      background-position: $base-spacing 17px;
+      padding-left: $base-spacing-x9;
+    }
+
+    .t-link__line{
       height: $base-spacing;
     }
   }
@@ -59,19 +76,28 @@
   &--medium{
     font-weight: $font-weight-light;
     font-size: $font-size-large;
-    background-size: 22px;
-    background-position: $base-spacing 7px;
-    padding-left: $base-spacing-x5;
 
-    .t-arrow-link__line{
-      height: $base-spacing;
+    .t-link__line{
+      height: $base-spacing/2;
+    }
+  }
+
+  &--selected{
+    color: color($base, white);
+    .t-link__line {
+      &:before {
+        transform: translateZ(0);
+      }
+      &:after {
+        transform: translateZ(0);
+      }
     }
   }
 
   &:hover {
     color: color($secondary, dark);
 
-    .t-arrow-link__line {
+    .t-link__line {
       &:before {
         transition: transform .6s cubic-bezier(.165,.84,.44,1);
         transform: translateZ(0);
@@ -83,6 +109,18 @@
         opacity: 0;
       }
     }
+  }
+}
 
+.t-link-detail{
+  margin-left: $base-spacing-x4;
+  color: color($base, light);
+  font-family: $font-face-primary;
+  font-size: $font-size-book;
+}
+
+.e-page--inverted{
+  .t-link--selected{
+    color: color($base, default);
   }
 }

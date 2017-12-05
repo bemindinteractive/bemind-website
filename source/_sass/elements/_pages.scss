@@ -19,7 +19,8 @@ html {
 }
 
 
-body {
+body,
+.e-page {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: color($base, lightest);
@@ -37,6 +38,11 @@ body {
 
   background: color($base, default);
 }
+.e-page--inverted{
+  background: color($base, white);
+}
+
+
 
 ::selection {
   text-shadow: none;
