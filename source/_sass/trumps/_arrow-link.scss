@@ -29,6 +29,13 @@
     padding-left: $base-spacing-x6;
   }
 
+  &--arrow--small{
+    font-size: $font-size-book;
+    background-size: 18px;
+    background-position: $base-spacing 4px;
+    padding-left: $base-spacing-x5;
+  }
+
   .t-link__line {
     position: absolute;
     left: 0;
@@ -58,15 +65,10 @@
   }
 
   &--big{
-    text-align: right;
+    text-align: left;
     font-weight: $font-weight-light;
-    font-size: $font-size-huge;
-
-    &--arrow{
-      background-size: 46px;
-      background-position: $base-spacing 17px;
-      padding-left: $base-spacing-x9;
-    }
+    font-size: $font-size-large;
+    margin-bottom: 0;
 
     .t-link__line{
       height: $base-spacing;
@@ -113,14 +115,37 @@
 }
 
 .t-link-detail{
-  margin-left: $base-spacing-x4;
+  display: block;
+  margin-left: 0;
   color: color($base, light);
   font-family: $font-face-primary;
-  font-size: $font-size-book;
+  font-size: $font-size-small;
 }
 
 .e-page--inverted{
+  .t-link--arrow{
+    color: color($base, default);
+  }
   .t-link--selected{
     color: color($base, default);
+  }
+}
+
+@media screen and (break(medium)) {
+  .t-link{
+    &--big{
+      text-align: left;
+      font-weight: $font-weight-light;
+      font-size: $font-size-huge;
+
+      .t-link__line{
+        height: $base-spacing;
+      }
+    }
+  }
+  .t-link-detail{
+    display: inline-block;
+    margin-left: $base-spacing-x4;
+    font-size: $font-size-book;
   }
 }

@@ -950,29 +950,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 50%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 8.3333333333% + 24px );
+    margin-left: 8.3333333333%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 50% - 24px - 12px );
+    padding: 0 12px;
     margin-top: 128px; }
 
   .owl-carousel .owl-item .c-carousel-item p {
@@ -1051,7 +1044,8 @@ img, video, iframe {
     padding-bottom: 16px;
     overflow: hidden; }
     .c-main-navigation__list-item--small .c-main-navigation__line {
-      height: 4px; }
+      height: 4px;
+      bottom: 0px; }
     .c-main-navigation__list-item--small .c-main-navigation__link {
       transition: transform 0.4s cubic-bezier(0.41, 0, 0.07, 1);
       transition-delay: 0;
@@ -1096,61 +1090,47 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 41.6666666667%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 58.3333333333% + 24px );
+    margin-left: 58.3333333333%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 41.6666666667% - 24px - 10px ); }
+    padding: 0 12px; }
 
   .c-main-navigation__list-item {
-    display: inline-block; } }
+    display: block; } }
 @media screen and (min-width: 60em) {
   .c-main-navigation__list {
     /*
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 33.3333333333%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 66.6666666667% + 24px );
+    margin-left: 66.6666666667%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 33.3333333333% - 24px - 8px ); } }
+    padding: 0 12px; } }
 #nav-icon4 {
   width: 24px;
   height: 17px;
@@ -1214,29 +1194,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 25%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 25% - 24px - 6px );
-    margin: 0 0 0 24px; }
+    padding: 0 12px; }
     .c-sub-navigation__item h3 {
       display: inline-block;
       font-weight: 400;
@@ -1265,29 +1238,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 25%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 16.6666666667% + 24px );
+    margin-left: 16.6666666667%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 25% - 24px - 6px ); } }
+    padding: 0 12px; } }
 .c-mobile-navigation {
   display: none; }
   .c-mobile-navigation .e-button {
@@ -1416,29 +1382,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 66.6666666667%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 66.6666666667% - 24px - 16px );
-    margin: 0 0 0 24px;
+    padding: 0 12px;
     -ms-flex: 2;
         flex: 2;
     -ms-flex-item-align: start;
@@ -1449,29 +1408,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 16.6666666667%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 8.3333333333% + 24px );
+    margin-left: 8.3333333333%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 16.6666666667% - 24px - 4px ); }
+    padding: 0 12px; }
 
   .c-hero__title br {
     display: block; } }
@@ -1521,29 +1473,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 100%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 100% - 24px - 24px );
-    margin: 0 0 0 24px; } }
+    padding: 0 12px; } }
 .c-centered-block {
   background: linear-gradient(180deg, #F0F1F4 0%, rgba(255, 155, 255, 0) 100%);
   padding: 80px 24px 80px 24px;
@@ -1579,29 +1524,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 50%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 25% + 24px );
+    margin-left: 25%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 50% - 24px - 12px );
+    padding: 0 12px;
     margin-bottom: 32px; }
 
   .c-centered-block__subtitle {
@@ -1609,29 +1547,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 66.6666666667%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 16.6666666667% + 24px );
+    margin-left: 16.6666666667%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 66.6666666667% - 24px - 16px );
+    padding: 0 12px;
     margin-bottom: 16px; }
 
   .c-centered-block__text {
@@ -1639,29 +1570,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 66.6666666667%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 16.6666666667% + 24px );
+    margin-left: 16.6666666667%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 66.6666666667% - 24px - 16px );
+    padding: 0 12px;
     margin-bottom: 64px; }
 
   .c-centered-block--small-image .c-centered-block__image {
@@ -1669,29 +1593,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 50%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 25% + 24px );
+    margin-left: 25%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 50% - 24px - 12px ); } }
+    padding: 0 12px; } }
 .c-illustrated-description-block {
   position: relative;
   text-align: left;
@@ -1752,29 +1669,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 33.3333333333%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 8.3333333333% + 24px );
+    margin-left: 8.3333333333%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 33.3333333333% - 24px - 8px );
+    padding: 0 12px;
     padding-top: 160px;
     padding-bottom: 160px;
     -ms-flex-order: 1;
@@ -1786,29 +1696,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 50%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 8.3333333333% + 24px );
+    margin-left: 8.3333333333%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 50% - 24px - 12px );
+    padding: 0 12px;
     height: 100%;
     -ms-flex-order: 2;
         order: 2; }
@@ -1833,29 +1736,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 41.6666666667%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 41.6666666667% - 24px - 10px );
-    margin: 0 0 0 24px;
+    padding: 0 12px;
     margin-left: 0; }
   .c-illustrated-description-block--inverted .c-illustrated-description-block__image {
     position: absolute;
@@ -1872,29 +1768,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 33.3333333333%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 50% + 24px );
+    margin-left: 50%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 33.3333333333% - 24px - 8px );
+    padding: 0 12px;
     padding-top: 112px;
     padding-bottom: 112px; } }
 .c-illustrated-description-block-double {
@@ -1923,58 +1812,44 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 33.3333333333%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 8.3333333333% + 24px );
+    margin-left: 8.3333333333%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 33.3333333333% - 24px - 8px ); }
+    padding: 0 12px; }
 
   .c-illustrated-description-block-double__content:nth-child(2) {
     /*
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 33.3333333333%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 16.6666666667% + 24px );
+    margin-left: 16.6666666667%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 33.3333333333% - 24px - 8px ); }
+    padding: 0 12px; }
 
   .c-illustrated-description-block-double__text {
     position: relative; }
@@ -2015,29 +1890,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 41.6666666667%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 41.6666666667% - 24px - 10px );
-    margin: 0 0 0 24px;
+    padding: 0 12px;
     margin-left: 20px; }
   .c-illustrated-description-block-double--boxed .c-illustrated-description-block-double__text {
     padding: 64px;
@@ -2047,29 +1915,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 41.6666666667%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 16.6666666667% + 24px );
+    margin-left: 16.6666666667%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 41.6666666667% - 24px - 10px ); } }
+    padding: 0 12px; } }
 .c-illustrated-description-block-triple {
   text-align: center;
   margin: 0 auto;
@@ -2094,29 +1955,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 25%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 25% - 24px - 6px );
-    margin: 0 0 0 24px; }
+    padding: 0 12px; }
 
   .c-illustrated-description-block-triple__content:nth-child(2),
   .c-illustrated-description-block-triple__content:nth-child(3) {
@@ -2124,29 +1978,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 25%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 8.3333333333% + 24px );
+    margin-left: 8.3333333333%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 25% - 24px - 6px ); }
+    padding: 0 12px; }
 
   .c-illustrated-description-block-triple__image {
     display: block;
@@ -2200,29 +2047,22 @@ img, video, iframe {
     Check if $colSpan is a valid integer number then process the parameters
     passed to the grid() mixin.
   */
-  box-sizing: border-box;
-  /*
-    Check if $align is set to left (default) and make element floating
-    to the left
-  */
   float: left;
+  box-sizing: border-box;
   /*
     If $grid-use-gutters is set to false (true by default) set the
     element width based on the $initColWidth process result.
   */
+  width: 100%;
   /*
     Check if not 0 $offset is passed as argument and then if $gutter is 0
     set the left (based on direction) margin as offset.
   */
+  margin-left: 0%;
   /*
-    If $grid-use-gutters is true then calculate the default new width and left-margin
-    based on $columns and $colSpan
+    If $offset and $gutter aren't 0 set the left offset by adding the gutter
   */
-  /*
-    Check if the $gutter have a % unit
-  */
-  width: calc( 100% - 24px - 24px );
-  margin: 0 0 0 24px;
+  padding: 0 12px;
   color: white;
   margin-bottom: 32px;
   -ms-flex-item-align: start;
@@ -2259,29 +2099,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 50%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 50% - 24px - 12px );
-    margin: 0 0 0 24px;
+    padding: 0 12px;
     margin-bottom: 0; }
 
   .c-prefooter__button {
@@ -2298,29 +2131,22 @@ img, video, iframe {
     Check if $colSpan is a valid integer number then process the parameters
     passed to the grid() mixin.
   */
-  box-sizing: border-box;
-  /*
-    Check if $align is set to left (default) and make element floating
-    to the left
-  */
   float: left;
+  box-sizing: border-box;
   /*
     If $grid-use-gutters is set to false (true by default) set the
     element width based on the $initColWidth process result.
   */
+  width: 25%;
   /*
     Check if not 0 $offset is passed as argument and then if $gutter is 0
     set the left (based on direction) margin as offset.
   */
+  margin-left: 0%;
   /*
-    If $grid-use-gutters is true then calculate the default new width and left-margin
-    based on $columns and $colSpan
+    If $offset and $gutter aren't 0 set the left offset by adding the gutter
   */
-  /*
-    Check if the $gutter have a % unit
-  */
-  width: calc( 25% - 24px - 6px );
-  margin: 0 0 0 24px; }
+  padding: 0 12px; }
   .c-footer__brand p {
     color: #C7C6CD; }
 
@@ -2353,29 +2179,22 @@ img, video, iframe {
     Check if $colSpan is a valid integer number then process the parameters
     passed to the grid() mixin.
   */
-  box-sizing: border-box;
-  /*
-    Check if $align is set to left (default) and make element floating
-    to the left
-  */
   float: left;
+  box-sizing: border-box;
   /*
     If $grid-use-gutters is set to false (true by default) set the
     element width based on the $initColWidth process result.
   */
+  width: 50%;
   /*
     Check if not 0 $offset is passed as argument and then if $gutter is 0
     set the left (based on direction) margin as offset.
   */
+  margin-left: 0%;
   /*
-    If $grid-use-gutters is true then calculate the default new width and left-margin
-    based on $columns and $colSpan
+    If $offset and $gutter aren't 0 set the left offset by adding the gutter
   */
-  /*
-    Check if the $gutter have a % unit
-  */
-  width: calc( 50% - 24px - 12px );
-  margin: 0 0 0 24px;
+  padding: 0 12px;
   margin: 40px 0 0 0;
   text-align: right;
   -ms-flex-align: center;
@@ -2425,58 +2244,44 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 50%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 50% - 24px - 12px );
-    margin: 0 0 0 24px; }
+    padding: 0 12px; }
 
   .c-footer__copyright {
     /*
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 58.3333333333%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 58.3333333333% - 24px - 14px );
-    margin: 0 0 0 24px;
+    padding: 0 12px;
     text-align: left; }
 
   .c-footer__contact {
@@ -2484,58 +2289,44 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 41.6666666667%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 41.6666666667% - 24px - 10px );
-    margin: 0 0 0 24px;
+    padding: 0 12px;
     text-align: right; } }
 .c-footer__navigation {
   /*
     Check if $colSpan is a valid integer number then process the parameters
     passed to the grid() mixin.
   */
-  box-sizing: border-box;
-  /*
-    Check if $align is set to left (default) and make element floating
-    to the left
-  */
   float: left;
+  box-sizing: border-box;
   /*
     If $grid-use-gutters is set to false (true by default) set the
     element width based on the $initColWidth process result.
   */
+  width: 25%;
   /*
     Check if not 0 $offset is passed as argument and then if $gutter is 0
     set the left (based on direction) margin as offset.
   */
+  margin-left: 0%;
   /*
-    If $grid-use-gutters is true then calculate the default new width and left-margin
-    based on $columns and $colSpan
+    If $offset and $gutter aren't 0 set the left offset by adding the gutter
   */
-  /*
-    Check if the $gutter have a % unit
-  */
-  width: calc( 25% - 24px - 6px );
-  margin: 0 0 0 24px;
+  padding: 0 12px;
   display: inline-block; }
 
 .c-footer__navigation__list {
@@ -2663,6 +2454,12 @@ img, video, iframe {
 .e-page--inverted .c-page-content__text__item p {
   color: #161C2D; }
 
+.c-page-content__image {
+  margin-bottom: 24px; }
+
+.c-careers__item {
+  margin-bottom: 40px; }
+
 @media screen and (min-width: 60em) {
   .c-page-content {
     padding: 144px 0 112px 0; }
@@ -2672,172 +2469,292 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 33.3333333333%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 33.3333333333% - 24px - 8px );
-    margin: 0 0 0 24px; }
+    padding: 0 12px; }
 
   .c-page-content__text {
     /*
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 41.6666666667%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 16.6666666667% + 24px );
+    margin-left: 16.6666666667%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 41.6666666667% - 24px - 10px ); }
+    padding: 0 12px; }
     .c-page-content__text--push-one {
       /*
         Check if $colSpan is a valid integer number then process the parameters
         passed to the grid() mixin.
       */
-      box-sizing: border-box;
-      /*
-        Check if $align is set to left (default) and make element floating
-        to the left
-      */
       float: left;
+      box-sizing: border-box;
       /*
         If $grid-use-gutters is set to false (true by default) set the
         element width based on the $initColWidth process result.
       */
+      width: 75%;
       /*
         Check if not 0 $offset is passed as argument and then if $gutter is 0
         set the left (based on direction) margin as offset.
       */
-      margin: 0 24px 0 calc( 8.3333333333% + 24px );
+      margin-left: 8.3333333333%;
       /*
-        If $grid-use-gutters is true then calculate the default new width and left-margin
-        based on $columns and $colSpan
+        If $offset and $gutter aren't 0 set the left offset by adding the gutter
       */
-      /*
-        Check if the $gutter have a % unit
-      */
-      width: calc( 75% - 24px - 18px ); }
+      padding: 0 12px; }
     .c-page-content__text--push-two {
       /*
         Check if $colSpan is a valid integer number then process the parameters
         passed to the grid() mixin.
       */
-      box-sizing: border-box;
-      /*
-        Check if $align is set to left (default) and make element floating
-        to the left
-      */
       float: left;
+      box-sizing: border-box;
       /*
         If $grid-use-gutters is set to false (true by default) set the
         element width based on the $initColWidth process result.
       */
+      width: 75%;
       /*
         Check if not 0 $offset is passed as argument and then if $gutter is 0
         set the left (based on direction) margin as offset.
       */
-      margin: 0 24px 0 calc( 16.6666666667% + 24px );
+      margin-left: 16.6666666667%;
       /*
-        If $grid-use-gutters is true then calculate the default new width and left-margin
-        based on $columns and $colSpan
+        If $offset and $gutter aren't 0 set the left offset by adding the gutter
       */
+      padding: 0 12px; }
+
+  .c-page-content__image-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+    .c-page-content__image-container--push-one {
       /*
-        Check if the $gutter have a % unit
+        Check if $colSpan is a valid integer number then process the parameters
+        passed to the grid() mixin.
       */
-      width: calc( 75% - 24px - 18px ); }
+      float: left;
+      box-sizing: border-box;
+      /*
+        If $grid-use-gutters is set to false (true by default) set the
+        element width based on the $initColWidth process result.
+      */
+      width: 75%;
+      /*
+        Check if not 0 $offset is passed as argument and then if $gutter is 0
+        set the left (based on direction) margin as offset.
+      */
+      margin-left: 8.3333333333%;
+      /*
+        If $offset and $gutter aren't 0 set the left offset by adding the gutter
+      */
+      padding: 0 0; }
+    .c-page-content__image-container--push-two {
+      /*
+        Check if $colSpan is a valid integer number then process the parameters
+        passed to the grid() mixin.
+      */
+      float: left;
+      box-sizing: border-box;
+      /*
+        If $grid-use-gutters is set to false (true by default) set the
+        element width based on the $initColWidth process result.
+      */
+      width: 75%;
+      /*
+        Check if not 0 $offset is passed as argument and then if $gutter is 0
+        set the left (based on direction) margin as offset.
+      */
+      margin-left: 16.6666666667%;
+      /*
+        If $offset and $gutter aren't 0 set the left offset by adding the gutter
+      */
+      padding: 0 0; }
+
+  .c-page-content__image {
+    margin-bottom: 24px; }
+    .c-page-content__image--two {
+      /*
+        Check if $colSpan is a valid integer number then process the parameters
+        passed to the grid() mixin.
+      */
+      float: left;
+      box-sizing: border-box;
+      /*
+        If $grid-use-gutters is set to false (true by default) set the
+        element width based on the $initColWidth process result.
+      */
+      width: 22.2222222222%;
+      /*
+        Check if not 0 $offset is passed as argument and then if $gutter is 0
+        set the left (based on direction) margin as offset.
+      */
+      margin-left: 0%;
+      /*
+        If $offset and $gutter aren't 0 set the left offset by adding the gutter
+      */
+      padding: 0 12px; }
+    .c-page-content__image--three {
+      /*
+        Check if $colSpan is a valid integer number then process the parameters
+        passed to the grid() mixin.
+      */
+      float: left;
+      box-sizing: border-box;
+      /*
+        If $grid-use-gutters is set to false (true by default) set the
+        element width based on the $initColWidth process result.
+      */
+      width: 33.3333333333%;
+      /*
+        Check if not 0 $offset is passed as argument and then if $gutter is 0
+        set the left (based on direction) margin as offset.
+      */
+      margin-left: 0%;
+      /*
+        If $offset and $gutter aren't 0 set the left offset by adding the gutter
+      */
+      padding: 0 12px; }
+    .c-page-content__image--seven {
+      /*
+        Check if $colSpan is a valid integer number then process the parameters
+        passed to the grid() mixin.
+      */
+      float: left;
+      box-sizing: border-box;
+      /*
+        If $grid-use-gutters is set to false (true by default) set the
+        element width based on the $initColWidth process result.
+      */
+      width: 77.7777777778%;
+      /*
+        Check if not 0 $offset is passed as argument and then if $gutter is 0
+        set the left (based on direction) margin as offset.
+      */
+      margin-left: 0%;
+      /*
+        If $offset and $gutter aren't 0 set the left offset by adding the gutter
+      */
+      padding: 0 12px; }
+    .c-page-content__image--five {
+      /*
+        Check if $colSpan is a valid integer number then process the parameters
+        passed to the grid() mixin.
+      */
+      float: left;
+      box-sizing: border-box;
+      /*
+        If $grid-use-gutters is set to false (true by default) set the
+        element width based on the $initColWidth process result.
+      */
+      width: 55.5555555556%;
+      /*
+        Check if not 0 $offset is passed as argument and then if $gutter is 0
+        set the left (based on direction) margin as offset.
+      */
+      margin-left: 0%;
+      /*
+        If $offset and $gutter aren't 0 set the left offset by adding the gutter
+      */
+      padding: 0 12px; }
+    .c-page-content__image--up {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      margin-bottom: 0; }
+    .c-page-content__image--four-push-one {
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      /*
+        Check if $colSpan is a valid integer number then process the parameters
+        passed to the grid() mixin.
+      */
+      float: left;
+      box-sizing: border-box;
+      /*
+        If $grid-use-gutters is set to false (true by default) set the
+        element width based on the $initColWidth process result.
+      */
+      width: 44.4444444444%;
+      /*
+        Check if not 0 $offset is passed as argument and then if $gutter is 0
+        set the left (based on direction) margin as offset.
+      */
+      margin-left: 11.1111111111%;
+      /*
+        If $offset and $gutter aren't 0 set the left offset by adding the gutter
+      */
+      padding: 0 12px; }
 
   .c-big-link {
     /*
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 33.3333333333%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 66.6666666667% + 24px );
+    margin-left: 66.6666666667%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 33.3333333333% - 24px - 8px ); }
+    padding: 0 12px; }
 
   .c-page-content--notitle .c-page-content__text {
     /*
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 58.3333333333%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 33.3333333333% + 24px );
+    margin-left: 33.3333333333%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 58.3333333333% - 24px - 14px ); }
+    padding: 0 12px; }
     .c-page-content--notitle .c-page-content__text .c-page-content__text__item p {
       font-size: 1.778rem; }
     .c-page-content--notitle .c-page-content__text.c-page-content__text--col1 {
@@ -2845,29 +2762,22 @@ img, video, iframe {
         Check if $colSpan is a valid integer number then process the parameters
         passed to the grid() mixin.
       */
-      box-sizing: border-box;
-      /*
-        Check if $align is set to left (default) and make element floating
-        to the left
-      */
       float: left;
+      box-sizing: border-box;
       /*
         If $grid-use-gutters is set to false (true by default) set the
         element width based on the $initColWidth process result.
       */
+      width: 33.3333333333%;
       /*
         Check if not 0 $offset is passed as argument and then if $gutter is 0
         set the left (based on direction) margin as offset.
       */
-      margin: 0 24px 0 calc( 33.3333333333% + 24px );
+      margin-left: 33.3333333333%;
       /*
-        If $grid-use-gutters is true then calculate the default new width and left-margin
-        based on $columns and $colSpan
+        If $offset and $gutter aren't 0 set the left offset by adding the gutter
       */
-      /*
-        Check if the $gutter have a % unit
-      */
-      width: calc( 33.3333333333% - 24px - 8px ); }
+      padding: 0 12px; }
       .c-page-content--notitle .c-page-content__text.c-page-content__text--col1 .c-page-content__text__item p {
         font-size: 1.111rem; }
     .c-page-content--notitle .c-page-content__text.c-page-content__text--col2 {
@@ -2875,29 +2785,22 @@ img, video, iframe {
         Check if $colSpan is a valid integer number then process the parameters
         passed to the grid() mixin.
       */
-      box-sizing: border-box;
-      /*
-        Check if $align is set to left (default) and make element floating
-        to the left
-      */
       float: left;
+      box-sizing: border-box;
       /*
         If $grid-use-gutters is set to false (true by default) set the
         element width based on the $initColWidth process result.
       */
+      width: 25%;
       /*
         Check if not 0 $offset is passed as argument and then if $gutter is 0
         set the left (based on direction) margin as offset.
       */
+      margin-left: 0%;
       /*
-        If $grid-use-gutters is true then calculate the default new width and left-margin
-        based on $columns and $colSpan
+        If $offset and $gutter aren't 0 set the left offset by adding the gutter
       */
-      /*
-        Check if the $gutter have a % unit
-      */
-      width: calc( 25% - 24px - 6px );
-      margin: 0 0 0 24px; }
+      padding: 0 12px; }
       .c-page-content--notitle .c-page-content__text.c-page-content__text--col2 .c-page-content__text__item p {
         font-size: 1.111rem; } }
 .c-modal-wrapper {
@@ -2983,29 +2886,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 50%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 25% + 24px );
+    margin-left: 25%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 50% - 24px - 12px );
+    padding: 0 12px;
     padding: 128px 64px; } }
 .c-team-item {
   position: relative;
@@ -3065,29 +2961,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 33.3333333333%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 33.3333333333% - 24px - 8px );
-    margin: 0 0 0 24px;
+    padding: 0 12px;
     margin-top: 80px; } }
 /* Import Trumps */
 .t-link {
@@ -3113,6 +3002,11 @@ img, video, iframe {
     background-size: 24px;
     background-position: 8px 10px;
     padding-left: 48px; }
+  .t-link--arrow--small {
+    font-size: 1.111rem;
+    background-size: 18px;
+    background-position: 8px 4px;
+    padding-left: 40px; }
   .t-link .t-link__line {
     position: absolute;
     left: 0;
@@ -3136,13 +3030,10 @@ img, video, iframe {
       transform: translate3d(102%, 0, 0);
       opacity: 1; }
   .t-link--big {
-    text-align: right;
+    text-align: left;
     font-weight: 200;
-    font-size: 3.556rem; }
-    .t-link--big--arrow {
-      background-size: 46px;
-      background-position: 8px 17px;
-      padding-left: 72px; }
+    font-size: 1.778rem;
+    margin-bottom: 0; }
     .t-link--big .t-link__line {
       height: 8px; }
   .t-link--medium {
@@ -3168,14 +3059,29 @@ img, video, iframe {
       opacity: 0; }
 
 .t-link-detail {
-  margin-left: 32px;
+  display: block;
+  margin-left: 0;
   color: #6A687B;
   font-family: Apercu;
-  font-size: 1.111rem; }
+  font-size: 0.8889rem; }
 
+.e-page--inverted .t-link--arrow {
+  color: #161C2D; }
 .e-page--inverted .t-link--selected {
   color: #161C2D; }
 
+@media screen and (min-width: 60em) {
+  .t-link--big {
+    text-align: left;
+    font-weight: 200;
+    font-size: 3.556rem; }
+    .t-link--big .t-link__line {
+      height: 8px; }
+
+  .t-link-detail {
+    display: inline-block;
+    margin-left: 32px;
+    font-size: 1.111rem; } }
 .t-home-hero {
   text-align: left;
   position: relative;
@@ -3215,29 +3121,22 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 50%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 50% - 24px - 12px );
-    margin: 0 0 0 24px; }
+    padding: 0 12px; }
 
   .t-home-hero__bg-img {
     position: absolute;
@@ -3249,58 +3148,44 @@ img, video, iframe {
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 50%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
+    margin-left: 0%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 50% - 24px - 12px );
-    margin: 0 0 0 24px; }
+    padding: 0 12px; }
 
   .t-home-hero__customers {
     /*
       Check if $colSpan is a valid integer number then process the parameters
       passed to the grid() mixin.
     */
-    box-sizing: border-box;
-    /*
-      Check if $align is set to left (default) and make element floating
-      to the left
-    */
     float: left;
+    box-sizing: border-box;
     /*
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
+    width: 83.3333333333%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
     */
-    margin: 0 24px 0 calc( 8.3333333333% + 24px );
+    margin-left: 8.3333333333%;
     /*
-      If $grid-use-gutters is true then calculate the default new width and left-margin
-      based on $columns and $colSpan
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
-    /*
-      Check if the $gutter have a % unit
-    */
-    width: calc( 83.3333333333% - 24px - 20px );
+    padding: 0 12px;
     position: absolute;
     left: 0;
     bottom: 32px; }

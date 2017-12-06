@@ -88,6 +88,7 @@
     overflow: hidden;
     .c-main-navigation__line {
       height: 4px;
+      bottom: 0px;
     }
     .c-main-navigation__link {
       transition: transform .4s cubic-bezier(.41,0,.07,1);
@@ -165,7 +166,7 @@
     @include grid(5, $offset:7);
   }
   .c-main-navigation__list-item {
-    display: inline-block;
+    display: block;
   }
 }
 
