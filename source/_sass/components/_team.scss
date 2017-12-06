@@ -64,15 +64,29 @@
   .c-team-item__title{
     transform: translateZ(10px);
     color: color($base, light);
+    opacity: 0.3;
+    transition: all .8s cubic-bezier(.86,0,.07,1);
   }
   .c-team-item__position{
+    opacity: 0;
     transform: translateZ(0px);
     color: color($base, light);
+    transition: all .8s cubic-bezier(.86,0,.07,1);
+    .teletype-cursor{
+      color: color($primary, default);
+    }
   }
 
 
   &:hover{
-
+    .c-team-item__title{
+      color: color($base, white);
+      opacity: 1;
+    }
+    .c-team-item__position{
+      color: color($base, white);
+      opacity: 1;
+    }
   }
 }
 

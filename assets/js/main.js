@@ -11,12 +11,11 @@ $(document).ready(function(){
 	});
 
   window.sr = ScrollReveal({
+    origin: 'top',
     distance: '30px',
     scale: 1,
     duration: 700,
     delay: 200,
-    autoWidth: false,
-    scale:1,
     easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
   });
 
@@ -26,10 +25,13 @@ $(document).ready(function(){
   sr.reveal('.c-intro-block');
   sr.reveal('.c-carousel-wrapper');
   sr.reveal('.c-page-content__title');
+  sr.reveal('.c-page-content--notitle');
   sr.reveal('.c-page-content__text__item');
   sr.reveal('.c-hero');
   sr.reveal('.c-team-item');
   sr.reveal('.t-link');
+  sr.reveal('.c-careers__item', { delay: 200}, 200);
+  sr.reveal('.c-page-content__image', { delay: 200}, 200);
 
   $(".owl-carousel").owlCarousel({
     loop:false,
@@ -120,11 +122,25 @@ function consoleText(words, id) {
   }, 400)
 }
 
-/*function consoleText(words, id) {
-  // <span class="console-writer" data-words="well.,"><span>
-  // foreach
-  var target = $('#'+id);
-  var underscore = $('#'+id).parent().children('.console-underscore').first();
-  var words =
 
-}*/
+  		$(function() {
+
+  			$('.c-team-item__position').each( function() {
+          var item = $(this);
+          var words = item.attr('title') + ';' + item.text();
+
+          var thing = item.empty().attr( 'title','').teletype({
+            text: words.split(';'),
+            typeDelay: 5,
+            backDelay: 10,
+            cursor: '▋',
+            delay: 1500,
+            preserve: false,
+            loop: 0,
+            callbackNext: function( letter, current, teletype ) {
+
+            }
+          });
+  			});
+
+  		});
