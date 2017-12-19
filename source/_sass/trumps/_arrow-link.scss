@@ -1,6 +1,6 @@
 .t-link{
   display: inline-block;
-  transition: transform .8s cubic-bezier(.41,0,.07,1);
+  transition: all .8s cubic-bezier(.41,0,.07,1);
   transform: translate3d(0,0,0);
   position: relative;
   color: color($base, white);
@@ -8,7 +8,7 @@
 
   font-weight: $font-weight-light;
   font-size: $font-size-large;
-  font-family: $font-face-secondary;
+  font-family: $font-face-primary;
 
   &--inverted{
     color: color($base, default);
@@ -30,6 +30,7 @@
   }
 
   &--arrow--small{
+    font-family: $font-face-secondary;
     font-size: $font-size-book;
     background-size: 18px;
     background-position: $base-spacing 4px;
