@@ -51,5 +51,7 @@ body,
 }
 
 @media screen and (break(medium)) {
-
+  main{
+    overflow: hidden;
+  }
 }
