@@ -1,28 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="626px" height="517px" viewBox="0 0 626 517" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 6</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="50%" y1="-3.01841885e-14%" x2="50%" y2="96.5999681%" id="linearGradient-1">
-            <stop stop-color="#3D4352" offset="0%"></stop>
-            <stop stop-color="#151C2E" offset="100%"></stop>
-        </linearGradient>
-        <rect id="path-2" x="0" y="327" width="155" height="155" rx="77.5"></rect>
-        <polygon id="path-3" points="109 0 626 0 109 517"></polygon>
-    </defs>
-    <g id="Explorations-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home-variante" transform="translate(-733.000000, -3549.000000)">
-            <g id="Group-3" transform="translate(-2.000000, 2666.000000)">
-                <g id="Group-5" transform="translate(735.000000, 883.000000)">
-                    <g id="Group-6">
-                        <g id="Rectangle-7-Copy-3">
-                            <use fill="#151C2E" xlink:href="#path-2"></use>
-                            <use fill-opacity="0.5" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Cerchio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 626 517" style="enable-background:new 0 0 626 517;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#path-2_1_);}
+</style>
+<linearGradient id="path-2_1_" gradientUnits="userSpaceOnUse" x1="77.5" y1="482" x2="77.5" y2="327">
+	<stop  offset="0.1" style="stop-color:#151C2E"/>
+	<stop  offset="1" style="stop-color:#272E3E"/>
+</linearGradient>
+<path id="path-2" class="st0" d="M77.5,327L77.5,327c42.8,0,77.5,34.7,77.5,77.5l0,0c0,42.8-34.7,77.5-77.5,77.5l0,0
+	C34.7,482,0,447.3,0,404.5l0,0C0,361.7,34.7,327,77.5,327z"/>
 </svg>

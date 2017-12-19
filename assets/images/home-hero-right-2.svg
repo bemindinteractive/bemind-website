@@ -1,37 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="701px" height="600px" viewBox="0 0 701 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
-    <title>Group Copy</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="50%" y1="-3.01841885e-14%" x2="50%" y2="96.5999681%" id="linearGradient-1">
-            <stop stop-color="#3D4352" offset="0%"></stop>
-            <stop stop-color="#151C2E" offset="100%"></stop>
-        </linearGradient>
-        <rect id="path-2" x="580" y="131" width="310" height="487"></rect>
-        <linearGradient x1="1.70001594%" y1="48.2999841%" x2="98.2999841%" y2="48.2999841%" id="linearGradient-3">
-            <stop stop-color="#3D4352" offset="0%"></stop>
-            <stop stop-color="#151C2E" offset="100%"></stop>
-        </linearGradient>
-        <polygon id="path-4" points="119.74434 44.1908321 213.534902 195.297848 25.9537784 195.297848"></polygon>
-        <linearGradient x1="6.05010397%" y1="74.5642554%" x2="96.8256801%" y2="16.2113208%" id="linearGradient-5">
-            <stop stop-color="#3D4352" offset="0%"></stop>
-            <stop stop-color="#151C2E" offset="100%"></stop>
-        </linearGradient>
-        <path d="M324,262 C219.882353,262 147,375.5 147,375.5 C147,375.5 200.1,489 324,489 C448.941176,489 501,375.5 501,375.5 C501,375.5 429.158824,262 324,262 Z M323.685628,448.231119 C283.183332,448.231119 250.989199,416.350531 250.989199,376.242693 C250.989199,336.134856 283.183332,304.254268 323.685628,304.254268 C364.187924,304.254268 396.382056,336.134856 396.382056,376.242693 C396.382056,416.350531 364.187924,448.231119 323.685628,448.231119 Z" id="path-6"></path>
-    </defs>
-    <g id="Explorations-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home-variante" transform="translate(-739.000000, -279.000000)">
-            <g id="Group-Copy" transform="translate(592.000000, 148.000000)">
-
-                <g id="Group-3" transform="translate(442.000000, 491.000000)">
-                    <g id="Triangle" transform="translate(119.744340, 119.744340) scale(-1, 1) rotate(-45.000000) translate(-119.744340, -119.744340) ">
-                        <use fill="#151C2E" xlink:href="#path-4"></use>
-                        <use fill-opacity="0.5" fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
-                    </g>
-                </g>
-
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Triangolo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 701 600" style="enable-background:new 0 0 701 600;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#path-4_1_);}
+</style>
+<linearGradient id="path-4_1_" gradientUnits="userSpaceOnUse" x1="348.4244" y1="413.4244" x2="481.0643" y2="546.0643">
+	<stop  offset="0" style="stop-color:#151C2E"/>
+	<stop  offset="1" style="stop-color:#272E3E"/>
+</linearGradient>
+<polygon id="path-4" class="st0" points="468.2,426.3 295,466.8 427.6,599.5 "/>
 </svg>
