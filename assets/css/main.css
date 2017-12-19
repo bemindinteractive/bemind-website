@@ -1172,7 +1172,7 @@ img, video, iframe {
 
 @media screen and (min-width: 60em) {
   #nav-icon4 {
-    margin: 50px auto; } }
+    margin: 24px auto; } }
 @media screen and (min-width: 60em) {
   .c-sub-navigation {
     display: -ms-flexbox;
