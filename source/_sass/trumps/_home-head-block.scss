@@ -40,8 +40,11 @@
   }
 }
 
-
 @media screen and (break(medium)) {
+  .t-home-hero__content{
+    @include grid(10);
+  }
+
   .t-home-hero {
     min-height: 100vh;
     padding-top: 0;
@@ -50,9 +53,7 @@
     //padding: ($base-spacing-x6 * 4) 0;
     //padding-bottom: $base-spacing-x10 * 5;
   }
-  .t-home-hero__content{
-    @include grid(6);
-  }
+
   .t-home-hero__bg-img {
     position: absolute;
     display: block;
@@ -93,5 +94,11 @@
       }
     }
 
+  }
+}
+
+@media screen and (break(large)) {
+  .t-home-hero__content{
+    @include grid(6);
   }
 }

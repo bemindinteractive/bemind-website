@@ -21,6 +21,11 @@ h1 {
 }
 @media screen and (break(medium)) {
   h1 {
+    font-size: $font-size-huge;
+  }
+}
+@media screen and (break(large)) {
+  h1 {
     font-size: $font-size-mega;
   }
 }
@@ -34,6 +39,11 @@ h2 {
 }
 @media screen and (break(medium)) {
   h2 {
+    font-size: $font-size-huge;
+  }
+}
+@media screen and (break(large)) {
+  h2 {
     font-size: $font-size-mega;
   }
 }
@@ -46,6 +56,11 @@ blockquote>p {
   margin-bottom: $base-spacing-x8;
 }
 @media screen and (break(medium)) {
+  h3 {
+    font-size: $font-size-medium;
+  }
+}
+@media screen and (break(large)) {
   h3 {
     font-size: $font-size-large;
   }

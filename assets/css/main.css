@@ -526,6 +526,9 @@ h1 {
 
 @media screen and (min-width: 60em) {
   h1 {
+    font-size: 3.556rem; } }
+@media screen and (min-width: 80em) {
+  h1 {
     font-size: 4.444rem; } }
 h2 {
   font-size: 2.222rem;
@@ -535,6 +538,9 @@ h2 {
 
 @media screen and (min-width: 60em) {
   h2 {
+    font-size: 3.556rem; } }
+@media screen and (min-width: 80em) {
+  h2 {
     font-size: 4.444rem; } }
 h3,
 blockquote > p {
@@ -543,6 +549,9 @@ blockquote > p {
   margin-bottom: 64px; }
 
 @media screen and (min-width: 60em) {
+  h3 {
+    font-size: 1.333rem; } }
+@media screen and (min-width: 80em) {
   h3 {
     font-size: 1.778rem; } }
 h4 {
@@ -3150,14 +3159,6 @@ img, video, iframe {
   margin: 0 auto; }
 
 @media screen and (min-width: 60em) {
-  .t-home-hero {
-    min-height: 100vh;
-    padding-top: 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center; }
-
   .t-home-hero__content {
     /*
       Check if $colSpan is a valid integer number then process the parameters
@@ -3169,7 +3170,7 @@ img, video, iframe {
       If $grid-use-gutters is set to false (true by default) set the
       element width based on the $initColWidth process result.
     */
-    width: 50%;
+    width: 83.3333333333%;
     /*
       Check if not 0 $offset is passed as argument and then if $gutter is 0
       set the left (based on direction) margin as offset.
@@ -3179,6 +3180,14 @@ img, video, iframe {
       If $offset and $gutter aren't 0 set the left offset by adding the gutter
     */
     padding: 0 12px; }
+
+  .t-home-hero {
+    min-height: 100vh;
+    padding-top: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
 
   .t-home-hero__bg-img {
     position: absolute;
@@ -3248,6 +3257,28 @@ img, video, iframe {
         background-image: url(/assets/images/customers/logo_veratour.svg); }
       .t-home-hero__customers .t-home-hero__customers__item--sofidel {
         background-image: url(/assets/images/customers/logo_sofidel@2x.png); } }
+@media screen and (min-width: 80em) {
+  .t-home-hero__content {
+    /*
+      Check if $colSpan is a valid integer number then process the parameters
+      passed to the grid() mixin.
+    */
+    float: left;
+    box-sizing: border-box;
+    /*
+      If $grid-use-gutters is set to false (true by default) set the
+      element width based on the $initColWidth process result.
+    */
+    width: 50%;
+    /*
+      Check if not 0 $offset is passed as argument and then if $gutter is 0
+      set the left (based on direction) margin as offset.
+    */
+    margin-left: 0%;
+    /*
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
+    */
+    padding: 0 12px; } }
 .c-language-switcher {
   display: none; }
 
