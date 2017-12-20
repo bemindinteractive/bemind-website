@@ -42,7 +42,9 @@ body,
   background: color($base, white);
 }
 
-
+main{
+  overflow-x: hidden;
+}
 
 ::selection {
   text-shadow: none;
@@ -51,7 +53,5 @@ body,
 }
 
 @media screen and (break(medium)) {
-  main{
-    overflow: hidden;
-  }
+
 }

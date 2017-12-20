@@ -498,6 +498,9 @@ body,
 .e-page--inverted {
   background: #FFFFFF; }
 
+main {
+  overflow-x: hidden; }
+
 ::-moz-selection {
   text-shadow: none;
   color: #FFFFFF;
@@ -508,9 +511,6 @@ body,
   color: #FFFFFF;
   background-color: #491CDF; }
 
-@media screen and (min-width: 60em) {
-  main {
-    overflow: hidden; } }
 h1, h2, h3,
 blockquote > p, h4, h5, h6 {
   line-height: 1.2;
