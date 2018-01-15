@@ -498,9 +498,6 @@ body,
 .e-page--inverted {
   background: #FFFFFF; }
 
-main {
-  overflow-x: hidden; }
-
 ::-moz-selection {
   text-shadow: none;
   color: #FFFFFF;
@@ -1668,7 +1665,7 @@ img, video, iframe {
   .c-illustrated-description-block {
     padding: 24px;
     margin-top: 320px;
-    overflow-x: visible; }
+    overflow-x: auto; }
 
   .c-illustrated-description-block__content {
     -ms-flex-flow: row;
