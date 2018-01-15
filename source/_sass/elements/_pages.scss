@@ -40,7 +40,7 @@ body,
 }
 
 main{
-  //overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -50,5 +50,7 @@ main{
 }
 
 @media screen and (break(medium)) {
-
+  main{
+    overflow-x: auto;
+  }
 }
