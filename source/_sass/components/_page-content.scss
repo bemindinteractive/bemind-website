@@ -2,6 +2,7 @@
   position: relative;
   margin: 0 auto;
   padding-top: $base-spacing-x10;
+  overflow-x: hidden;
 
   .c-page-content__title{
 
@@ -92,6 +93,7 @@
 @media screen and (break(medium)) {
   .c-page-content {
     padding: $base-spacing-x9 *2 0 $base-spacing-x7 * 2 0;
+    overflow-x: visible;
   }
   .c-page-content__title{
     @include grid(4);

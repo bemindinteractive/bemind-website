@@ -498,9 +498,6 @@ body,
 .e-page--inverted {
   background: #FFFFFF; }
 
-main {
-  overflow-x: hidden; }
-
 ::-moz-selection {
   text-shadow: none;
   color: #FFFFFF;
@@ -511,9 +508,6 @@ main {
   color: #FFFFFF;
   background-color: #491CDF; }
 
-@media screen and (min-width: 60em) {
-  main {
-    overflow-x: auto; } }
 h1, h2, h3,
 blockquote > p, h4, h5, h6 {
   line-height: 1.2;
@@ -2423,7 +2417,8 @@ img, video, iframe {
 .c-page-content {
   position: relative;
   margin: 0 auto;
-  padding-top: 80px; }
+  padding-top: 80px;
+  overflow-x: hidden; }
   .c-page-content .c-page-content__text__item h5 {
     margin-bottom: 40px; }
   .c-page-content .c-page-content__text__item p {
@@ -2477,7 +2472,8 @@ img, video, iframe {
 
 @media screen and (min-width: 60em) {
   .c-page-content {
-    padding: 144px 0 112px 0; }
+    padding: 144px 0 112px 0;
+    overflow-x: visible; }
 
   .c-page-content__title {
     /*
