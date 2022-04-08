@@ -172,22 +172,21 @@
                 <script type='text/javascript' charset='utf-8'>
                   whr(document).ready(function () {
                     whr_embed(523679, { detail: 'titles', base: 'jobs', zoom: 'country', grouping: 'none' });
-                  });
-  
-                  setTimeout(() => {
-                    Array.from(document.querySelectorAll('.whr-title a')).forEach(e => {
-                      e.classList.add('c-careers__item')
-                    })
-  
-                    Array.from(document.querySelectorAll('.whr-title a')).forEach(e => {
-                      e.classList.add('t-link')
-                      e.classList.add('t-link--big')
-                      e.classList.add('t-link--inverted')
-                      const arrow = document.createElement('span')
-                      arrow.classList.add('t-link__line')
-                      e.prepend(arrow)
-                    })
-                  }, 1000)
+                    setTimeout(() => {
+                      Array.from(document.querySelectorAll('.whr-title a')).forEach(e => {
+                        e.classList.add('c-careers__item')
+                      })
+    
+                      Array.from(document.querySelectorAll('.whr-title a')).forEach(e => {
+                        e.classList.add('t-link')
+                        e.classList.add('t-link--big')
+                        e.classList.add('t-link--inverted')
+                        const arrow = document.createElement('span')
+                        arrow.classList.add('t-link__line')
+                        e.prepend(arrow)
+                      })
+                    }, 1000)
+                  });                  
                 </script>
                 <div id="whr_embed_hook"></div>
 
