@@ -3,7 +3,7 @@
 
   <head>
     <title>Bemind - Careers</title>
-    <meta name="description" content="You are passionate, curious, creative and ready to step up your game?">
+    <meta name="description" content="Are you passionate, curious, creative and ready to step up your game?">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
 
@@ -18,7 +18,7 @@
 
     <meta property="og:site_name" content="Bemind">
     <meta property="og:title" content="Bemind - Careers">
-    <meta property="og:description" content="You are passionate, curious, creative and ready to step up your game?">
+    <meta property="og:description" content="Are you passionate, curious, creative and ready to step up your game?">
     <meta property="og:image" content="https://www.bemind.me/assets/images/share.png">
     <meta property="og:url" content="https://www.bemind.me/careers.html">
 
@@ -79,9 +79,9 @@
           <li class="c-main-navigation__list-item">
             <a class="c-main-navigation__link link" href="/studio.html">Studio<span class="c-main-navigation__line"></span></a>
           </li>
-          <li class="c-main-navigation__list-item">
+          <!-- <li class="c-main-navigation__list-item">
             <a class="c-main-navigation__link link" href="/team.html">Team<span class="c-main-navigation__line"></span></a>
-          </li>
+          </li> -->
           <li class="c-main-navigation__list-item">
             <a class="c-main-navigation__link link" href="/careers.html">Careers<span class="c-main-navigation__line"></span></a>
           </li>
@@ -113,11 +113,11 @@
       <div class="c-hero">
         <div class="o-wrapper">
           <div class="c-hero__content">
-            <h1 class="c-hero__text">You are passionate, curious, creative and ready to step up your game?</h1>
+            <h1 class="c-hero__text">Are you passionate, curious, creative and ready to step up your game?</h1>
             <div class="c-hero__sub-navigation">
               <ul class="c-hero__sub-navigation__list">
                 <li><a href="studio.html" class="t-link t-link--base-font link"><span class="t-link__line"></span>Studio</a></li>
-                <li><a href="team.html" class="t-link t-link--base-font link"><span class="t-link__line"></span>Team</a></li>
+                <!-- <li><a href="team.html" class="t-link t-link--base-font link"><span class="t-link__line"></span>Team</a></li> -->
                 <li><a href="careers.html" class="t-link t-link--base-font t-link--selected link"><span class="t-link__line"></span>Careers</a></li>
               </ul>
             </div>
@@ -148,31 +148,6 @@
       <div class="o-wrapper">
         <div class="c-page-content">
 
-          <div class="c-page-content__image-container c-page-content__image-container--push-two">
-            <div class="c-page-content__image c-page-content__image--two">
-              <!--img src="/assets/images/careers/sprint.jpg" alt=""-->
-              <video preload="none" autoplay loop src="/assets/images/careers/angelo.mp4" type="video/mp4"></video>
-            </div>
-            <div class="c-page-content__image c-page-content__image--seven">
-              <img src="/assets/images/careers/cena.jpg" alt="">
-            </div>
-            <div class="clearfix"></div>
-          </div>
-
-          <div class="c-page-content__image-container c-page-content__image-container--push-one">
-            <div class="c-page-content__image c-page-content__image--five">
-              <img src="/assets/images/careers/developers.jpg" alt="">
-            </div>
-            <div class="c-page-content__image c-page-content__image--three c-page-content__image--up">
-              <img src="/assets/images/careers/michele.jpg" alt="">
-            </div>
-            <!--div class="c-page-content__image c-page-content__image--two c-page-content__image--four-push-one">
-              To see more of the team daily life, follow us on Instagram and Facebook! Also, we write stuff on Medium  italian-only, for now :)
-            </div-->
-            <div class="clearfix"></div>
-          </div>
-
-
 
           <div class="clearfix"></div>
         </div>
@@ -191,10 +166,34 @@
           <div class="c-page-content__text c-page-content__text--push-one">
             <div class="c-page-content__text__item">
               <div class="c-careers">
-                <div class="c-careers__item"><a href="https://bemind.recruitee.com/o/web-designer" target="_blank" class="t-link t-link--big t-link--inverted"><span class="t-link__line"></span>Web Designer</a><span class="t-link-detail">Milano, Italy</span></div>
+
+
+                <script src='https://www.workable.com/assets/embed.js' type='text/javascript'></script>
+                <script type='text/javascript' charset='utf-8'>
+                  whr(document).ready(function () {
+                    whr_embed(523679, { detail: 'titles', base: 'jobs', zoom: 'country', grouping: 'none' });
+                    setTimeout(() => {
+                      Array.from(document.querySelectorAll('.whr-title a')).forEach(e => {
+                        e.classList.add('c-careers__item')
+                      })
+    
+                      Array.from(document.querySelectorAll('.whr-title a')).forEach(e => {
+                        e.classList.add('t-link')
+                        e.classList.add('t-link--big')
+                        e.classList.add('t-link--inverted')
+                        const arrow = document.createElement('span')
+                        arrow.classList.add('t-link__line')
+                        e.prepend(arrow)
+                      })
+                    }, 1000)
+                  });                  
+                </script>
+                <div id="whr_embed_hook"></div>
+
+                <!-- <div class="c-careers__item"><a href="https://bemind.recruitee.com/o/web-designer" target="_blank" class="t-link t-link--big t-link--inverted"><span class="t-link__line"></span>Web Designer</a><span class="t-link-detail">Milano, Italy</span></div>
                 <div class="c-careers__item"><a href="https://bemind.recruitee.com/o/microservices-developer" target="_blank" class="t-link t-link--big t-link--inverted"><span class="t-link__line"></span>Microservices Developer</a><span class="t-link-detail">Remote</span></div>
                 <div class="c-careers__item"><a href="https://bemind.recruitee.com/o/senior-designer-milano" target="_blank" class="t-link t-link--big t-link--inverted"><span class="t-link__line"></span>Senior Designer</a><span class="t-link-detail">Biella, Italy</span></div>
-                <div class="c-careers__item"><a href="https://bemind.recruitee.com/o/junior-designer" target="_blank" class="t-link t-link--big t-link--inverted"><span class="t-link__line"></span>Junior Designer</a><span class="t-link-detail">Biella, Italy</span></div>
+                <div class="c-careers__item"><a href="https://bemind.recruitee.com/o/junior-designer" target="_blank" class="t-link t-link--big t-link--inverted"><span class="t-link__line"></span>Junior Designer</a><span class="t-link-detail">Biella, Italy</span></div> -->
               </div>
             </div>
           </div>

@@ -501,11 +501,6 @@ body,
 main {
   overflow: hidden; }
 
-::-moz-selection {
-  text-shadow: none;
-  color: #FFFFFF;
-  background-color: #491CDF; }
-
 ::selection {
   text-shadow: none;
   color: #FFFFFF;
@@ -743,7 +738,6 @@ img, video, iframe {
   cursor: pointer;
   cursor: hand;
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
 
@@ -762,13 +756,11 @@ img, video, iframe {
 
 .owl-carousel.owl-drag .owl-item {
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
 
 .owl-carousel.owl-grab {
   cursor: move;
-  cursor: -webkit-grab;
   cursor: grab; }
 
 .owl-carousel.owl-rtl {
@@ -3001,6 +2993,19 @@ img, video, iframe {
     */
     padding: 0 12px;
     margin-top: 80px; } }
+.whr-items {
+  padding-left: 0; }
+
+.whr-title {
+  margin-bottom: 0.5rem; }
+
+.whr-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding-left: 0; }
+
 /* Import Trumps */
 .t-link {
   display: inline-block;
@@ -3082,7 +3087,7 @@ img, video, iframe {
       transition: none;
       opacity: 0; }
 
-.t-link-detail {
+.t-link-detail, .whr-dept, .whr-location, .whr-date {
   display: block;
   margin-left: 0;
   color: #6A687B;
@@ -3102,7 +3107,7 @@ img, video, iframe {
     .t-link--big .t-link__line {
       height: 8px; }
 
-  .t-link-detail {
+  .t-link-detail, .whr-dept, .whr-location, .whr-date {
     display: inline-block;
     margin-left: 32px;
     font-size: 1.111rem; } }
