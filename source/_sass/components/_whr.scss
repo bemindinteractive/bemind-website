@@ -1,0 +1,23 @@
+.whr-items {
+  padding-left: 0;
+}
+
+.whr-title {
+  margin-bottom: 0.5rem;
+}
+
+.whr-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.whr-dept {
+  @extend .t-link-detail;
+}
+.whr-location {
+  @extend .t-link-detail;
+}
+.whr-date {
+  @extend .t-link-detail;
+}
