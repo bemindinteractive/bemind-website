@@ -1,6 +1,7 @@
 const gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     connect = require('gulp-connect'),
+    connectRewrite = require('connect-modrewrite'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
@@ -83,16 +84,19 @@ gulp.task('compress', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('connect', function() {
-  connect.server();
+gulp.task("connect", function () {
+    connect.server();
 });
 
-gulp.task('watch', function () {
-    browserSync.init({
-      server: './'
-    })
-    gulp.watch(config.srcPath + config.sassPath + '**/*.scss', ['styles']);
-    gulp.watch('*.html').on('change', browserSync.reload);
+gulp.task("watch", function () {
+    browserSync.init(null, {
+      server: {
+        baseDir: ["./"],
+        middleware: [connectRewrite(["^.([^\\.]+)$ /$1.html [L]"])],
+      },
+    });
+    gulp.watch(config.srcPath + config.sassPath + "**/*.scss", ["styles"]);
+    gulp.watch("*.html").on("change", browserSync.reload);
 });
 
 gulp.task('default', function (callback) {

@@ -37,6 +37,7 @@
   },
   "homepage": "https://github.com/vidra-io/website#readme",
   "dependencies": {
+    "connect-modrewrite": "^0.10.2",
     "scrollreveal": "^3.3.6"
   }
 }
