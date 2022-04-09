@@ -3,173 +3,197 @@
   margin: 0 auto;
   padding-top: $base-spacing-x10;
 
-  .c-page-content__title{
-
+  .c-page-content__title {
   }
-  .c-page-content__text{
-    &__item{
-      h5{
+  .c-page-content__text {
+    &__item {
+      h5 {
         margin-bottom: $base-spacing-x5;
       }
-      p{
+      p {
         margin-bottom: $base-spacing-x8 * 2;
       }
     }
   }
 
-.c-page-content-background{
-  position: absolute;
-  width: 550px;
-  height: 550px;
-
-  .c-page-content-background__image{
+  .c-page-content-background {
     position: absolute;
     width: 550px;
     height: 550px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
+
+    .c-page-content-background__image {
+      position: absolute;
+      width: 550px;
+      height: 550px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+
+    &--triangle {
+      .c-page-content-background__image {
+        background-size: 70%;
+        background-image: url(/assets/images/triangle-about.svg);
+      }
+      right: -20%;
+      bottom: 0;
+    }
+    &--circle {
+      .c-page-content-background__image {
+        background-image: url(/assets/images/circle.svg);
+      }
+      left: -20%;
+      top: 50%;
+    }
+    &--triangle-violet {
+      .c-page-content-background__image {
+        background-size: 70%;
+        background-image: url(/assets/images/triangle-violet.svg);
+      }
+      right: -130%;
+      bottom: 0;
+    }
+    &--circle-violet {
+      .c-page-content-background__image {
+        background-image: url(/assets/images/circle-violet.svg);
+      }
+      left: -130%;
+      top: 30%;
+    }
   }
 
-  &--triangle{
-    .c-page-content-background__image{
-      background-size: 70%;
-      background-image: url(/assets/images/triangle-about.svg);
+  @media screen and (min-width: 30em) {
+    .c-page-content-background {
+      &--triangle-violet {
+        right: -100%;
+        bottom: 0;
+      }
+      &--circle-violet {
+        left: -100%;
+        top: 50%;
+      }
     }
-    right: -20%;
-    bottom: 0;
   }
-  &--circle{
-    .c-page-content-background__image{
-      background-image: url(/assets/images/circle.svg);
-    }
-    left: -20%;
-    top: 50%;
-  }
-  &--triangle-violet{
-    .c-page-content-background__image{
-      background-size: 70%;
-      background-image: url(/assets/images/triangle-violet.svg);
-    }
-    right: -20%;
-    bottom: 0;
-  }
-  &--circle-violet{
-    .c-page-content-background__image{
-      background-image: url(/assets/images/circle-violet.svg);
-    }
-    left: -20%;
-    top: 50%;
-  }
-}
 
+  @media screen and (min-width: 60em) {
+    .c-page-content-background {
+      &--triangle-violet {
+        right: -20%;
+        bottom: 0;
+      }
+      &--circle-violet {
+        left: -20%;
+        top: 50%;
+      }
+    }
+  }
 
   &--notitle {
-    .c-page-content__text__item{
-        h5{
-          margin-bottom: $base-spacing-x7;
-        }
-        p{
-          font-size: $font-size-book;
-        }
+    .c-page-content__text__item {
+      h5 {
+        margin-bottom: $base-spacing-x7;
+      }
+      p {
+        font-size: $font-size-book;
+      }
     }
   }
 }
 
-.e-page--inverted .c-page-content__text__item{
-  p{
+.e-page--inverted .c-page-content__text__item {
+  p {
     color: color($base, default);
   }
 }
 
-.c-page-content__image{
+.c-page-content__image {
   margin-bottom: $base-spacing-x3;
 }
 
-.c-careers__item{
+.c-careers__item {
   margin-bottom: $base-spacing-x5;
 }
 @media screen and (break(medium)) {
   .c-page-content {
-    padding: $base-spacing-x9 *2 0 $base-spacing-x7 * 2 0;
+    padding: $base-spacing-x9 * 2 0 $base-spacing-x7 * 2 0;
     overflow-x: visible;
   }
-  .c-page-content__title{
+  .c-page-content__title {
     @include grid(4);
   }
-  .c-page-content__text{
-    @include grid(5, $offset:2);
+  .c-page-content__text {
+    @include grid(5, $offset: 2);
 
-    &--push-one{
-      @include grid(9, $offset:1);
+    &--push-one {
+      @include grid(9, $offset: 1);
     }
-    &--push-two{
-      @include grid(9, $offset:2);
+    &--push-two {
+      @include grid(9, $offset: 2);
     }
   }
-  .c-page-content__image-container{
+  .c-page-content__image-container {
     display: flex;
     align-items: flex-end;
 
-    &--push-one{
-      @include grid(9, $gutter:0, $offset:1);
+    &--push-one {
+      @include grid(9, $gutter: 0, $offset: 1);
     }
-    &--push-two{
-      @include grid(9, $gutter:0, $offset:2);
+    &--push-two {
+      @include grid(9, $gutter: 0, $offset: 2);
     }
   }
-  .c-page-content__image{
-    &--two{
+  .c-page-content__image {
+    &--two {
       @include grid(2, $colunms: 9);
     }
-    &--three{
+    &--three {
       @include grid(3, $colunms: 9);
     }
-    &--seven{
+    &--seven {
       @include grid(7, $colunms: 9);
     }
-    &--five{
+    &--five {
       @include grid(5, $colunms: 9);
     }
-    &--up{
+    &--up {
       align-self: flex-start;
       margin-bottom: 0;
     }
-    &--four-push-one{
+    &--four-push-one {
       align-self: flex-end;
-      @include grid(4, $colunms: 9, $offset:1);
+      @include grid(4, $colunms: 9, $offset: 1);
     }
     margin-bottom: $base-spacing-x3;
   }
-  .c-big-link{
-    @include grid(4, $offset:8);
+  .c-big-link {
+    @include grid(4, $offset: 8);
   }
-  .c-page-content--notitle{
-      .c-page-content__text{
-        @include grid(7, $offset:4);
+  .c-page-content--notitle {
+    .c-page-content__text {
+      @include grid(7, $offset: 4);
 
-        .c-page-content__text__item{
-            p{
-              font-size: $font-size-large;
-            }
+      .c-page-content__text__item {
+        p {
+          font-size: $font-size-large;
         }
+      }
 
-        &.c-page-content__text--col1{
-          @include grid(4, $offset:4);
-          .c-page-content__text__item{
-            p{
-              font-size: $font-size-book;
-            }
-          }
-        }
-        &.c-page-content__text--col2{
-          @include grid(3, $offset:0);
-          .c-page-content__text__item{
-            p{
-              font-size: $font-size-book;
-            }
+      &.c-page-content__text--col1 {
+        @include grid(4, $offset: 4);
+        .c-page-content__text__item {
+          p {
+            font-size: $font-size-book;
           }
         }
       }
+      &.c-page-content__text--col2 {
+        @include grid(3, $offset: 0);
+        .c-page-content__text__item {
+          p {
+            font-size: $font-size-book;
+          }
+        }
+      }
+    }
   }
 }
