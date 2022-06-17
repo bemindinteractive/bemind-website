@@ -2234,6 +2234,25 @@ img, video, iframe {
   font-weight: 400;
   font-family: Apercu-Mono; }
 
+.c-footer__transparency-title {
+  margin-top: 16px;
+  color: #6A687B;
+  padding: 16px 0;
+  text-align: center;
+  font-size: 0.7222rem;
+  font-weight: 400;
+  font-family: Apercu-Mono;
+  margin-bottom: 0; }
+
+.c-footer__transparency-description {
+  margin-top: 0;
+  color: #6A687B;
+  padding: 16px 0;
+  text-align: center;
+  font-size: 0.7222rem;
+  font-weight: 400;
+  font-family: Apercu-Mono; }
+
 .c-footer__contact {
   text-align: center; }
 
@@ -2285,6 +2304,54 @@ img, video, iframe {
     */
     padding: 0 12px;
     text-align: left; }
+
+  .c-footer__transparency-title {
+    /*
+      Check if $colSpan is a valid integer number then process the parameters
+      passed to the grid() mixin.
+    */
+    float: left;
+    box-sizing: border-box;
+    /*
+      If $grid-use-gutters is set to false (true by default) set the
+      element width based on the $initColWidth process result.
+    */
+    width: 58.3333333333%;
+    /*
+      Check if not 0 $offset is passed as argument and then if $gutter is 0
+      set the left (based on direction) margin as offset.
+    */
+    margin-left: 0%;
+    /*
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
+    */
+    padding: 0 12px;
+    text-align: left;
+    margin-bottom: 0; }
+
+  .c-footer__transparency-description {
+    /*
+      Check if $colSpan is a valid integer number then process the parameters
+      passed to the grid() mixin.
+    */
+    float: left;
+    box-sizing: border-box;
+    /*
+      If $grid-use-gutters is set to false (true by default) set the
+      element width based on the $initColWidth process result.
+    */
+    width: 58.3333333333%;
+    /*
+      Check if not 0 $offset is passed as argument and then if $gutter is 0
+      set the left (based on direction) margin as offset.
+    */
+    margin-left: 0%;
+    /*
+      If $offset and $gutter aren't 0 set the left offset by adding the gutter
+    */
+    padding: 0 12px;
+    text-align: left;
+    margin-top: 16px; }
 
   .c-footer__contact {
     /*

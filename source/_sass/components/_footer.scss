@@ -6,10 +6,10 @@
   text-align: center;
 }
 
-.c-footer__brand{
+.c-footer__brand {
   @include grid(3);
 
-  p{
+  p {
     color: color($base, lighter);
   }
 }
@@ -27,7 +27,7 @@
   margin-bottom: $base-spacing-x6;
 }
 
-.c-footer__bottom{
+.c-footer__bottom {
   display: flex;
   align-items: center;
 }
@@ -35,7 +35,7 @@
 .c-footer__credits {
   padding: 0;
   text-align: left;
-  p{
+  p {
     color: color($base, light);
     font-size: $font-size-small;
     font-family: $font-face-secondary;
@@ -86,9 +86,30 @@
   font-weight: $font-weight-normal;
   font-family: $font-face-secondary;
 }
-.c-footer__contact{
+
+.c-footer__transparency-title {
+  margin-top: $base-spacing-x2;
+  color: color($base, light);
+  padding: $base-spacing-x2 0;
   text-align: center;
-  
+  font-size: $font-size-xxsmall;
+  font-weight: $font-weight-normal;
+  font-family: $font-face-secondary;
+  margin-bottom: 0;
+}
+
+.c-footer__transparency-description {
+  margin-top: 0;
+  color: color($base, light);
+  padding: $base-spacing-x2 0;
+  text-align: center;
+  font-size: $font-size-xxsmall;
+  font-weight: $font-weight-normal;
+  font-family: $font-face-secondary;
+}
+
+.c-footer__contact {
+  text-align: center;
 }
 
 @media screen and (break(medium)) {
@@ -102,7 +123,17 @@
     @include grid(7);
     text-align: left;
   }
-  .c-footer__contact{
+  .c-footer__transparency-title {
+    @include grid(7);
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .c-footer__transparency-description {
+    @include grid(7);
+    text-align: left;
+    margin-top: $base-spacing-x2;
+  }
+  .c-footer__contact {
     @include grid(5);
     text-align: right;
   }
